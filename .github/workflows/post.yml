@@ -1,0 +1,42 @@
+name: Post to Instagram
+
+on:
+  # 21:00 UTC = 5 PM New York in daylight time (4 PM after Nov 1). Adjust in winter.
+  schedule:
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "post or check (check only reads the profile)"
+        default: "check"
+      date:
+        description: "Queue date YYYY-MM-DD (blank = today)"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency: instagram-post
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Publish
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          POST_DATE: ${{ github.event.inputs.date }}
+        run: python scripts/post.py "${{ github.event.inputs.mode || 'post' }}"
+      - name: Record posted marker
+        run: |
+          if [ -n "$(git status --porcelain queue)" ]; then
+            git config user.name "riffex-bot"
+            git config user.email "riffex-bot@users.noreply.github.com"
+            git add queue
+            git commit -m "Mark post as published"
+            git push
+          fi
