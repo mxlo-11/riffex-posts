@@ -54,7 +54,11 @@ def main():
     if mode == "check":
         return
 
-    day = os.environ.get("POST_DATE") or datetime.datetime.now(ZoneInfo("America/New_York")).date().isoformat()
+    now_ny = datetime.datetime.now(ZoneInfo("America/New_York"))
+    if os.environ.get("GITHUB_EVENT_NAME") == "schedule" and now_ny.hour < 17:
+        print(f"Scheduled run at {now_ny:%H:%M} New York time, before 5 PM. Waiting for the next run.")
+        return
+    day = os.environ.get("POST_DATE") or now_ny.date().isoformat()
     folder = pathlib.Path("queue") / day
     if not folder.is_dir():
         print(f"Nothing queued for {day}.")

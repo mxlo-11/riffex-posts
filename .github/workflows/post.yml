@@ -1,9 +1,10 @@
 name: Post to Instagram
 
 on:
-  # 21:00 UTC = 5 PM New York in daylight time (4 PM after Nov 1). Adjust in winter.
+  # Runs at 21:05 and 22:05 UTC. The script only posts once it's 5 PM or later in New York,
+  # so this covers both daylight (EDT) and standard (EST) time without edits.
   schedule:
-    - cron: "0 21 * * *"
+    - cron: "5 21,22 * * *"
   workflow_dispatch:
     inputs:
       mode:
