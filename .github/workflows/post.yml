@@ -5,10 +5,15 @@ on:
   # so this covers both daylight (EDT) and standard (EST) time without edits.
   schedule:
     - cron: "5 21,22 * * *"
+  # A push that adds a queue folder posts anything that is due right away
+  # (past days that were missed, or today's if it's already 5 PM in New York).
+  push:
+    branches: [main]
+    paths: ["queue/**"]
   workflow_dispatch:
     inputs:
       mode:
-        description: "post or check (check only reads the profile)"
+        description: "post, pending or check (check only reads the profile)"
         default: "check"
       date:
         description: "Queue date YYYY-MM-DD (blank = today)"
@@ -23,7 +28,11 @@ jobs:
   post:
     runs-on: ubuntu-latest
     steps:
+      # Always start from the latest main, so a queued run sees posted.json markers
+      # written by the run before it and never posts the same day twice.
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -31,7 +40,7 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           POST_DATE: ${{ github.event.inputs.date }}
-        run: python scripts/post.py "${{ github.event.inputs.mode || 'post' }}"
+        run: python scripts/post.py "${{ github.event.inputs.mode || 'pending' }}"
       - name: Record posted marker
         run: |
           if [ -n "$(git status --porcelain queue)" ]; then
@@ -39,5 +48,6 @@ jobs:
             git config user.email "riffex-bot@users.noreply.github.com"
             git add queue
             git commit -m "Mark post as published"
+            git pull --rebase origin main
             git push
           fi

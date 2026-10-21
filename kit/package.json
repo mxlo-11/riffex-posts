@@ -1,0 +1,9 @@
+{
+  "name": "riffex-post-kit",
+  "private": true,
+  "dependencies": {
+    "@fontsource/geist-mono": "^5.0.0",
+    "@fontsource/host-grotesk": "^5.0.0",
+    "playwright": "^1.47.0"
+  }
+}

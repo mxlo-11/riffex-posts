@@ -1,12 +1,17 @@
 """Publish the queued Riffex post for today to Instagram.
 
 Queue layout (committed by the daily Claude task):
-  queue/YYYY-MM-DD/1.jpg, 2.jpg, ...   JPEG images, 4:5 (1080x1350), in slide order
+  queue/YYYY-MM-DD/1.jpg, 2.jpg, ...   JPEG images, 1080x1080, in slide order
   queue/YYYY-MM-DD/caption.txt          the caption
 After posting, queue/YYYY-MM-DD/posted.json is committed with the media id.
 
 The token comes only from the IG_TOKEN repository secret. Never print it.
-Modes: post (default), check (reads the profile, posts nothing).
+Modes:
+  pending (default for schedule and push): posts every unposted queue folder that is due,
+           oldest first. Past dates are always due; today's folder is due from 5 PM New York time.
+           Future dates wait.
+  post:    posts one folder now (POST_DATE, or today), ignoring the 5 PM rule.
+  check:   reads the profile, posts nothing.
 """
 import json, os, sys, time, datetime, pathlib, urllib.parse, urllib.request
 from zoneinfo import ZoneInfo
@@ -55,10 +60,26 @@ def main():
         return
 
     now_ny = datetime.datetime.now(ZoneInfo("America/New_York"))
-    if os.environ.get("GITHUB_EVENT_NAME") == "schedule" and now_ny.hour < 17:
-        print(f"Scheduled run at {now_ny:%H:%M} New York time, before 5 PM. Waiting for the next run.")
+    today = now_ny.date().isoformat()
+    if mode == "pending":
+        due = []
+        for f in sorted(pathlib.Path("queue").iterdir()):
+            if not f.is_dir() or (f / "posted.json").exists():
+                continue
+            if f.name < today or (f.name == today and now_ny.hour >= 17):
+                due.append(f.name)
+        if not due:
+            print(f"Nothing due at {now_ny:%Y-%m-%d %H:%M} New York time.")
+            return
+        for k, day in enumerate(due):
+            if k:
+                time.sleep(90)
+            publish(day)
         return
-    day = os.environ.get("POST_DATE") or now_ny.date().isoformat()
+    publish(os.environ.get("POST_DATE") or today)
+
+
+def publish(day):
     folder = pathlib.Path("queue") / day
     if not folder.is_dir():
         print(f"Nothing queued for {day}.")
@@ -66,7 +87,7 @@ def main():
     if (folder / "posted.json").exists():
         print(f"{day} already posted.")
         return
-    images = sorted(p for p in folder.iterdir() if p.suffix.lower() in (".jpg", ".jpeg"))
+    images = sorted((p for p in folder.iterdir() if p.suffix.lower() in (".jpg", ".jpeg")), key=lambda p: int(p.stem) if p.stem.isdigit() else 999)
     if not images:
         sys.exit(f"No .jpg images in {folder}")
     caption = (folder / "caption.txt").read_text().strip() if (folder / "caption.txt").exists() else ""
@@ -85,7 +106,6 @@ def main():
     media = call("POST", "me/media_publish", creation_id=c)["id"]
     (folder / "posted.json").write_text(json.dumps({"media_id": media, "posted_at": datetime.datetime.utcnow().isoformat() + "Z", "slides": len(urls)}, indent=2))
     print(f"Posted {day}: media {media} ({len(urls)} slide(s))")
-
 
 if __name__ == "__main__":
     main()
