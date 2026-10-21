@@ -1,0 +1,294 @@
+{
+ "posts": [
+  {
+   "id": "1_drop",
+   "caption": "New Music Friday, underground first.\n\nfakemink x Skepta, Lil Peep, Tiffany Day x glaive, Lucky Daye, Gucci Mane, Tierra Whack, the GTA VI song, SIXBILL and rexv2. What are you running back this weekend?\n\nvia HotNewHipHop\n#newmusicfriday #undergroundrap #fakemink #skepta #lilpeep #sixbill #newmusic",
+   "slides": [
+    {
+     "type": "grid9",
+     "series": "The Drop",
+     "title": "New Music Friday",
+     "accent": "Friday",
+     "sub": "Oct 16 · Swipe for the drops",
+     "imgs": [
+      "assets/fakemink.jpg",
+      "assets/peep.jpg",
+      "assets/tiffany.jpg",
+      "assets/luckydaye.jpg",
+      "assets/gucci.jpg",
+      "assets/whack.jpg",
+      "assets/flower.jpg",
+      "assets/sixbill.jpg",
+      "assets/rexv2.jpg"
+     ],
+     "size": 124
+    },
+    {
+     "type": "cover",
+     "series": "The Drop · Oct 16",
+     "img": "assets/fakemink.jpg",
+     "a": "fakemink & Skepta",
+     "t": "Chiltern Firehouse"
+    },
+    {
+     "type": "cover",
+     "series": "The Drop · Oct 16",
+     "img": "assets/peep.jpg",
+     "a": "Lil Peep",
+     "t": "prada"
+    },
+    {
+     "type": "cover",
+     "series": "The Drop · Oct 16",
+     "img": "assets/tiffany.jpg",
+     "a": "Tiffany Day x glaive",
+     "t": "MEANT TO BE"
+    },
+    {
+     "type": "cover",
+     "series": "The Drop · Oct 16",
+     "img": "assets/sixbill.jpg",
+     "a": "SIXBILL",
+     "t": "PURE LUST"
+    },
+    {
+     "type": "cover",
+     "series": "The Drop · Oct 16",
+     "img": "assets/rexv2.jpg",
+     "a": "rexv2",
+     "t": "Baby Houston"
+    },
+    {
+     "type": "cover",
+     "series": "The Drop · Oct 16",
+     "img": "assets/luckydaye.jpg",
+     "a": "Lucky Daye",
+     "t": "ALOUD!"
+    },
+    {
+     "type": "cover",
+     "series": "The Drop · Oct 16",
+     "img": "assets/gucci.jpg",
+     "a": "Gucci Mane",
+     "t": "Against All Odds"
+    },
+    {
+     "type": "cover",
+     "series": "The Drop · Oct 16",
+     "img": "assets/whack.jpg",
+     "a": "Tierra Whack",
+     "t": "WHACK'S MUSEUM (Deluxe)"
+    },
+    {
+     "type": "cover",
+     "series": "The Drop · Oct 16",
+     "img": "assets/flower.jpg",
+     "a": "Justice, Tame Impala, SZA & King Gizzard",
+     "a_size": 40,
+     "t": "Flower In A Hurricane"
+    }
+   ]
+  },
+  {
+   "id": "2_week",
+   "caption": "Seven days, one swipe.\n\nYeat got his own Fortnite skins, fakemink linked with Skepta, SZA and Tame Impala landed on the GTA VI soundtrack, Drake set a new chart record, and Cordae's old label is suing over his album with .Paak. Which one are you still talking about?\n\nvia HotNewHipHop, Stereogum, Billboard\n#hiphopnews #rapnews #yeat #fortnite #fakemink #gta6 #drake #cordae",
+   "slides": [
+    {
+     "type": "title",
+     "series": "Week in Music",
+     "title": "Week in Music",
+     "accent": "Music",
+     "sub": "Oct 10 to 17 · 5 stories",
+     "imgs": [
+      "assets/habibti.jpg",
+      "assets/fakemink.jpg",
+      "assets/flower.jpg"
+     ]
+    },
+    {
+     "type": "image",
+     "series": "Week in Music",
+     "img": "assets/yeat_fortnite.jpg",
+     "pos": "55% 30%",
+     "headline": "Yeat is in Fortnite",
+     "sub": "His own skins, plus three Jam Tracks."
+    },
+    {
+     "type": "cover",
+     "series": "Week in Music",
+     "img": "assets/fakemink.jpg",
+     "chip": "Out now",
+     "a": "fakemink x Skepta",
+     "t": "\"Chiltern Firehouse\""
+    },
+    {
+     "type": "cover",
+     "series": "Week in Music",
+     "img": "assets/flower.jpg",
+     "chip": "GTA VI soundtrack",
+     "a": "SZA, Tame Impala & Justice",
+     "t": "\"Flower In A Hurricane\" with King Gizzard"
+    },
+    {
+     "type": "stat",
+     "series": "Week in Music",
+     "img": "assets/habibti.jpg",
+     "big": "18",
+     "big_label": "No. 1 albums on Top R&B/Hip-Hop. The most ever.",
+     "headline": "Drake breaks the record",
+     "sub": "Plus Don Toliver's best ever peak: No. 5 with \"Solar Eclipse\"."
+    },
+    {
+     "type": "cover",
+     "series": "Week in Music",
+     "img": "assets/paak.jpg",
+     "chip": "Sued",
+     "a": "Cordae & Anderson .Paak",
+     "t": "His old label is suing to block the album"
+    }
+   ]
+  },
+  {
+   "id": "3_wire",
+   "caption": "Rocky says Carti came from him.\n\nIn a new Complex interview Rocky called Carti \"my artist that I birthed\" and the godfather of rage. Ian Connor wasn't having it. Who really started rage? Make your case.\n\nvia Complex, HotNewHipHop\n#playboicarti #asaprocky #rage #awge #rapnews #undergroundrap",
+   "slides": [
+    {
+     "type": "shot",
+     "series": "The Wire",
+     "img": "assets/complex_rocky.jpg",
+     "w": 700,
+     "top": 118,
+     "headline": "\"My artist that I birthed\"",
+     "size": 72
+    },
+    {
+     "type": "shot",
+     "series": "The Wire",
+     "img": "assets/hnh_ianconnor.jpg",
+     "w": 960,
+     "top": 380,
+     "headline": "Ian Connor fired back",
+     "size": 96,
+     "accent": "fired back"
+    }
+   ]
+  },
+  {
+   "id": "4_upnext",
+   "caption": "Next week's lineup.\n\n.Paak and Cordae, John Legend's Pharrell album, SZA's Vans drop, plus SOB x RBE and 2hollis on the way. What are you running first?\n\nvia HotNewHipHop, Official Charts, Stereogum\n#newmusic #upcomingalbums #andersonpaak #cordae #johnlegend #pharrell #sza #2hollis",
+   "slides": [
+    {
+     "type": "title",
+     "series": "Up Next",
+     "title": "Up Next",
+     "accent": "Next",
+     "sub": "Week of Oct 19",
+     "imgs": [
+      "assets/legend.jpg",
+      "assets/paak.jpg"
+     ]
+    },
+    {
+     "type": "cover",
+     "series": "Up Next",
+     "img": "assets/paak.jpg",
+     "chip": "Fri Oct 23",
+     "a": "Anderson .Paak & Cordae",
+     "t": "Heavy Is The Crown"
+    },
+    {
+     "type": "cover",
+     "series": "Up Next",
+     "img": "assets/legend.jpg",
+     "chip": "Fri Oct 23",
+     "a": "John Legend",
+     "t": "Muse · produced by Pharrell"
+    },
+    {
+     "type": "dates",
+     "series": "Up Next",
+     "title": "On the radar",
+     "rows": [
+      {
+       "d": "Oct 22",
+       "a": "SZA x Vans",
+       "t": "VANSZA Drop 1"
+      },
+      {
+       "d": "Oct 23",
+       "a": "Anderson .Paak & Cordae",
+       "t": "Heavy Is The Crown"
+      },
+      {
+       "d": "Oct 23",
+       "a": "John Legend",
+       "t": "Muse"
+      },
+      {
+       "d": "Nov 6",
+       "a": "SOB x RBE",
+       "t": "From The Land"
+      },
+      {
+       "d": "Nov 11",
+       "a": "2hollis",
+       "t": "Pirouette"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "5_rewind",
+   "caption": "One year ago this week.\n\nPsykotic dropped, Yung Lean and Bladee shared \"Advent,\" Kendrick pulled up on Carti in LA, and everyone was asking who fakemink was. Where were you in October 2025?\n\nvia HotNewHipHop, Stereogum, Billboard\n#osamason #psykotic #bladee #yunglean #kendricklamar #playboicarti #fakemink",
+   "slides": [
+    {
+     "type": "title",
+     "series": "Rewind",
+     "title": "One year ago",
+     "accent": "ago",
+     "sub": "This week in Oct 2025",
+     "imgs": [
+      "assets/evilworld.jpg",
+      "assets/psykotic.jpg"
+     ]
+    },
+    {
+     "type": "cover",
+     "series": "Rewind · Oct 10, 2025",
+     "img": "assets/psykotic.jpg",
+     "a": "OsamaSon",
+     "t": "Psykotic"
+    },
+    {
+     "type": "cover",
+     "series": "Rewind · Oct 12, 2025",
+     "img": "assets/evilworld.jpg",
+     "a": "Yung Lean & Bladee",
+     "t": "\"Advent\""
+    },
+    {
+     "type": "shot",
+     "series": "Rewind · Oct 2025",
+     "img": "assets/hnh_kendrick2025.jpg",
+     "w": 960,
+     "top": 330,
+     "headline": "Kendrick pulled up on Carti",
+     "size": 88,
+     "accent": "Carti"
+    },
+    {
+     "type": "shot",
+     "series": "Rewind · Then and now",
+     "img": "assets/hnh_fakemink2025.jpg",
+     "bg_img": "assets/fakemink.jpg",
+     "w": 960,
+     "top": 300,
+     "headline": "Now he's on a song with Skepta",
+     "size": 80,
+     "accent": "Skepta"
+    }
+   ]
+  }
+ ]
+}

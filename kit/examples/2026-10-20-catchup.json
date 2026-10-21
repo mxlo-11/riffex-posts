@@ -1,0 +1,43 @@
+{
+ "posts": [
+  {
+   "id": "2026-10-18",
+   "caption": "Pick one 👇\n\nSix Oct 16 drops, one spot on repeat: 1 @fakemink & @skepta, 2 @lilpeep, 3 SIXBILL, 4 @rexv2s, 5 @tierrawhack deluxe, 6 Lucky Daye. Drop your number in the comments.\n\nThe ones you pick early are the ones you get to say you found first. Join the Riffex waitlist, link in bio.\n\n#newmusic #pickone #undergroundrap #fakemink #lilpeep",
+   "slides": [
+    {"type": "grid9", "series": "Pick One", "title": "Pick one", "accent": "one", "sub": "Oct 16 drops · Comment your number",
+     "imgs": ["assets/fakemink.jpg","assets/peep.jpg","assets/sixbill.jpg","assets/rexv2.jpg","assets/whack.jpg","assets/luckydaye.jpg"], "size": 150},
+    {"type": "cover", "series": "Pick One", "img": "assets/fakemink.jpg", "chip": "1", "a": "fakemink & Skepta", "t": "Chiltern Firehouse"},
+    {"type": "cover", "series": "Pick One", "img": "assets/peep.jpg", "chip": "2", "a": "Lil Peep", "t": "prada"},
+    {"type": "cover", "series": "Pick One", "img": "assets/sixbill.jpg", "chip": "3", "a": "SIXBILL", "t": "PURE LUST"},
+    {"type": "cover", "series": "Pick One", "img": "assets/rexv2.jpg", "chip": "4", "a": "rexv2", "t": "Baby Houston"},
+    {"type": "cover", "series": "Pick One", "img": "assets/whack.jpg", "chip": "5", "a": "Tierra Whack", "t": "WHACK'S MUSEUM (Deluxe)"},
+    {"type": "cover", "series": "Pick One", "img": "assets/luckydaye.jpg", "chip": "6", "a": "Lucky Daye", "t": "ALOUD!"}
+   ]
+  },
+  {
+   "id": "2026-10-19",
+   "caption": "Your week in three swipes 📆\n\n@lilbaby locked in Fresh for Nov 6 with Future, Young Thug and Rylo Rodriguez, @yungmiami305 drops her debut Watch Dis this Friday with Travis Scott, Rick Ross and Trina on it, and Rolling Loud India just named @metroboomin, Burna Boy and @skepta as headliners. Which one are you waiting on most?\n\nBe early to what's next. Join the Riffex waitlist, link in bio.\n\n#hiphopnews #lilbaby #yungmiami #rollingloud #metroboomin",
+   "slides": [
+    {"type": "title", "series": "Week in Music", "title": "Week in Music", "accent": "Music", "sub": "Oct 14 to 20 · 3 stories",
+     "imgs": ["assets/spenddat.jpg","assets/deadfresh.jpg"]},
+    {"type": "cover", "series": "Week in Music", "img": "assets/deadfresh.jpg", "chip": "Fresh · Nov 6", "a": "Lil Baby", "t": "17 tracks. Future, Young Thug, Rylo Rodriguez"},
+    {"type": "cover", "series": "Week in Music", "img": "assets/spenddat.jpg", "chip": "Fri Oct 23", "a": "Yung Miami", "t": "Debut album Watch Dis. 21 tracks"},
+    {"type": "shot", "series": "Week in Music", "img": "assets/hnh_rlindia.jpg", "w": 980, "top": 360, "headline": "Metro, Burna & Skepta in Mumbai", "size": 80, "accent": "Mumbai"}
+   ]
+  },
+  {
+   "id": "2026-10-20",
+   "caption": "The labels want DistroKid's AI numbers 🤖\n\nSony and UMG asked a Manhattan federal court to make DistroKid hand over monthly data on how many uploads its software flags as AI made, as part of their case against Suno. DistroKid says it's a third party and its AI detection can be wrong. Should distributors have to show how much of what they upload is AI?\n\nRiffex is built around real artists and the fans who back them first. Join the waitlist, link in bio.\n\n#musicnews #distrokid #aimusic #musicbusiness #independentartist",
+   "slides": [
+    {"type": "shot", "series": "The Wire", "img": "assets/hnh_distrokid.jpg", "w": 960, "top": 300, "headline": "The labels vs DistroKid", "size": 104, "accent": "DistroKid"},
+    {"type": "dates", "series": "The Wire", "title": "How we got here",
+     "rows": [
+      {"d": "Sep", "a": "UMG sues DistroKid", "t": "Copyright claims over AI uploads"},
+      {"d": "Sep 18", "a": "UMG & Sony sue Suno again", "t": "Federal court in Boston"},
+      {"d": "Oct 14", "a": "Labels file a motion", "t": "Asking the court to force DistroKid's AI data"},
+      {"d": "Oct 30", "a": "Proposed deadline", "t": "If the court orders DistroKid to comply"}
+     ]}
+   ]
+  }
+ ]
+}
