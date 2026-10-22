@@ -1,10 +1,7 @@
-{"posts":[{"id":"2026-10-21",
-"caption":"Two big ones land Friday 📅\n\n@yungmiami305 drops her debut Watch Dis on Oct 23 with Travis Scott, Rick Ross, Summer Walker and Lil Baby on it, and @cordae and Anderson .Paak release their joint album Heavy Is the Crown the same day. On the radar after that: Ken Carson and Destroy Lonely's 00Twinz is set for Oct 30. Which one are you pressing play on first?\n\nBe early to what's next. Join the Riffex waitlist, link in bio.\n\n#newmusicfriday #yungmiami #cordae #andersonpaak #hiphopnews",
+{"posts":[{"id":"2026-10-22",
+"caption":"One year ago this Friday 🔁\n\nOct 17, 2025 was a loaded drop day: @tydollasign's TYCOON arrived with Young Thug and Future on the title track, @laflare1017 put out Episodes alongside his memoir, and Monaleo released her debut Who Did the Body. Which one is still in your rotation?\n\nBe early to the next ones. Join the Riffex waitlist, link in bio.\n\n#rewind #newmusicfriday #hiphop #tydollasign #guccimane",
 "slides":[
-{"type":"cover","series":"Up Next","img":"assets/miami.jpg","chip":"Fri Oct 23","a":"Yung Miami","t":"Debut album Watch Dis"},
-{"type":"cover","series":"Up Next","img":"assets/heavy.jpg","chip":"Fri Oct 23","a":"Anderson .Paak & Cordae","t":"Heavy Is the Crown"},
-{"type":"dates","series":"Up Next","title":"On the radar",
-"rows":[{"d":"Oct 23","a":"Yung Miami","t":"Watch Dis, debut solo album"},
-{"d":"Oct 23","a":"Anderson .Paak & Cordae","t":"Heavy Is the Crown"},
-{"d":"Oct 30","a":"Ken Carson & Destroy Lonely","t":"00Twinz, scheduled"},
-{"d":"Nov 6","a":"Lil Baby","t":"Fresh, 17 tracks"}]}]}]}
+{"type":"title","series":"Rewind","title":"Rewind","accent":"Rewind","sub":"Oct 17, 2025 · 3 drops","imgs":["assets/tycoon.jpg","assets/episodes.jpg","assets/monaleo.jpg"]},
+{"type":"cover","series":"Rewind","img":"assets/tycoon.jpg","chip":"Oct 17, 2025","a":"Ty Dolla $ign","t":"TYCOON"},
+{"type":"cover","series":"Rewind","img":"assets/episodes.jpg","chip":"Oct 17, 2025","a":"Gucci Mane","t":"Episodes"},
+{"type":"cover","series":"Rewind","img":"assets/monaleo.jpg","chip":"Oct 17, 2025","a":"Monaleo","t":"Who Did the Body"}]}]}
