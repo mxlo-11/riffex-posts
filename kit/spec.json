@@ -1,7 +1,8 @@
-{"posts":[{"id":"2026-10-22",
-"caption":"One year ago this Friday 🔁\n\nOct 17, 2025 was a loaded drop day: Ty Dolla $ign's TYCOON arrived with Young Thug and Future on the title track, @laflare1017 put out Episodes alongside his memoir, and Monaleo released her debut Who Did the Body. Which one is still in your rotation?\n\nBe early to the next ones. Join the Riffex waitlist, link in bio.\n\n#rewind #newmusicfriday #hiphop #tydollasign #guccimane",
-"slides":[
-{"type":"title","series":"Rewind","title":"Rewind","accent":"Rewind","sub":"Oct 17, 2025 · 3 drops","imgs":["assets/tycoon.jpg","assets/episodes.jpg","assets/monaleo.jpg"]},
-{"type":"cover","series":"Rewind","img":"assets/tycoon.jpg","chip":"Oct 17, 2025","a":"Ty Dolla $ign","t":"TYCOON"},
-{"type":"cover","series":"Rewind","img":"assets/episodes.jpg","chip":"Oct 17, 2025","a":"Gucci Mane","t":"Episodes"},
-{"type":"cover","series":"Rewind","img":"assets/monaleo.jpg","chip":"Oct 17, 2025","a":"Monaleo","t":"Who Did the Body"}]}]}
+{"posts":[{"id":"2026-10-23","caption":"x","slides":[
+{"type":"grid9","series":"The Drop","title":"The Drop","accent":"Drop","sub":"New Music Friday · Oct 23","imgs":["assets/yeat.jpg","assets/brakence.jpg","assets/ghoste.jpg","assets/erick.jpg","assets/yg.jpg","assets/boldy.jpg"],"size":150},
+{"type":"cover","series":"The Drop","img":"assets/yeat.jpg","chip":"Fri Oct 23","a":"Yeat","t":"LUH LEAKYZ VOL. 1"},
+{"type":"cover","series":"The Drop","img":"assets/brakence.jpg","chip":"Fri Oct 23","a":"brakence","t":"marroW"},
+{"type":"cover","series":"The Drop","img":"assets/ghoste.jpg","chip":"Fri Oct 23","a":"Ghostemane","t":"AM:FM"},
+{"type":"cover","series":"The Drop","img":"assets/erick.jpg","chip":"Fri Oct 23","a":"Erick the Architect","t":"YERR"},
+{"type":"cover","series":"The Drop","img":"assets/yg.jpg","chip":"Fri Oct 23","a":"YG & Ty Dolla $ign","t":"Relax (2009)"},
+{"type":"cover","series":"The Drop","img":"assets/boldy.jpg","chip":"Fri Oct 23","a":"Boldy James","t":"Love Me Now"}]}]}
