@@ -1,8 +1,1 @@
-{"posts":[{"id":"2026-10-23","caption":"x","slides":[
-{"type":"grid9","series":"The Drop","title":"The Drop","accent":"Drop","sub":"New Music Friday · Oct 23","imgs":["assets/yeat.jpg","assets/brakence.jpg","assets/ghoste.jpg","assets/erick.jpg","assets/yg.jpg","assets/boldy.jpg"],"size":150},
-{"type":"cover","series":"The Drop","img":"assets/yeat.jpg","chip":"Fri Oct 23","a":"Yeat","t":"LUH LEAKYZ VOL. 1"},
-{"type":"cover","series":"The Drop","img":"assets/brakence.jpg","chip":"Fri Oct 23","a":"brakence","t":"marroW"},
-{"type":"cover","series":"The Drop","img":"assets/ghoste.jpg","chip":"Fri Oct 23","a":"Ghostemane","t":"AM:FM"},
-{"type":"cover","series":"The Drop","img":"assets/erick.jpg","chip":"Fri Oct 23","a":"Erick the Architect","t":"YERR"},
-{"type":"cover","series":"The Drop","img":"assets/yg.jpg","chip":"Fri Oct 23","a":"YG & Ty Dolla $ign","t":"Relax (2009)"},
-{"type":"cover","series":"The Drop","img":"assets/boldy.jpg","chip":"Fri Oct 23","a":"Boldy James","t":"Love Me Now"}]}]}
+{"posts": [{"id": "2026-10-24", "caption": "x", "slides": [{"type": "title", "series": "The Drop", "title": "The Drop pt. 2", "accent": "pt. 2", "sub": "Oct 23 deep cuts \u00b7 4 more to hear", "imgs": ["assets/toosii.jpg", "assets/laila.jpg", "assets/shabazz.jpg", "assets/kolo.jpg"]}, {"type": "cover", "series": "The Drop", "img": "assets/toosii.jpg", "chip": "Fri Oct 23", "a": "Toosii", "t": "Platinum Heart 2"}, {"type": "cover", "series": "The Drop", "img": "assets/laila.jpg", "chip": "Fri Oct 23", "a": "Laila!", "t": "We'll Never Be This Young Again"}, {"type": "cover", "series": "The Drop", "img": "assets/shabazz.jpg", "chip": "Fri Oct 23", "a": "Shabazz Palaces", "t": "It's a Style Sport"}, {"type": "cover", "series": "The Drop", "img": "assets/kolo.jpg", "chip": "Fri Oct 23", "a": "Kolo & 6ix", "t": "SONATA"}]}]}
