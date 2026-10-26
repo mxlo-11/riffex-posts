@@ -1,8 +1,5 @@
-{"posts":[{"id":"2026-10-25","caption":"x","slides":[
-{"type":"grid9","series":"Pick One","title":"Pick one","accent":"one","sub":"Oct 23 drops · Comment your number","imgs":["assets/yeat.jpg","assets/brakence.jpg","assets/ghost.jpg","assets/erick.jpg","assets/toosii.jpg","assets/laila.jpg"],"size":150},
-{"type":"cover","series":"Pick One","img":"assets/yeat.jpg","chip":"1","a":"Yeat","t":"LUH LEAKYZ VOL. 1"},
-{"type":"cover","series":"Pick One","img":"assets/brakence.jpg","chip":"2","a":"brakence","t":"marroW"},
-{"type":"cover","series":"Pick One","img":"assets/ghost.jpg","chip":"3","a":"Ghostemane","t":"AM:FM"},
-{"type":"cover","series":"Pick One","img":"assets/erick.jpg","chip":"4","a":"Erick the Architect","t":"YERR"},
-{"type":"cover","series":"Pick One","img":"assets/toosii.jpg","chip":"5","a":"Toosii","t":"Platinum Heart 2"},
-{"type":"cover","series":"Pick One","img":"assets/laila.jpg","chip":"6","a":"Laila!","t":"We'll Never Be This Young Again"}]}]}
+{"posts":[{"id":"2026-10-26","caption":"x","slides":[
+{"type":"title","series":"Week in Music","title":"Week in Music","accent":"Music","sub":"Oct 20 to 26 · 3 stories","imgs":["assets/ecco.jpg","assets/olivia.jpg"]},
+{"type":"shot","series":"Week in Music","img":"assets/hnh_jayz.png","w":980,"top":300,"headline":"Jay-Z fills SoFi, Dre and Snoop pull up","size":76,"accent":"SoFi"},
+{"type":"cover","series":"Week in Music","img":"assets/ecco.jpg","chip":"Thu Oct 22","a":"Ecco2k","t":"Aldehydes and Ketones"},
+{"type":"cover","series":"Week in Music","img":"assets/olivia.jpg","chip":"No. 1 · Oct 31 chart","a":"Olivia Rodrigo","t":"you seem pretty sad for a girl so in love"}]}]}
