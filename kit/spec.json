@@ -1,5 +1,11 @@
-{"posts":[{"id":"2026-10-26","caption":"x","slides":[
-{"type":"title","series":"Week in Music","title":"Week in Music","accent":"Music","sub":"Oct 20 to 26 · 3 stories","imgs":["assets/ecco.jpg","assets/olivia.jpg"]},
-{"type":"shot","series":"Week in Music","img":"assets/hnh_jayz.png","w":980,"top":300,"headline":"Jay-Z fills SoFi, Dre and Snoop pull up","size":76,"accent":"SoFi"},
-{"type":"cover","series":"Week in Music","img":"assets/ecco.jpg","chip":"Thu Oct 22","a":"Ecco2k","t":"Aldehydes and Ketones"},
-{"type":"cover","series":"Week in Music","img":"assets/olivia.jpg","chip":"No. 1 · Oct 31 chart","a":"Olivia Rodrigo","t":"you seem pretty sad for a girl so in love"}]}]}
+{"posts":[{"id":"2026-10-27","caption":"x","slides":[
+{"type":"shot","series":"The Wire","img":"assets/c_tsfuture.png","w":960,"top":250,"headline":"Drake turns 40 and the whole room shows up","size":84,"accent":"40"},
+{"type":"shot","series":"The Wire","img":"assets/c_bowwow.png","w":960,"top":250,"headline":"\"It wouldn't be no Drake without Bow Wow\"","size":72,"accent":"Bow Wow"},
+{"type":"dates","series":"The Wire","title":"Drake's 40th weekend",
+ "rows":[
+  {"d":"Fri","a":"Dinner party in NYC","t":"The OVO crew kicks off the weekend"},
+  {"d":"Sat","a":"Club party in NYC","t":"Travis Scott and Future pull up"},
+  {"d":"Live","a":"Bow Wow performs Like You","t":"Drake gives him an ovation first"},
+  {"d":"Surprise","a":"Backstreet Boys perform","t":"Arranged by Drake's friends"}
+ ]}
+]}]}
