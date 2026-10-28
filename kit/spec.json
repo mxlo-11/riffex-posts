@@ -1,11 +1,9 @@
-{"posts":[{"id":"2026-10-27","caption":"x","slides":[
-{"type":"shot","series":"The Wire","img":"assets/c_tsfuture.png","w":960,"top":250,"headline":"Drake turns 40 and the whole room shows up","size":84,"accent":"40"},
-{"type":"shot","series":"The Wire","img":"assets/c_bowwow.png","w":960,"top":250,"headline":"\"It wouldn't be no Drake without Bow Wow\"","size":72,"accent":"Bow Wow"},
-{"type":"dates","series":"The Wire","title":"Drake's 40th weekend",
+{"posts":[{"id":"2026-10-28","caption":"x","slides":[
+{"type":"cover","series":"Up Next","img":"assets/lite.jpg","chip":"Fri Oct 30","a":"BigXthaPlug","t":"Better Over Time. Lead single LITE"},
+{"type":"dates","series":"Up Next","title":"This Friday and beyond",
  "rows":[
-  {"d":"Fri","a":"Dinner party in NYC","t":"The OVO crew kicks off the weekend"},
-  {"d":"Sat","a":"Club party in NYC","t":"Travis Scott and Future pull up"},
-  {"d":"Live","a":"Bow Wow performs Like You","t":"Drake gives him an ovation first"},
-  {"d":"Surprise","a":"Backstreet Boys perform","t":"Arranged by Drake's friends"}
+  {"d":"Oct 30","a":"BigXthaPlug","t":"Better Over Time, with GloRilla and Lil Yachty"},
+  {"d":"Oct 30","a":"Ken Carson & Destroy Lonely","t":"00Twinz is slated for Halloween weekend"},
+  {"d":"Nov 6","a":"Lil Baby","t":"Fresh, with Future and Young Thug"}
  ]}
 ]}]}
