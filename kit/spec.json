@@ -1,9 +1,5 @@
-{"posts":[{"id":"2026-10-28","caption":"x","slides":[
-{"type":"cover","series":"Up Next","img":"assets/lite.jpg","chip":"Fri Oct 30","a":"BigXthaPlug","t":"Better Over Time. Lead single LITE"},
-{"type":"dates","series":"Up Next","title":"This Friday and beyond",
- "rows":[
-  {"d":"Oct 30","a":"BigXthaPlug","t":"Better Over Time, with GloRilla and Lil Yachty"},
-  {"d":"Oct 30","a":"Ken Carson & Destroy Lonely","t":"00Twinz is slated for Halloween weekend"},
-  {"d":"Nov 6","a":"Lil Baby","t":"Fresh, with Future and Young Thug"}
- ]}
+{"posts":[{"id":"2026-10-29","caption":"x","slides":[
+{"type":"title","series":"Rewind","title":"One year ago this week","accent":"year ago","sub":"Oct 24 to 31, 2025 · 2 albums","imgs":["assets/dave.jpg","assets/kodak.jpg"]},
+{"type":"cover","series":"Rewind","img":"assets/dave.jpg","chip":"Fri Oct 24, 2025","a":"Dave","t":"The Boy Who Played the Harp"},
+{"type":"cover","series":"Rewind","img":"assets/kodak.jpg","chip":"Fri Oct 31, 2025","a":"Kodak Black","t":"Just Getting Started. With Chance, Pharrell, Gunna"}
 ]}]}
