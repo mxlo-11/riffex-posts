@@ -148,7 +148,7 @@ TYPES = dict(grid9=t_grid9, cover=t_cover, image=t_image, shot=t_shot, stat=t_st
 async def main(spec, out):
     spec = json.loads(pathlib.Path(spec).read_text()); out = pathlib.Path(out).resolve(); out.mkdir(parents=True, exist_ok=True)
     async with async_playwright() as p:
-        b = await p.chromium.launch(); pg = await b.new_page(viewport={"width": S, "height": S})
+        b = await p.chromium.launch(executable_path=__import__("os").environ.get("CHROME_PATH")); pg = await b.new_page(viewport={"width": S, "height": S})
         for post in spec["posts"]:
             for k, s in enumerate(post["slides"], 1):
                 f = out / f'{post["id"]}_{k:02d}.html'; f.write_text(TYPES[s["type"]](s))
