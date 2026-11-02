@@ -1,8 +1,6 @@
-{"posts":[{"id":"2026-11-01","caption":"x","slides":[
-{"type":"grid9","series":"Pick One","title":"Pick one","accent":"one","sub":"Oct 30 drops · Comment your number","imgs":["assets/bigx.jpg","assets/bk.jpg","assets/coi.jpg","assets/bleood.jpg","assets/evil.jpg","assets/kaliii.jpg"],"size":150},
-{"type":"cover","series":"Pick One","img":"assets/bigx.jpg","chip":"1","a":"BigXthaPlug","t":"Better Over Time"},
-{"type":"cover","series":"Pick One","img":"assets/bk.jpg","chip":"2","a":"BKTHERULA","t":"N5ON"},
-{"type":"cover","series":"Pick One","img":"assets/coi.jpg","chip":"3","a":"Coi Leray","t":"Milk N Cookies ft. Lucky Daye"},
-{"type":"cover","series":"Pick One","img":"assets/bleood.jpg","chip":"4","a":"bleood","t":"KILL YOUR IDOLS"},
-{"type":"cover","series":"Pick One","img":"assets/evil.jpg","chip":"5","a":"Evilgiane","t":"EVILSLIME 2"},
-{"type":"cover","series":"Pick One","img":"assets/kaliii.jpg","chip":"6","a":"Kaliii","t":"Wit 3 iii's"}]}]}
+{"posts":[{"id":"2026-11-02","caption":"Your week in three swipes 📆\n\nKanye broke his own U.S. hip-hop attendance record in Houston and brought out Playboi Carti, Drake is sitting on 11 albums on the Billboard 200 at once (the most of any artist right now), and Benny The Butcher teased A Friend Of Ours 2 with a new single, Elevate, alongside Black Soprano Family. Which one are you most locked in on?\n\nBe early to what's next. Join the Riffex waitlist, link in bio.\n\n#hiphopnews #weekinmusic #playboicarti #drake #bennythebutcher","slides":[
+{"type":"title","series":"Week in Music","title":"Week in Music","accent":"Music","sub":"Oct 27 to Nov 2 · 3 stories","imgs":["assets/benny.jpg","assets/iceman.jpg"]},
+{"type":"shot","series":"Week in Music","img":"assets/hnh_carti.png","w":960,"top":300,"headline":"Ye breaks his record. Carti pulls up","size":84,"accent":"Carti"},
+{"type":"shot","series":"Week in Music","img":"assets/hnh_drake.png","w":960,"top":300,"headline":"Drake: 11 albums on the chart at once","size":84,"accent":"11"},
+{"type":"cover","series":"Week in Music","img":"assets/benny.jpg","chip":"Oct 30","a":"Benny The Butcher & Black Soprano Family","t":"Elevate · A Friend Of Ours 2 teaser"}
+]}]}
