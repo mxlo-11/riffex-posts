@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Riffex IG posts v4 (Nov 18, 2026): the Home screen look. 1080x1440 (3:4), brand blue #3DD6CD.
+"""Riffex IG posts v4 (Nov 18, 2026): the Home screen look with a blurred glow background from each slide's artwork. 1080x1440 (3:4), brand blue #3DD6CD.
 Every post is a carousel. JSON spec -> PNG slides. Image paths are relative to kit/.
 Slide types: carousel, calendar, ranked, hero, pick, number, question, live, inside
 Usage: python3 render4.py spec.json out_dir   (writes <id>_01.png ... and <id>_caption.txt)
@@ -27,17 +27,17 @@ CSS = f"""
 *{{margin:0;padding:0;box-sizing:border-box}}
 html,body{{width:1080px;height:1440px;overflow:hidden;background:#08090A;font-family:HG;color:#F2EFE8;-webkit-font-smoothing:antialiased}}
 .abs{{position:absolute}}
-.pill{{display:inline-flex;align-items:center;gap:12px;height:62px;padding:0 26px;border-radius:999px;background:#1A1F21;font-weight:600;font-size:28px}}
-.blue{{color:#3DD6CD}} .mute{{color:#9AA3A6}}
+.pill{{display:inline-flex;align-items:center;gap:12px;height:62px;padding:0 26px;border-radius:999px;background:rgba(255,255,255,.14);backdrop-filter:blur(20px);font-weight:600;font-size:28px}}
+.blue{{color:#3DD6CD}} .mute{{color:rgba(242,239,232,.66)}}
 .title{{font-weight:800;letter-spacing:-.035em;line-height:1.0}}
-.sub{{font-weight:500;font-size:34px;line-height:1.3;color:#9AA3A6}}
+.sub{{font-weight:500;font-size:34px;line-height:1.3;color:rgba(242,239,232,.7)}}
 .card{{outline:1.5px solid rgba(255,255,255,.10);outline-offset:-1.5px;border-radius:44px;background-size:cover;background-position:center;box-shadow:0 40px 90px rgba(0,0,0,.55)}}
 .round{{border-radius:50%;background-size:cover;background-position:center;flex:none;box-shadow:inset 0 0 0 2px rgba(255,255,255,.1)}}
-.panel{{background:#111618;border:1.5px solid #1B2225;border-radius:44px}}
+.panel{{background:rgba(10,12,13,.42);border:1.5px solid rgba(255,255,255,.10);border-radius:44px;backdrop-filter:blur(30px)}}
 .cta{{position:absolute;left:64px;right:64px;bottom:56px;height:96px;border-radius:999px;display:flex;align-items:center;justify-content:space-between;
       padding:0 14px 0 36px;background:#3DD6CD;color:#090B0C;font-weight:700;font-size:31px}}
 .cta span{{width:68px;height:68px;border-radius:50%;background:rgba(9,11,12,.12);display:flex;align-items:center;justify-content:center}}
-.chip{{display:inline-flex;align-items:center;height:48px;padding:0 20px;border-radius:999px;background:#1F2629;font-weight:600;font-size:24px}}
+.chip{{display:inline-flex;align-items:center;height:48px;padding:0 20px;border-radius:999px;background:rgba(255,255,255,.14);font-weight:600;font-size:24px}}
 .grain{{position:absolute;inset:0;opacity:.06;mix-blend-mode:overlay;pointer-events:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>")}}
 """
 
@@ -53,7 +53,13 @@ def header(cat, n, i):
     return (f'<div class="abs" style="left:64px;top:64px">{WM}</div>'
             f'<div class="abs" style="right:64px;top:54px;display:flex;gap:12px"><span class="pill">{e(cat)}</span>{counter(n, i)}</div>')
 def cta(s): return f'<div class="cta">{e(s["ask"])}<span>{ARROW}</span></div>' if s.get("ask") else ""
-def stage(): return '<div class="abs" style="inset:0;background:radial-gradient(900px 760px at 540px 760px,rgba(255,255,255,.055),transparent 70%),#08090A"></div>'
+def stage(img=None):
+    if not img:
+        return '<div class="abs" style="inset:0;background:radial-gradient(900px 760px at 540px 760px,rgba(255,255,255,.055),transparent 70%),#08090A"></div>'
+    # Spotify style: the art, blown up and blurred into a colour wash, darker toward the bottom
+    return (f'<div class="abs" style="inset:0;background:#08090A;overflow:hidden">'
+            f'<div class="abs" style="left:-260px;top:-300px;width:1600px;height:1600px;background:url({u(img)}) center/cover;filter:blur(110px) saturate(1.7) brightness(.72)"></div>'
+            f'<div class="abs" style="inset:0;background:linear-gradient(180deg,rgba(8,9,10,.28) 0%,rgba(8,9,10,.42) 45%,rgba(8,9,10,.78) 82%,rgba(8,9,10,.9) 100%)"></div></div>')
 def doc(body): return f'<!doctype html><html><head><meta charset="utf-8"><style>{CSS}</style></head><body>{body}<div class="grain"></div></body></html>'
 def title(t, sub=None, top=168, size=100):
     lines = t.count("<br>") + 1
@@ -66,6 +72,7 @@ def t_carousel(s, n, i):
     two = "<br>" in s.get("title", "")
     W, top = (590, 450) if two else (640, 400)
     x0 = 64 if k_on == 0 else (1080 - 64 - W if k_on == m - 1 else (1080 - W) // 2)
+    it_on = items[k_on]
     cards = ""
     for k, it in enumerate(items):
         x = x0 + (k - k_on) * (W + G)
@@ -73,9 +80,9 @@ def t_carousel(s, n, i):
         on = k == k_on
         cards += (f'<div class="abs card" style="left:{x}px;top:{top + (0 if on else 30)}px;width:{W}px;height:{W - (0 if on else 60)}px;'
                   f'background-image:url({u(it["img"])});{"" if on else "opacity:.5;"}"></div>')
-    it = items[k_on]; tx = max(64, x0); a = it.get("artist", "")
+    it = it_on; tx = max(64, x0); a = it.get("artist", "")
     dots = "".join(f'<span style="width:{36 if k == k_on else 13}px;height:13px;border-radius:7px;background:{"#F2EFE8" if k == k_on else "#3A4144"}"></span>' for k in range(m))
-    return doc(stage() + header(s["cat"], n, i) + title(s["title"], s.get("sub")) + cards +
+    return doc(stage(it["img"]) + header(s["cat"], n, i) + title(s["title"], s.get("sub")) + cards +
         f'<div class="abs" style="left:{tx}px;right:64px;top:{top + W + 34}px">'
         f'<div class="blue" style="font-weight:600;font-size:28px">{e(it.get("kicker"))}</div>'
         f'<div class="title" style="font-size:{58 if len(a) < 18 else 42}px;margin-top:10px">{e(a)}</div>'
@@ -89,7 +96,7 @@ def t_calendar(s, n, i):
         <div style="width:150px;height:150px;border-radius:26px;background:url({u(x["img"])}) center/cover;flex:none;box-shadow:inset 0 0 0 2px rgba(255,255,255,.1)"></div>
         <div><div style="font-weight:700;font-size:38px">{e(x.get("artist"))}</div><div class="mute" style="font-weight:500;font-size:30px;margin-top:4px">{e(x.get("title"))}</div>
         <div class="blue" style="font-weight:600;font-size:24px;margin-top:8px">{e(x.get("line"))}</div></div></div>''' for x in s["rows"][:4])
-    return doc(stage() + header(s["cat"], n, i) + title(s["title"], s.get("sub")) +
+    return doc(stage(s.get("bg") or s["rows"][0]["img"]) + header(s["cat"], n, i) + title(s["title"], s.get("sub")) +
                f'<div class="abs panel" style="left:64px;right:64px;top:{s.get("top", 520)}px;padding:8px 0">{r}</div>' + cta(s))
 
 # ---- ranked: numbered stories like the Ranks screen (numbered:false for a plain list) ----
@@ -100,12 +107,12 @@ def t_ranked(s, n, i):
         <div class="round" style="width:160px;height:160px;background-image:url({u(x["img"])})"></div>
         <div><div style="font-weight:700;font-size:36px;line-height:1.15">{e(x.get("headline"))}</div><div class="mute" style="font-weight:500;font-size:28px;margin-top:8px">{e(x.get("line"))}</div></div></div>'''
         for k, x in enumerate(s["rows"][:4]))
-    return doc(stage() + header(s["cat"], n, i) + title(s["title"], s.get("sub")) +
+    return doc(stage(s.get("bg") or s["rows"][0]["img"]) + header(s["cat"], n, i) + title(s["title"], s.get("sub")) +
                f'<div class="abs panel" style="left:64px;right:64px;top:{s.get("top", 520)}px">{r}</div>' + cta(s))
 
 # ---- hero: one big story, the Home hero card ----
 def t_hero(s, n, i):
-    return doc(stage() + header(s["cat"], n, i) +
+    return doc(stage(s["img"]) + header(s["cat"], n, i) +
         f'''<div class="abs card" style="left:64px;right:64px;top:160px;height:1060px;background-image:url({u(s["img"])});background-position:{s.get("pos", "center")}"></div>
         <div class="abs" style="left:64px;right:64px;top:160px;height:1060px;border-radius:44px;background:linear-gradient(180deg,rgba(8,9,10,0) 38%,rgba(8,9,10,.92) 80%)"></div>
         <div class="abs" style="left:112px;right:112px;bottom:{252 if s.get("ask") else 160}px">
@@ -117,13 +124,13 @@ def t_hero(s, n, i):
 def t_pick(s, n, i):
     its = s["items"][:3]; d = 250 if len(its) == 3 else 320
     def col(x):
-        return f'''<div style="flex:1;background:#171D1F;border-radius:34px;padding:28px 12px 26px;text-align:center">
+        return f'''<div style="flex:1;background:rgba(255,255,255,.07);border-radius:34px;padding:28px 12px 26px;text-align:center">
           <div style="position:relative;width:{d}px;height:{d}px;margin:0 auto"><div class="round" style="width:{d}px;height:{d}px;background-image:url({u(x["img"])})"></div>
           <span style="position:absolute;right:6px;bottom:6px;width:54px;height:54px;border-radius:50%;background:#090B0C;display:flex;align-items:center;justify-content:center">{PLAY}</span></div>
           <div style="font-weight:700;font-size:{30 if len(x.get("artist","")) < 16 else 24}px;margin-top:20px;line-height:1.15">{e(x.get("artist"))}</div>
           <div class="chip" style="margin-top:12px;height:42px;font-size:21px;color:#9AA3A6">{e(x.get("title"))}</div>
           <div class="blue" style="font-weight:700;font-size:30px;margin-top:18px">Pick</div></div>'''
-    return doc(stage() + header(s["cat"], n, i) + title(s["title"], s.get("sub")) +
+    return doc(stage(s.get("bg") or its[0]["img"]) + header(s["cat"], n, i) + title(s["title"], s.get("sub")) +
         f'''<div class="abs panel" style="left:64px;right:64px;top:{s.get("top", 540)}px;padding:30px">
           <div style="display:flex;justify-content:space-between;align-items:center;padding:0 8px 26px"><span style="font-weight:700;font-size:38px">{e(s.get("panel_title", "Your pick"))}</span><span class="mute" style="font-weight:500;font-size:28px">{e(s.get("panel_note"))}</span></div>
           <div style="display:flex;gap:16px">{"".join(col(x) for x in its)}</div></div>''' + cta(s))
@@ -136,7 +143,7 @@ def t_number(s, n, i):
     card = (f'''<div class="abs panel" style="left:64px;right:64px;top:1000px;padding:30px 36px;display:flex;gap:28px;align-items:center">
           <div style="width:120px;height:120px;border-radius:24px;background:url({u(c["img"])}) center/cover;flex:none"></div>
           <div><div style="font-weight:700;font-size:32px">{e(c.get("title"))}</div><div class="mute" style="font-weight:500;font-size:27px;margin-top:6px">{e(c.get("line"))}</div></div></div>''' if c else "")
-    return doc(stage() + header(s["cat"], n, i) + fan +
+    return doc(stage(s["img"]) + header(s["cat"], n, i) + fan +
         f'''<div class="abs title blue" style="left:52px;top:190px;font-size:{s.get("big_size", 430)}px;letter-spacing:-.07em;line-height:.9">{e(s["big"])}</div>
         <div class="abs" style="left:64px;right:64px;top:640px"><div class="title" style="font-size:84px">{h(s["headline"])}</div>
           {f'<div class="sub" style="margin-top:22px">{e(s["sub"])}</div>' if s.get("sub") else ''}</div>{card}''' + cta(s))
@@ -144,7 +151,7 @@ def t_number(s, n, i):
 # ---- question: a big fan question with a comment box ----
 def t_question(s, n, i):
     tiles = "".join(f'<div class="round" style="width:150px;height:150px;background-image:url({u(x)})"></div>' for x in s.get("imgs", [])[:5])
-    return doc(stage() + header(s["cat"], n, i) +
+    return doc(stage(s.get("bg") or (s.get("imgs") or [None])[0]) + header(s["cat"], n, i) +
         f'''<div class="abs title" style="left:64px;right:64px;top:200px;font-size:112px">{h(s["question"])}</div>
         <div class="abs sub" style="left:64px;right:64px;top:{200 + 112 * (s["question"].count("<br>") + 1) + 30}px">{e(s.get("sub"))}</div>
         <div class="abs" style="left:64px;right:64px;top:760px;display:flex;justify-content:space-between">{tiles}</div>
@@ -154,7 +161,7 @@ def t_question(s, n, i):
 # ---- live: two covers meet for a live moment ----
 def t_live(s, n, i):
     a, b = s["imgs"][:2]
-    return doc(stage() + header(s["cat"], n, i) +
+    return doc(stage(s.get("bg") or a) + header(s["cat"], n, i) +
         f'''<div class="abs card" style="left:64px;top:190px;width:560px;height:560px;transform:rotate(-5deg);background-image:url({u(a)})"></div>
         <div class="abs card" style="left:456px;top:330px;width:560px;height:560px;transform:rotate(5deg);background-image:url({u(b)})"></div>
         <div class="abs" style="left:64px;right:64px;top:960px">

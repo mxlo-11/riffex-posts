@@ -22,7 +22,7 @@ About once a week, swap a slot for "Inside Riffex" (inside type, then one produc
 - Never repeat a story or release already posted (check POSTED_LOG.md and queue/).
 
 ## The look (v4, render4.py): the Riffex Home screen
-- 1080x1440 (3:4). Header on every slide: riffex wordmark left, category pill and the pick shaped slide counter right. Big bold Host Grotesk titles, rounded cover cards, blue (#3DD6CD) kicker lines, a full width blue pill at the bottom with the hook. Near black background. All of this is built into render4.py; never hand edit colors or fonts.
+- 1080x1440 (3:4). Header on every slide: riffex wordmark left, category pill and the pick shaped slide counter right. Big bold Host Grotesk titles, rounded cover cards, blue (#3DD6CD) kicker lines, a full width blue pill at the bottom with the hook. Background: a blurred, glowing color wash made from the slide's main artwork (like the Spotify player), fading to near black at the bottom; frosted glass panels and pills. render4.py picks the image automatically (the card in focus, the hero image, the first row or item); set "bg" on a slide to choose a different one. All of this is built into render4.py; never hand edit colors or fonts.
 - Slide types: carousel, calendar, ranked, hero, pick, number, question, live, inside. Examples of each: kit/examples/types.json.
 - Carousels must read like a real scroll: in a carousel post, give every slide the same items list and set "index" to 0, 1, 2... First slide shows the card left with the next one peeking right; the last shows the card right with the previous one peeking left. render4.py does this from "index".
 - Look at every rendered slide. Fix anything cut off, overlapping, blurry or too long. Export JPEG quality 92.
