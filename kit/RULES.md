@@ -43,7 +43,7 @@ About once a week, swap a slot for "Inside Riffex" (inside type, then one produc
 
 ## Images
 - Covers: Deezer (api.deezer.com/search/album, cover_xl) or iTunes Search (swap 100x100bb for 1200x1200bb; upcoming albums are often on iTunes before Deezer). Official single or album art only.
-- Label art correctly. If an album's cover isn't out yet, use the lead single's art and make that slide about the single by name (headline = the song, kicker = when the album drops). Never put a single's cover under the album's name as if it were the album art.
+- Label art correctly. If an upcoming album's cover isn't out yet, the slide is still about the album (headline = the album, kicker = its date) and you may use the lead single's art only if the slide also shows that single as a play chip with "out now" ("play": "Party With The Boys · out now"), so the image is explained. Never present a song that's already out as upcoming.
 - Headline screenshots of articles are fine on a hero or ranked slide; crop to the headline and byline.
 - Never use agency or wire press photos (Getty, AP, Reuters, USA Today). Never AI generated people. Careful with covers that show nudity.
 - Never put a real artist next to Riff prices or credits, and never imply any real artist is on Riffex or endorses it.
@@ -62,6 +62,17 @@ Confirmed handles so far: @whoisconway (Conway The Machine) @danz_cm (Danz CM) @
 3. A question for the comments.
 4. A call to action that changes every day: the Riffex beta (link in bio) or the waitlist at riffex.app. Never "buy", never imply the artists in the post are on Riffex.
 5. At most 5 hashtags. No source credits in the caption.
+
+## Before you commit: the self check (Milo, Nov 18). Do this every run, in writing.
+Write queue/<date>/checks.md (post.py ignores it) with these sections, and fix anything that fails before you push. If something can't be confirmed, cut it from the post instead of guessing.
+1. Facts table: every date, number, name, feature and claim on the slides and in the caption, each with two sources (or one official source: the artist, label, Apple Music/iTunes or Deezer listing) and the date of each source. Release dates must be officially announced (artist, label, press release, or a streaming listing with that date). "Hinted", "rumored", "85% done" or "coming soon" is not a date: leave the date off or skip the item.
+2. Out or upcoming: for every song and album, mark OUT (with its release date) or UPCOMING (with its date). Up next and calendar posts may only list UPCOMING releases as the subject; an OUT song can appear only as a play chip.
+3. Tense and time words, checked against the day it posts (5 PM New York time): "this Friday", "next week", "tonight", "last week" must be true on that day.
+4. Read every line as a stranger seeing only that slide. Each "it", "he", "she", "this" must point to exactly one thing (bad: "The first song off Nitrous. He plays SNL the night after it drops", where "it" could be the song). Name the thing instead when in doubt.
+5. Words: no trivia or flat facts, nothing the slide already shows, no em dashes or hyphens, no banned words, every bottom pill is a real question for that slide, and it doesn't repeat the caption's question.
+6. Art: each image is the official art for exactly what the slide names (or a single shown with an "out now" play chip, see Images). No image is used twice on one slide.
+7. Structure: every overview item has its own slide, in the same order; at least one small or rising artist; full titles, nothing cut off or overlapping (look at every rendered slide).
+8. Tags: each handle confirmed from an official link (write the link), max 5, small artists not tagged in the last 14 days, and every tagged artist is @mentioned in the caption.
 
 ## Publishing and account safety (most important)
 - Commit queue/YYYY-MM-DD/ (today, New York time): 1.jpg, 2.jpg ... in slide order, caption.txt, and tags.json if tagging. Then push to main. The "Post to Instagram" Action posts it from 5 PM New York time through Instagram's official publishing API.

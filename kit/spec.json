@@ -2,7 +2,7 @@
  "posts": [
   {
    "id": "2026-11-18",
-   "caption": "Your next few Fridays, sorted 🗓️\n\n@whoisconway brings out Ghostface, Raekwon and Method Man on OTIS this Friday. Same day, @danz_cm (the voice behind Computer Magic) drops her new album. Then @dontoliver closes it out Dec 4 with Nitrous.\n\nWhich one's first in your queue?\n\nFind the next ones before everyone else. Get on the waitlist at riffex.app.\n\n#newmusic #upnext #conwaythemachine #dontoliver #danzcm",
+   "caption": "Your next few Fridays, sorted 🗓️\n\n@whoisconway brings out Ghostface, Raekwon and Method Man on OTIS this Friday. Same day, @danz_cm (the voice behind Computer Magic) drops her new album. Then @dontoliver drops Nitrous on Dec 4.\n\nWhich one's first in your queue?\n\nFind the next ones before everyone else. Get on the waitlist at riffex.app.\n\n#newmusic #upnext #conwaythemachine #dontoliver #danzcm",
    "tags": {
     "2": [
      "whoisconway"
@@ -78,11 +78,12 @@
      "cat": "Up next",
      "img": "assets/pwtb.jpg",
      "chip": "Don Toliver",
-     "kicker": "Nitrous drops Dec 4",
-     "headline": "Party With The Boys",
-     "line": "The first song off Nitrous. He plays SNL the night after it drops.",
+     "kicker": "Friday, Dec 4",
+     "headline": "Nitrous",
+     "line": "His follow up to Octane. He plays SNL the next night.",
      "ask": "Is Nitrous topping Octane?",
-     "pos": "15% 50%"
+     "pos": "15% 50%",
+     "play": "Party With The Boys · out now"
     }
    ]
   }

@@ -129,6 +129,7 @@ def t_hero(s, n, i):
           <div style="display:flex;gap:12px;align-items:center">{f'<span class="chip">{e(s["chip"])}</span>' if s.get("chip") else ''}<span class="blue" style="font-weight:600;font-size:28px">{e(s.get("kicker"))}</span></div>
           <div class="title" style="font-size:{s.get("size", 84 if len(s["headline"]) < 16 else 68)}px;margin-top:22px">{h(s["headline"])}</div>
           {f'<div class="sub" style="margin-top:16px;font-size:32px;color:#C9CDCF">{e(s["line"])}</div>' if s.get("line") else ''}
+          {f'<div style="margin-top:8px">{playchip(s["play"])}</div>' if s.get("play") else ''}
           {f'<div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px">' + "".join(f'<span class="chip" style="height:44px;font-size:22px">{e(f)}</span>' for f in s["feats"]) + '</div>' if s.get("feats") else ''}</div>''' + cta(s))
 
 # ---- pick: the Home "Pick someone early" module, 2 or 3 albums ----
