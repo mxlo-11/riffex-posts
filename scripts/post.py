@@ -9,9 +9,9 @@ After posting, queue/YYYY-MM-DD/posted.json is committed with the media id.
 
 The token comes only from the IG_TOKEN repository secret. Never print it.
 Modes:
-  pending (default for schedule and push): posts the newest due folder only (never more than one post
-           per run, so the account never bursts). Older unposted folders are marked skipped.json.
-           Today's folder is due from 5 PM New York time. Future dates wait.
+  pending (default for schedule and push): posts TODAY's folder only, from 5 PM New York time.
+           Older unposted dated folders are marked skipped.json and never posted (stale). Future dates wait.
+           Folders not named YYYY-MM-DD are only posted by a manual "post" run.
   post:    posts one folder now (POST_DATE, or today), ignoring the 5 PM rule.
   check:   reads the profile, posts nothing.
 """
@@ -67,19 +67,26 @@ def main():
     now_ny = datetime.datetime.now(ZoneInfo("America/New_York"))
     today = now_ny.date().isoformat()
     if mode == "pending":
-        due = []
+        # Only TODAY's folder can go out on its own (from 5 PM New York time). Any older unposted
+        # dated folder is stale (its "this week" / "this Friday" words are no longer true), so it is
+        # marked skipped and never posted. Folders not named YYYY-MM-DD (e.g. pin-1-trade) are only
+        # ever posted by a manual run (mode post + date). Added Nov 18, 2026 after a stale Nov 5 post went out.
+        import re
+        due = None
         for f in sorted(pathlib.Path("queue").iterdir()):
-            if not f.is_dir() or (f / "posted.json").exists() or (f / "skipped.json").exists():
+            if not f.is_dir() or not re.fullmatch(r"\d{4}-\d{2}-\d{2}", f.name):
                 continue
-            if f.name < today or (f.name == today and now_ny.hour >= 17):
-                due.append(f.name)
+            if (f / "posted.json").exists() or (f / "skipped.json").exists():
+                continue
+            if f.name < today:
+                (f / "skipped.json").write_text(json.dumps({"skipped_at": now_ny.isoformat(), "reason": "stale: older than today, never auto posted"}))
+                print(f"Skipped stale {f.name}.")
+            elif f.name == today and now_ny.hour >= 17:
+                due = f.name
         if not due:
             print(f"Nothing due at {now_ny:%Y-%m-%d %H:%M} New York time.")
             return
-        for day in due[:-1]:
-            (pathlib.Path("queue") / day / "skipped.json").write_text(json.dumps({"skipped_at": now_ny.isoformat(), "reason": "a newer post was due; one post per run"}))
-            print(f"Skipped {day} (only the newest due post goes out).")
-        publish(due[-1])
+        publish(due)
         return
     publish(os.environ.get("POST_DATE") or today)
 
