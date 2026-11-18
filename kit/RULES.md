@@ -1,47 +1,61 @@
-# Riffex daily post rules
+# Riffex daily post rules (v4, Nov 18, 2026)
 
-The daily scheduled task reads this file every run. The goal (Milo, Oct 17, 2026): keep @riffexapp full of on brand recap and mini news posts (Complex and TappedIn style, mainly underground plus major rap moments) so the account never looks empty when artists and fans check it, and every post reminds people Riffex exists.
+The daily scheduled task reads this file every run. Goal (Milo): keep @riffexapp full of on brand music news and culture posts so the account never looks empty, put small and rising artists in front of people next to the big names, and remind people Riffex exists. Posts are content first, not app ads.
 
-## Weekly calendar (one feed post a day, America/New_York)
-| Day | Format |
-|---|---|
-| Mon | Week in Music: 3 to 7 stories from the past 7 days, one per slide |
-| Tue | The Wire: the single biggest story, 2 to 3 slides, with the number or quote that matters |
-| Wed | Up Next: confirmed releases for this Friday plus the radar (dates slide) |
-| Thu | Rewind: releases and moments from one year ago this week |
-| Fri | The Drop: New Music Friday (grid + one cover per release, up to 10 slides) |
-| Sat | The Drop part 2 (underground deep cuts not covered Friday) or first week numbers |
-| Sun | Community post: a "pick one" slide built from this week's covers |
+## Weekly calendar (one post a day, America/New_York). Every post is a carousel (2 to 10 slides).
+| Day | Format | Main slide types |
+|---|---|---|
+| Mon | The week in music: 3 to 5 stories from the past 7 days | ranked, then one slide per story (hero or number) |
+| Tue | The Wire: the one story that matters most | hero, then number or ranked for the details |
+| Wed | Up next: confirmed releases for this Friday and the next few weeks | calendar, then hero for the biggest one |
+| Thu | Rewind: releases and moments from one year ago this week | carousel (one album per slide) |
+| Fri | The Drop: New Music Friday | carousel (one album per slide, up to 10) |
+| Sat | Rising: small artists worth knowing (underground drops from the week, deep cuts) | carousel, then question |
+| Sun | Pick one: a vote built from this week's covers, then a fan question | pick, then question |
+About once a week, swap a slot for "Inside Riffex" (inside type, then one product slide) or a "Live" moment (live type) when a real one happened. Vary the slide mix so two days in a row never look the same.
 
-## Look (v2)
-- 1080x1080 square, visual first: cover art, official promo art, screenshots of the article headline. Very little text: a short all caps headline (Host Grotesk 800) or artist + title under a cover. Details go in the caption.
-- Brand: charcoal #14181A, cream #F2EFE8, ONE teal #0ABAB5 accent, Geist Mono series label top left, riffex wordmark top right. All of this is built into `render2.py`.
-- Layouts in `render2.py`: grid9 (6 covers + title band), cover (sharp cover on a blurred copy + label + optional teal chip like "Fri Oct 23"), image (full bleed art + headline), shot (screenshot card + headline), stat (cover + giant teal number), title (fanned covers + series title), dates (list of upcoming dates).
-- Look at every rendered slide. Fix anything cut off, blurry or overlapping. Export JPEG quality 92, max 10 slides.
+## Artists: big AND small, every post
+- Riffex is about finding artists early, so every post includes at least one underground or rising artist, and across the week about half the artists featured should be small or rising. Pair them with the big names people already search for.
+- Sources for small and rising artists: The FADER, Pigeons & Planes, Lyrical Lemonade, Our Generation Music, Kerrang/Alternative Press for rock, SoundCloud and Spotify discovery charts (Fresh Finds, Radar), Bandcamp Daily, plus the artists' own posts. Big names: HotNewHipHop, Complex, Billboard, Rolling Stone, XXL, Pitchfork, Stereogum, Music Business Worldwide.
+- Every fact needs a source and a date (keep them in POSTED_LOG.md, not in the caption).
+- Skip: rumors, crime, arrests, deaths, lawsuits, beef, politics, and anything negative about small artists.
+- Never repeat a story or release already posted (check POSTED_LOG.md and queue/).
 
-## Research
-- Sources: HotNewHipHop, Stereogum, The FADER, Billboard, Complex, Rolling Stone, XXL, Pitchfork, Music Business Worldwide, official artist posts. Every fact needs a source and a date.
-- Skip: rumors and anything unconfirmed (e.g. a Puck report nobody confirmed), crime, arrests, deaths, lawsuits against artists, chart flops or anything negative about underground artists (Riffex pitches them), politics.
-- Never repeat a story or release already posted (check `POSTED_LOG.md` and the `queue/` folders).
+## The look (v4, render4.py): the Riffex Home screen
+- 1080x1440 (3:4). Header on every slide: riffex wordmark left, category pill and the pick shaped slide counter right. Big bold Host Grotesk titles, rounded cover cards, blue (#3DD6CD) kicker lines, a full width blue pill at the bottom with the hook. Near black background. All of this is built into render4.py; never hand edit colors or fonts.
+- Slide types: carousel, calendar, ranked, hero, pick, number, question, live, inside. Examples of each: kit/examples/types.json.
+- Carousels must read like a real scroll: in a carousel post, give every slide the same items list and set "index" to 0, 1, 2... First slide shows the card left with the next one peeking right; the last shows the card right with the previous one peeking left. render4.py does this from "index".
+- Look at every rendered slide. Fix anything cut off, overlapping, blurry or too long. Export JPEG quality 92.
+
+## Words (Milo, Nov 18): plain and natural
+- Write like a fan talking to a friend, not a label or a press release. Short, specific, warm. Bad: "Out on Warp", "Out the same day as Stardust". Good: "His first album since getting sober", "Same Friday, totally different vibe".
+- Titles are short (2 to 6 words). Kicker lines are 2 to 4 words ("New today", "A year ago this week"). Each item line is one plain sentence, under 45 characters.
+- The bottom pill is a question or nudge people actually answer ("What are you playing first?", "Who found them first?").
+- No em dashes or hyphens. Banned words in our own copy: shares, stock, portfolio, returns, invest, valuation, market cap, dividend, bet, wager, odds, profit, gains, token, NFT (album titles are the only exception).
 
 ## Images
-- Covers: iTunes Search API (`https://itunes.apple.com/search?entity=song&term=...`, swap `100x100bb` for `1200x1200bb` in artworkUrl100) or Deezer (`api.deezer.com`, `album.cover_xl`). Download straight from the cloud workspace.
-- Headline screenshots: open the article in the preinstalled Playwright Chromium, hide fixed/sticky elements, clip the h1 plus byline, crop the bottom so only the headline and byline show.
-- Never use agency press photos (Getty, USA Today, Reuters, AP) on their own. Be careful with covers that show nudity.
+- Covers: Deezer (api.deezer.com/search/album, cover_xl) or iTunes Search (swap 100x100bb for 1200x1200bb). Official single or album art only.
+- Headline screenshots of articles are fine on a hero or ranked slide; crop to the headline and byline.
+- Never use agency or wire press photos (Getty, AP, Reuters, USA Today). Never AI generated people. Careful with covers that show nudity.
+- Never put a real artist next to Riff prices or credits, and never imply any real artist is on Riffex or endorses it.
 
-## Caption rules (Milo approved Oct 17)
-1. Hook line that shows before "more", one emoji.
-2. 1 to 2 sentences of context the slides skip, with @ tags for the artists only when the handle is confirmed as the real artist. Don't tag people in a beef.
-3. A question for comments.
-4. A Riffex waitlist call to action, wording changes every day, e.g. "Join the Riffex waitlist and back the next ones before everyone else. Link in bio." Never "buy", never imply the artists in the post are on Riffex.
-5. At most 5 hashtags.
-6. No "via" or source credit line. Keep sources in `POSTED_LOG.md`.
-7. Banned words never appear in our own copy: shares, stock, portfolio, returns, invest, valuation, market cap, dividend, bet, wager, odds, token, NFT (album titles are the only exception). No em dashes.
+## Tagging artists (tags.json)
+- Tag the artists featured, on the slide that shows them: queue/<date>/tags.json like {"2": ["handle"], "3": ["handle2"]} (slide numbers start at 1).
+- Only the artist's real, verified account (check the profile: verified badge or linked from their official site or Spotify). If you can't confirm the handle, don't tag.
+- Max 5 tags per post. Never tag the same small artist more than once every 14 days (check POSTED_LOG.md). Never tag in negative or beef stories.
+- Also @mention the main artist once in the caption, only with a confirmed handle.
+Confirmed handles so far: @fakemink @skepta @lilpeep @laflare1017 (Gucci Mane) @tierrawhack @rexv2s @yeat @dontoliver @cordae @champagnepapi (Drake) @lilbaby @yungmiami305 @metroboomin. NOT the artist: @glaive, @tiffanyday.
 
-Confirmed handles: @fakemink @skepta @lilpeep @laflare1017 (Gucci Mane) @tierrawhack @rexv2s @yeat @dontoliver @cordae @champagnepapi (Drake) @lilbaby @yungmiami305 @metroboomin. NOT the artist: @glaive, @tiffanyday.
+## Caption
+1. A hook line that shows before "more", at most one emoji.
+2. One or two plain sentences of context the slides skip.
+3. A question for the comments.
+4. A call to action that changes every day: the Riffex beta (link in bio) or the waitlist at riffex.app. Never "buy", never imply the artists in the post are on Riffex.
+5. At most 5 hashtags. No source credits in the caption.
 
-## Publishing
-- Commit `queue/YYYY-MM-DD/` (today, New York time) with `1.jpg, 2.jpg, ...` in slide order and `caption.txt`, then push to main.
-- The push starts the "Post to Instagram" Action. It posts past days right away and today's folder from 5 PM New York time (the 5:05 PM scheduled run catches it if you pushed earlier). It writes `posted.json` into the folder when done.
-- The Instagram token lives only in the repo secret IG_TOKEN. Never print, read, copy or ask for it.
-- If the Action fails with "API access blocked" or a token error, tell Milo: the Meta developer account or the token needs his attention (developers.facebook.com, Riffex app). Never boost, never pay, never post to Facebook.
+## Publishing and account safety (most important)
+- Commit queue/YYYY-MM-DD/ (today, New York time): 1.jpg, 2.jpg ... in slide order, caption.txt, and tags.json if tagging. Then push to main. The "Post to Instagram" Action posts it from 5 PM New York time through Instagram's official publishing API.
+- One post per day, never more. If today's folder already exists or POSTED_LOG.md has today, stop.
+- The only thing that touches Instagram is that Action. Never open Instagram in a browser, never log in, never DM, comment, like, follow, unfollow, reply, or change settings. Never boost or pay. Never post to Facebook.
+- The token lives only in the repo secret IG_TOKEN. Never print, read, copy or ask for it.
+- If the Action reports any error, limit, block, "API access blocked", or token problem: stop, queue nothing new, and tell Milo exactly what it said. Do not retry over and over.
