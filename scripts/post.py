@@ -1,15 +1,17 @@
 """Publish the queued Riffex post for today to Instagram.
 
 Queue layout (committed by the daily Claude task):
-  queue/YYYY-MM-DD/1.jpg, 2.jpg, ...   JPEG images, 1080x1080, in slide order
+  queue/YYYY-MM-DD/1.jpg, 2.jpg, ...   JPEG images, 1080x1440 (3:4), in slide order
   queue/YYYY-MM-DD/caption.txt          the caption
+  queue/YYYY-MM-DD/tags.json            optional: {"1": ["handle"], "3": ["handle2"]} artists to tag on those slides
+                                        (max 5 tags per post; a tag Instagram rejects is dropped, the post still goes out)
 After posting, queue/YYYY-MM-DD/posted.json is committed with the media id.
 
 The token comes only from the IG_TOKEN repository secret. Never print it.
 Modes:
-  pending (default for schedule and push): posts every unposted queue folder that is due,
-           oldest first. Past dates are always due; today's folder is due from 5 PM New York time.
-           Future dates wait.
+  pending (default for schedule and push): posts the newest due folder only (never more than one post
+           per run, so the account never bursts). Older unposted folders are marked skipped.json.
+           Today's folder is due from 5 PM New York time. Future dates wait.
   post:    posts one folder now (POST_DATE, or today), ignoring the 5 PM rule.
   check:   reads the profile, posts nothing.
 """
@@ -23,7 +25,7 @@ BRANCH = os.environ.get("GITHUB_REF_NAME", "main")
 RAW = f"https://raw.githubusercontent.com/{REPO}/{BRANCH}"
 
 
-def call(method, path, **params):
+def call(method, path, soft=False, **params):
     params["access_token"] = TOKEN
     data = urllib.parse.urlencode(params).encode()
     url = f"{API}/{path}"
@@ -36,6 +38,9 @@ def call(method, path, **params):
             return json.load(r)
     except urllib.error.HTTPError as e:
         body = e.read().decode(errors="replace").replace(TOKEN, "***")
+        if soft:
+            print(f"Instagram API error {e.code} on {path} (handled): {body}")
+            return None
         sys.exit(f"Instagram API error {e.code} on {path}: {body}")
 
 
@@ -64,17 +69,17 @@ def main():
     if mode == "pending":
         due = []
         for f in sorted(pathlib.Path("queue").iterdir()):
-            if not f.is_dir() or (f / "posted.json").exists():
+            if not f.is_dir() or (f / "posted.json").exists() or (f / "skipped.json").exists():
                 continue
             if f.name < today or (f.name == today and now_ny.hour >= 17):
                 due.append(f.name)
         if not due:
             print(f"Nothing due at {now_ny:%Y-%m-%d %H:%M} New York time.")
             return
-        for k, day in enumerate(due):
-            if k:
-                time.sleep(90)
-            publish(day)
+        for day in due[:-1]:
+            (pathlib.Path("queue") / day / "skipped.json").write_text(json.dumps({"skipped_at": now_ny.isoformat(), "reason": "a newer post was due; one post per run"}))
+            print(f"Skipped {day} (only the newest due post goes out).")
+        publish(due[-1])
         return
     publish(os.environ.get("POST_DATE") or today)
 
@@ -92,13 +97,29 @@ def publish(day):
         sys.exit(f"No .jpg images in {folder}")
     caption = (folder / "caption.txt").read_text().strip() if (folder / "caption.txt").exists() else ""
     urls = [f"{RAW}/{folder.as_posix()}/{p.name}" for p in images]
+    tags = json.loads((folder / "tags.json").read_text()) if (folder / "tags.json").exists() else {}
+    budget = 5
+
+    def user_tags(slide_no):
+        nonlocal budget
+        names = [n.lstrip("@").strip() for n in tags.get(str(slide_no), []) if n.strip()][:budget]
+        budget -= len(names)
+        # spread tags along the lower part of the slide, where the artist name sits
+        return json.dumps([{"username": n, "x": round(0.2 + 0.6 * (k + 0.5) / len(names), 3), "y": 0.82} for k, n in enumerate(names)]) if names else None
 
     if len(urls) == 1:
-        c = call("POST", "me/media", image_url=urls[0], caption=caption)["id"]
+        t = user_tags(1)
+        r = call("POST", "me/media", soft=bool(t), image_url=urls[0], caption=caption, **({"user_tags": t} if t else {}))
+        c = (r or call("POST", "me/media", image_url=urls[0], caption=caption))["id"]
     else:
         kids = []
-        for u in urls[:10]:
-            k = call("POST", "me/media", image_url=u, is_carousel_item="true")["id"]
+        for n, u in enumerate(urls[:10], 1):
+            t = user_tags(n)
+            r = call("POST", "me/media", soft=bool(t), image_url=u, is_carousel_item="true", **({"user_tags": t} if t else {}))
+            if r is None:
+                print(f"Slide {n}: tags rejected, posting it without them")
+                r = call("POST", "me/media", image_url=u, is_carousel_item="true")
+            k = r["id"]
             wait_ready(k)
             kids.append(k)
         c = call("POST", "me/media", media_type="CAROUSEL", children=",".join(kids), caption=caption)["id"]
