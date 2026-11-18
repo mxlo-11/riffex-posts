@@ -28,23 +28,33 @@ About once a week, swap a slot for "Inside Riffex" (inside type, then one produc
 - Look at every rendered slide. Fix anything cut off, overlapping, blurry or too long. Export JPEG quality 92.
 
 ## Words (Milo, Nov 18): plain and natural
-- Write like a fan talking to a friend, not a label or a press release. Short, specific, warm. Bad: "Out on Warp", "Out the same day as Stardust". Good: "His first album since getting sober", "Same Friday, totally different vibe".
-- Titles are short (2 to 6 words). Kicker lines are 2 to 4 words ("New today", "A year ago this week"). Each item line is one plain sentence, under 45 characters.
-- The bottom pill is a question or nudge people actually answer ("What are you playing first?", "Who found them first?").
-- No em dashes or hyphens. Banned words in our own copy: shares, stock, portfolio, returns, invest, valuation, market cap, dividend, bet, wager, odds, profit, gains, token, NFT (album titles are the only exception).
+- Write like a fan talking to a friend, not a label or a press release. Short, specific, warm.
+- Titles are short (2 to 6 words). Kicker lines are 2 to 4 words ("This Friday", "A year ago this week").
+- Lines under a release (calendar rows, carousel cards) are app style details, not sentences: "meta" like "Album · 11 songs" or "Single · prod. Conductor Williams", plus "play" with the song that's already out (shows as a play chip). The design says what it means; never write it out ("X is the first taste", "11 songs, X is already out").
+- A sentence (hero "line", number "sub") only when it gives a fan a real reason to care: who's on it, who the artist is if they're small, a big moment around it (a tour, SNL, a first album in years). Never trivia about how it was made ("made alone in her home studio", "he produced all of it himself"), and never a flat fact the slide already shows.
+  Bad: "He recorded and produced all of it himself." Good: "Three Wu Tang legends and, somehow, the Goo Goo Dolls." / "The voice behind Computer Magic, back with 12 songs of cosmic synth pop." / "The first song off Nitrous. He plays SNL the night after it drops."
+- The bottom pill is a question people actually answer and fits that slide ("Which feature are you skipping to?", "Who remembers Computer Magic?"). Don't repeat the caption's question word for word.
+- No em dashes or hyphens (write "Wu Tang"). Banned words in our own copy: shares, stock, portfolio, returns, invest, valuation, market cap, dividend, bet, wager, odds, profit, gains, token, NFT (album titles are the only exception).
+
+## Structure
+- After an overview slide (calendar, ranked), give each item its own slide in the same order as the overview, small artists included. Never skip one.
+- Show full titles: render4.py wraps long album titles; never shorten a title with "…" yourself.
+- On a number slide, "imgs" takes two different images; with one image it shows one card. Never use the same cover twice on a slide.
 
 ## Images
-- Covers: Deezer (api.deezer.com/search/album, cover_xl) or iTunes Search (swap 100x100bb for 1200x1200bb). Official single or album art only.
+- Covers: Deezer (api.deezer.com/search/album, cover_xl) or iTunes Search (swap 100x100bb for 1200x1200bb; upcoming albums are often on iTunes before Deezer). Official single or album art only.
+- Label art correctly. If an album's cover isn't out yet, use the lead single's art and make that slide about the single by name (headline = the song, kicker = when the album drops). Never put a single's cover under the album's name as if it were the album art.
 - Headline screenshots of articles are fine on a hero or ranked slide; crop to the headline and byline.
 - Never use agency or wire press photos (Getty, AP, Reuters, USA Today). Never AI generated people. Careful with covers that show nudity.
 - Never put a real artist next to Riff prices or credits, and never imply any real artist is on Riffex or endorses it.
 
 ## Tagging artists (tags.json)
 - Tag the artists featured, on the slide that shows them: queue/<date>/tags.json like {"2": ["handle"], "3": ["handle2"]} (slide numbers start at 1).
-- Only the artist's real, verified account (check the profile: verified badge or linked from their official site or Spotify). If you can't confirm the handle, don't tag.
+- Only the artist's real account: confirm it from a link on their official site, Bandcamp, Linktree or label page. If you can't confirm the handle, don't tag.
+- Small artists matter most here (a tag from us means more to them), so always try to confirm and tag every small artist in the post.
 - Max 5 tags per post. Never tag the same small artist more than once every 14 days (check POSTED_LOG.md). Never tag in negative or beef stories.
 - Also @mention the main artist once in the caption, only with a confirmed handle.
-Confirmed handles so far: @fakemink @skepta @lilpeep @laflare1017 (Gucci Mane) @tierrawhack @rexv2s @yeat @dontoliver @cordae @champagnepapi (Drake) @lilbaby @yungmiami305 @metroboomin. NOT the artist: @glaive, @tiffanyday.
+Confirmed handles so far: @whoisconway (Conway The Machine) @danz_cm (Danz CM) @fakemink @skepta @lilpeep @laflare1017 (Gucci Mane) @tierrawhack @rexv2s @yeat @dontoliver @cordae @champagnepapi (Drake) @lilbaby @yungmiami305 @metroboomin. NOT the artist: @glaive, @tiffanyday.
 
 ## Caption
 1. A hook line that shows before "more", at most one emoji.

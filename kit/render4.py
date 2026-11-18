@@ -30,7 +30,7 @@ html,body{{width:1080px;height:1440px;overflow:hidden;background:#08090A;font-fa
 .pill{{display:inline-flex;align-items:center;gap:12px;height:62px;padding:0 26px;border-radius:999px;background:rgba(255,255,255,.14);backdrop-filter:blur(20px);font-weight:600;font-size:28px}}
 .blue{{color:#3DD6CD}} .mute{{color:rgba(242,239,232,.66)}}
 .title{{font-weight:800;letter-spacing:-.035em;line-height:1.0}}
-.sub{{font-weight:500;font-size:34px;line-height:1.3;color:rgba(242,239,232,.7)}}
+.sub{{font-weight:500;font-size:34px;line-height:1.3;color:rgba(242,239,232,.7);text-wrap:pretty}}
 .card{{outline:1.5px solid rgba(255,255,255,.10);outline-offset:-1.5px;border-radius:44px;background-size:cover;background-position:center;box-shadow:0 40px 90px rgba(0,0,0,.55)}}
 .round{{border-radius:50%;background-size:cover;background-position:center;flex:none;box-shadow:inset 0 0 0 2px rgba(255,255,255,.1)}}
 .panel{{background:rgba(10,12,13,.42);border:1.5px solid rgba(255,255,255,.10);border-radius:44px;backdrop-filter:blur(30px)}}
@@ -89,13 +89,23 @@ def t_carousel(s, n, i):
         f'<div class="sub" style="margin-top:8px;font-size:31px">{e(it.get("line"))}</div></div>'
         f'<div class="abs" style="right:64px;top:{top + W + 44}px;display:flex;gap:9px">{dots}</div>' + cta(s))
 
-# ---- calendar: dates, covers, one line each ----
+# ---- calendar: dates, covers, app style details (no sentences) ----
+def playchip(song):  # a song that's already out, shown as a play chip like a streaming app
+    return (f'<span class="chip" style="height:44px;font-size:22px;gap:10px;margin-top:12px;max-width:100%">'
+            f'<svg width="16" height="16" viewBox="0 0 24 24"><path d="M7 4v16l13-8z" fill="#3DD6CD"/></svg>'
+            f'<span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{e(song)}</span></span>') if song else ""
 def t_calendar(s, n, i):
-    r = "".join(f'''<div style="display:flex;align-items:center;gap:26px;padding:22px 26px">
-        <div style="width:96px;text-align:center"><div class="mute" style="font-weight:600;font-size:24px">{e(x.get("day"))}</div><div class="title" style="font-size:52px">{e(x.get("date"))}</div></div>
+    def row(x):
+        t = x.get("title", ""); tsz = 30 if len(t) <= 26 else 25   # long album titles wrap to two lines instead of being cut
+        return f'''<div style="display:flex;align-items:center;gap:26px;padding:22px 26px">
+        <div style="width:96px;text-align:center;flex:none"><div class="mute" style="font-weight:600;font-size:24px">{e(x.get("day"))}</div><div class="title" style="font-size:52px">{e(x.get("date"))}</div></div>
         <div style="width:150px;height:150px;border-radius:26px;background:url({u(x["img"])}) center/cover;flex:none;box-shadow:inset 0 0 0 2px rgba(255,255,255,.1)"></div>
-        <div><div style="font-weight:700;font-size:38px">{e(x.get("artist"))}</div><div class="mute" style="font-weight:500;font-size:30px;margin-top:4px">{e(x.get("title"))}</div>
-        <div class="blue" style="font-weight:600;font-size:24px;margin-top:8px">{e(x.get("line"))}</div></div></div>''' for x in s["rows"][:4])
+        <div style="min-width:0;flex:1"><div style="font-weight:700;font-size:38px;line-height:1.1">{e(x.get("artist"))}</div>
+        <div style="font-weight:500;font-size:{tsz}px;line-height:1.2;margin-top:6px;color:rgba(242,239,232,.86);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">{e(t)}</div>
+        {f'<div class="mute" style="font-weight:500;font-size:23px;margin-top:6px">{e(x["meta"])}</div>' if x.get("meta") else ''}
+        {playchip(x.get("play"))}
+        {f'<div class="blue" style="font-weight:600;font-size:24px;margin-top:8px">{e(x["line"])}</div>' if x.get("line") else ''}</div></div>'''
+    r = "".join(row(x) for x in s["rows"][:4])
     return doc(stage(s.get("bg") or s["rows"][0]["img"]) + header(s["cat"], n, i) + title(s["title"], s.get("sub")) +
                f'<div class="abs panel" style="left:64px;right:64px;top:{s.get("top", 520)}px;padding:8px 0">{r}</div>' + cta(s))
 
@@ -117,8 +127,9 @@ def t_hero(s, n, i):
         <div class="abs" style="left:64px;right:64px;top:160px;height:1060px;border-radius:44px;background:linear-gradient(180deg,rgba(8,9,10,0) 38%,rgba(8,9,10,.92) 80%)"></div>
         <div class="abs" style="left:112px;right:112px;bottom:{252 if s.get("ask") else 160}px">
           <div style="display:flex;gap:12px;align-items:center">{f'<span class="chip">{e(s["chip"])}</span>' if s.get("chip") else ''}<span class="blue" style="font-weight:600;font-size:28px">{e(s.get("kicker"))}</span></div>
-          <div class="title" style="font-size:{s.get("size", 84)}px;margin-top:22px">{h(s["headline"])}</div>
-          {f'<div class="sub" style="margin-top:16px;font-size:32px;color:#C9CDCF">{e(s["line"])}</div>' if s.get("line") else ''}</div>''' + cta(s))
+          <div class="title" style="font-size:{s.get("size", 84 if len(s["headline"]) < 16 else 68)}px;margin-top:22px">{h(s["headline"])}</div>
+          {f'<div class="sub" style="margin-top:16px;font-size:32px;color:#C9CDCF">{e(s["line"])}</div>' if s.get("line") else ''}
+          {f'<div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px">' + "".join(f'<span class="chip" style="height:44px;font-size:22px">{e(f)}</span>' for f in s["feats"]) + '</div>' if s.get("feats") else ''}</div>''' + cta(s))
 
 # ---- pick: the Home "Pick someone early" module, 2 or 3 albums ----
 def t_pick(s, n, i):
@@ -137,8 +148,11 @@ def t_pick(s, n, i):
 
 # ---- number: one giant blue number ----
 def t_number(s, n, i):
-    fan = "".join(f'<div class="abs card" style="left:{x}px;top:{y}px;width:300px;height:300px;transform:rotate({r}deg);background-image:url({u(s["img"])})"></div>'
-                  for x, y, r in ((610, 170, 8), (680, 230, -4)))
+    # two DIFFERENT images fan out ("imgs"); with one image, show one card (never the same cover twice)
+    ims = [p for p in (s.get("imgs") or [s["img"]]) if p][:2]
+    spots = ((610, 170, 8), (680, 230, -4)) if len(ims) == 2 else ((650, 190, 5),)
+    fan = "".join(f'<div class="abs card" style="left:{x}px;top:{y}px;width:{300 if len(ims) == 2 else 340}px;height:{300 if len(ims) == 2 else 340}px;transform:rotate({r}deg);background-image:url({u(p)})"></div>'
+                  for p, (x, y, r) in zip(ims, spots))
     c = s.get("card")
     card = (f'''<div class="abs panel" style="left:64px;right:64px;top:1000px;padding:30px 36px;display:flex;gap:28px;align-items:center">
           <div style="width:120px;height:120px;border-radius:24px;background:url({u(c["img"])}) center/cover;flex:none"></div>

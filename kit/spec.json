@@ -2,9 +2,15 @@
  "posts": [
   {
    "id": "2026-11-18",
-   "caption": "Your next few Fridays, sorted 🗓️\n\nConway The Machine drops OTIS this Friday, the same day Danz CM puts out the album she spent four years making alone at home. Then @dontoliver returns Dec 4 with Nitrous, which he recorded and produced all by himself.\n\nWhich one are you running first?\n\nWant to back artists like these early? Get on the waitlist at riffex.app.\n\n#newmusic #upnext #conwaythemachine #dontoliver #danzcm",
+   "caption": "Your next few Fridays, sorted 🗓️\n\n@whoisconway brings out Ghostface, Raekwon and Method Man on OTIS this Friday. Same day, @danz_cm (the voice behind Computer Magic) drops her new album. Then @dontoliver closes it out Dec 4 with Nitrous.\n\nWhich one's first in your queue?\n\nFind the next ones before everyone else. Get on the waitlist at riffex.app.\n\n#newmusic #upnext #conwaythemachine #dontoliver #danzcm",
    "tags": {
     "2": [
+     "whoisconway"
+    ],
+    "3": [
+     "danz_cm"
+    ],
+    "4": [
      "dontoliver"
     ]
    },
@@ -14,7 +20,7 @@
      "cat": "Up next",
      "title": "Coming up<br>next",
      "sub": "Two this Friday, one big one in December",
-     "ask": "Which one are you saving a spot for?",
+     "ask": "Which one's first in your queue?",
      "rows": [
       {
        "day": "Fri",
@@ -22,15 +28,17 @@
        "img": "assets/otis.jpg",
        "artist": "Conway The Machine",
        "title": "OTIS",
-       "line": "11 songs, Sarah! is already out"
+       "meta": "Album · 11 songs",
+       "play": "Sarah!"
       },
       {
        "day": "Fri",
        "date": "20",
-       "img": "assets/danz.jpg",
+       "img": "assets/danz_album.jpg",
        "artist": "Danz CM",
-       "title": "The Interdimensional…",
-       "line": "Made alone in her home studio"
+       "title": "The Interdimensional Extraterrestrial Time Travelers Society",
+       "meta": "Album · 12 songs",
+       "play": "Animal"
       },
       {
        "day": "Dec",
@@ -38,33 +46,43 @@
        "img": "assets/pwtb.jpg",
        "artist": "Don Toliver",
        "title": "Nitrous",
-       "line": "Party With The Boys is the first taste"
+       "meta": "Album",
+       "play": "Party With The Boys"
       }
      ]
     },
     {
      "type": "hero",
      "cat": "Up next",
-     "img": "assets/pwtb.jpg",
-     "chip": "Don Toliver",
-     "kicker": "Friday, Dec 4",
-     "headline": "Nitrous",
-     "line": "He recorded and produced all of it himself.",
-     "ask": "Is Nitrous topping Octane?"
+     "img": "assets/otis.jpg",
+     "chip": "Conway The Machine",
+     "kicker": "This Friday",
+     "headline": "OTIS",
+     "line": "Three Wu Tang legends and, somehow, the Goo Goo Dolls.",
+     "ask": "Which feature are you skipping to?"
     },
     {
-     "type": "number",
+     "type": "hero",
      "cat": "Up next",
-     "big": "12",
-     "img": "assets/danz.jpg",
-     "headline": "songs she made<br>by herself",
-     "sub": "Four years of work in her home studio. Out this Friday.",
-     "card": {
-      "img": "assets/danz.jpg",
-      "title": "Danz CM",
-      "line": "Out Friday, Nov 20"
-     },
-     "ask": "Who's pressing play Friday?"
+     "img": "assets/danz_album.jpg",
+     "pos": "center 30%",
+     "chip": "Danz CM",
+     "kicker": "This Friday",
+     "headline": "The Interdimensional Extraterrestrial Time Travelers Society",
+     "size": 56,
+     "line": "The voice behind Computer Magic, back with 12 songs of cosmic synth pop.",
+     "ask": "Who remembers Computer Magic?"
+    },
+    {
+     "type": "hero",
+     "cat": "Up next",
+     "img": "assets/pwtb.jpg",
+     "chip": "Don Toliver",
+     "kicker": "Nitrous drops Dec 4",
+     "headline": "Party With The Boys",
+     "line": "The first song off Nitrous. He plays SNL the night after it drops.",
+     "ask": "Is Nitrous topping Octane?",
+     "pos": "15% 50%"
     }
    ]
   }
