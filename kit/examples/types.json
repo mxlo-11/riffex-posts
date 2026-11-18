@@ -1,0 +1,17 @@
+{"posts":[
+{"id":"drop","caption":"","tags":{"1":["lilbaby"]},"slides":[
+ {"type":"carousel","cat":"The Drop","title":"New this Friday","sub":"Swipe through what just came out","index":0,"ask":"What are you playing first?","items":[{"img":"assets/fresh.jpg","kicker":"New today","artist":"Lil Baby","line":"Fresh, 17 songs"},{"img":"assets/skepta.jpg","kicker":"New today","artist":"Skepta","line":"The Fork & Knife"},{"img":"assets/harlow.jpg","kicker":"New today","artist":"Jack Harlow","line":"Sweet Action II, with Babyface"}]},
+ {"type":"carousel","cat":"The Drop","title":"New this Friday","sub":"Swipe through what just came out","index":1,"ask":"What are you playing first?","items":[{"img":"assets/fresh.jpg","kicker":"New today","artist":"Lil Baby","line":"Fresh, 17 songs"},{"img":"assets/skepta.jpg","kicker":"New today","artist":"Skepta","line":"The Fork & Knife"},{"img":"assets/harlow.jpg","kicker":"New today","artist":"Jack Harlow","line":"Sweet Action II, with Babyface"}]}]},
+{"id":"upnext","caption":"","slides":[
+ {"type":"calendar","cat":"Up next","title":"Coming this<br>month","sub":"Albums worth setting a reminder for","ask":"Which one are you running first?","rows":[{"day":"Fri","date":"6","img":"assets/fresh.jpg","artist":"Lil Baby","title":"Fresh","line":"17 songs"},{"day":"Fri","date":"13","img":"assets/heelmatic.jpg","artist":"Westside Gunn","title":"HEELMATIC","line":"New album"}]},
+ {"type":"hero","cat":"Up next","img":"assets/heelmatic.jpg","chip":"Westside Gunn","kicker":"Friday the 13th","headline":"HEELMATIC","line":"His next album lands next week.","ask":"Who's tapped in?"}]},
+{"id":"week","caption":"","slides":[
+ {"type":"ranked","cat":"This week","title":"The week<br>in music","sub":"Three things you might've missed","ask":"What else happened this week?","rows":[{"img":"assets/kanye.jpg","headline":"Kanye brought out Carti in Houston","line":"The crowd got a surprise guest"},{"img":"assets/dogs.jpg","headline":"Drake has 11 albums on the Billboard 200","line":"All at the same time"},{"img":"assets/elevate.jpg","headline":"Benny The Butcher dropped Elevate","line":"A first taste of A Friend Of Ours 2"}]},
+ {"type":"number","cat":"This week","big":"11","img":"assets/dogs.jpg","headline":"Drake albums on the<br>Billboard 200 right now","sub":"Not singles. Full albums, all charting at once.","ask":"How many can you name?"}]},
+{"id":"pick","caption":"","slides":[
+ {"type":"pick","cat":"Pick one","title":"Same Friday.<br>Pick one.","sub":"Three big albums landed on Nov 6","panel_note":"1 vote each","ask":"Comment your pick","items":[{"img":"assets/fresh.jpg","artist":"Lil Baby","title":"Fresh"},{"img":"assets/skepta.jpg","artist":"Skepta","title":"The Fork & Knife"},{"img":"assets/harlow.jpg","artist":"Jack Harlow","title":"Sweet Action II"}]},
+ {"type":"question","cat":"Your turn","question":"Who did you<br>find before<br>everyone else?","sub":"The artist you were playing way before they blew up.","imgs":["assets/heelmatic.jpg","assets/elevate.jpg","assets/skepta.jpg","assets/carti.jpg","assets/stardust.jpg"],"ask":"Name them in the comments"}]},
+{"id":"live","caption":"","slides":[
+ {"type":"live","cat":"Live","imgs":["assets/kanye.jpg","assets/carti.jpg"],"chip":"Houston","kicker":"Surprise guest","headline":"Kanye brought<br>out Carti","ask":"Were you there? Tell us how it was"},
+ {"type":"inside","cat":"Inside Riffex","headline":"Back artists before<br>everyone knows<br>their name.","ask":"Try the beta, link in bio"}]}
+]}
