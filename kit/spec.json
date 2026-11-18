@@ -1,5 +1,72 @@
-{"posts":[{"id":"2026-11-05","caption":"One year ago today 🌠\n\nNov 7, 2025 gave us two left of center rap albums in one day. Danny Brown's Stardust on Warp was his first record made fully sober, with Quadeca and Jane Remover on it, and Armand Hammer & The Alchemist followed Haram with the 14 track Mercy. Which one still gets replayed in your rotation?\n\nBe early to the next ones. Join the Riffex waitlist, link in bio.\n\n#rewind #dannybrown #armandhammer #thealchemist #undergroundhiphop","slides":[
-{"type":"title","series":"Rewind","title":"Rewind","accent":"Rewind","sub":"Nov 7, 2025 · 2 albums","imgs":["assets/stardust.jpg","assets/mercy.jpg"]},
-{"type":"cover","series":"Rewind","img":"assets/stardust.jpg","chip":"Nov 7, 2025","a":"Danny Brown","t":"Stardust"},
-{"type":"cover","series":"Rewind","img":"assets/mercy.jpg","chip":"Nov 7, 2025","a":"Armand Hammer & The Alchemist","t":"Mercy"},
-{"type":"dates","series":"Rewind","title":"Back in 2025","rows":[{"d":"Sep 23","a":"Stardust announced","t":"Lead single Starburst"},{"d":"Nov 7","a":"Stardust lands on Warp","t":"His first album made fully sober"},{"d":"Nov 7","a":"Mercy lands","t":"14 tracks, follow up to Haram"},{"d":"Nov 10","a":"Danny Brown tour opens","t":"21 US dates, starting in Boston"}]}]}]}
+{
+ "posts": [
+  {
+   "id": "2026-11-18",
+   "caption": "Your next few Fridays, sorted 🗓️\n\nConway The Machine drops OTIS this Friday, the same day Danz CM puts out the album she spent four years making alone at home. Then @dontoliver returns Dec 4 with Nitrous, which he recorded and produced all by himself.\n\nWhich one are you running first?\n\nWant to back artists like these early? Get on the waitlist at riffex.app.\n\n#newmusic #upnext #conwaythemachine #dontoliver #danzcm",
+   "tags": {
+    "2": [
+     "dontoliver"
+    ]
+   },
+   "slides": [
+    {
+     "type": "calendar",
+     "cat": "Up next",
+     "title": "Coming up<br>next",
+     "sub": "Two this Friday, one big one in December",
+     "ask": "Which one are you saving a spot for?",
+     "rows": [
+      {
+       "day": "Fri",
+       "date": "20",
+       "img": "assets/otis.jpg",
+       "artist": "Conway The Machine",
+       "title": "OTIS",
+       "line": "11 songs, Sarah! is already out"
+      },
+      {
+       "day": "Fri",
+       "date": "20",
+       "img": "assets/danz.jpg",
+       "artist": "Danz CM",
+       "title": "The Interdimensional…",
+       "line": "Made alone in her home studio"
+      },
+      {
+       "day": "Dec",
+       "date": "4",
+       "img": "assets/pwtb.jpg",
+       "artist": "Don Toliver",
+       "title": "Nitrous",
+       "line": "Party With The Boys is the first taste"
+      }
+     ]
+    },
+    {
+     "type": "hero",
+     "cat": "Up next",
+     "img": "assets/pwtb.jpg",
+     "chip": "Don Toliver",
+     "kicker": "Friday, Dec 4",
+     "headline": "Nitrous",
+     "line": "He recorded and produced all of it himself.",
+     "ask": "Is Nitrous topping Octane?"
+    },
+    {
+     "type": "number",
+     "cat": "Up next",
+     "big": "12",
+     "img": "assets/danz.jpg",
+     "headline": "songs she made<br>by herself",
+     "sub": "Four years of work in her home studio. Out this Friday.",
+     "card": {
+      "img": "assets/danz.jpg",
+      "title": "Danz CM",
+      "line": "Out Friday, Nov 20"
+     },
+     "ask": "Who's pressing play Friday?"
+    }
+   ]
+  }
+ ]
+}
