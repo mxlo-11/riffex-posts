@@ -1,89 +1,158 @@
 {
  "posts": [
   {
-   "id": "2026-11-18",
-   "caption": "Your next few Fridays, sorted 🗓️\n\n@whoisconway brings out Ghostface, Raekwon and Method Man on OTIS this Friday. Same day, @danz_cm (the voice behind Computer Magic) drops her new album. Then @dontoliver drops Nitrous on Dec 4.\n\nWhich one's first in your queue?\n\nFind the next ones before everyone else. Get on the waitlist at riffex.app.\n\n#newmusic #upnext #conwaythemachine #dontoliver #danzcm",
-   "tags": {
-    "2": [
-     "whoisconway"
-    ],
-    "3": [
-     "danz_cm"
-    ],
-    "4": [
-     "dontoliver"
-    ]
-   },
+   "id": "2026-11-19",
+   "caption": "One year ago this week 🎧\n\nDe La Soul came back with Cabin In The Sky, their first album in nine years. Same Friday, Tems surprise dropped Love Is A Kingdom, Sharp Pins put out 21 songs of jangly Chicago guitar pop, and 1300SAINT dropped SAVIOR.\n\nWhich of these did you find first?\n\nRiffex is where fans back the artists they find early. Try the beta, link in bio.\n\n#rewind #delasoul #tems #sharppins #1300saint",
    "slides": [
     {
-     "type": "calendar",
-     "cat": "Up next",
-     "title": "Coming up<br>next",
-     "sub": "Two this Friday, one big one in December",
-     "ask": "Which one's first in your queue?",
-     "rows": [
+     "type": "carousel",
+     "cat": "Rewind",
+     "title": "A year ago<br>this week",
+     "sub": "All out Nov 21, 2025",
+     "index": 0,
+     "ask": "Which guest verse hit hardest?",
+     "items": [
       {
-       "day": "Fri",
-       "date": "20",
-       "img": "assets/otis.jpg",
-       "artist": "Conway The Machine",
-       "title": "OTIS",
-       "meta": "Album · 11 songs",
-       "play": "Sarah!"
+       "img": "assets/cabin.jpg",
+       "kicker": "Cabin In The Sky",
+       "artist": "De La Soul",
+       "line": "Album · feat. Nas, Q Tip, Black Thought"
       },
       {
-       "day": "Fri",
-       "date": "20",
-       "img": "assets/danz_album.jpg",
-       "artist": "Danz CM",
-       "title": "The Interdimensional Extraterrestrial Time Travelers Society",
-       "meta": "Album · 12 songs",
-       "play": "Animal"
+       "img": "assets/kingdom.jpg",
+       "kicker": "Love Is A Kingdom",
+       "artist": "Tems",
+       "line": "EP · 7 songs"
       },
       {
-       "day": "Dec",
-       "date": "4",
-       "img": "assets/pwtb.jpg",
-       "artist": "Don Toliver",
-       "title": "Nitrous",
-       "meta": "Album",
-       "play": "Party With The Boys"
+       "img": "assets/balloon.jpg",
+       "kicker": "Balloon Balloon Balloon",
+       "artist": "Sharp Pins",
+       "line": "Album · 21 songs"
+      },
+      {
+       "img": "assets/savior.jpg",
+       "kicker": "SAVIOR",
+       "artist": "1300SAINT",
+       "line": "Album · 17 songs"
       }
      ]
     },
     {
-     "type": "hero",
-     "cat": "Up next",
-     "img": "assets/otis.jpg",
-     "chip": "Conway The Machine",
-     "kicker": "This Friday",
-     "headline": "OTIS",
-     "line": "Three Wu Tang legends and, somehow, the Goo Goo Dolls.",
-     "ask": "Which feature are you skipping to?"
+     "type": "carousel",
+     "cat": "Rewind",
+     "title": "A year ago<br>this week",
+     "sub": "All out Nov 21, 2025",
+     "index": 1,
+     "ask": "Which song off this EP stuck with you?",
+     "items": [
+      {
+       "img": "assets/cabin.jpg",
+       "kicker": "Cabin In The Sky",
+       "artist": "De La Soul",
+       "line": "Album · feat. Nas, Q Tip, Black Thought"
+      },
+      {
+       "img": "assets/kingdom.jpg",
+       "kicker": "Love Is A Kingdom",
+       "artist": "Tems",
+       "line": "EP · 7 songs"
+      },
+      {
+       "img": "assets/balloon.jpg",
+       "kicker": "Balloon Balloon Balloon",
+       "artist": "Sharp Pins",
+       "line": "Album · 21 songs"
+      },
+      {
+       "img": "assets/savior.jpg",
+       "kicker": "SAVIOR",
+       "artist": "1300SAINT",
+       "line": "Album · 17 songs"
+      }
+     ]
     },
     {
-     "type": "hero",
-     "cat": "Up next",
-     "img": "assets/danz_album.jpg",
-     "pos": "center 30%",
-     "chip": "Danz CM",
-     "kicker": "This Friday",
-     "headline": "The Interdimensional Extraterrestrial Time Travelers Society",
-     "size": 56,
-     "line": "The voice behind Computer Magic, back with 12 songs of cosmic synth pop.",
-     "ask": "Who remembers Computer Magic?"
+     "type": "carousel",
+     "cat": "Rewind",
+     "title": "A year ago<br>this week",
+     "sub": "All out Nov 21, 2025",
+     "index": 2,
+     "ask": "Who had Sharp Pins on their radar?",
+     "items": [
+      {
+       "img": "assets/cabin.jpg",
+       "kicker": "Cabin In The Sky",
+       "artist": "De La Soul",
+       "line": "Album · feat. Nas, Q Tip, Black Thought"
+      },
+      {
+       "img": "assets/kingdom.jpg",
+       "kicker": "Love Is A Kingdom",
+       "artist": "Tems",
+       "line": "EP · 7 songs"
+      },
+      {
+       "img": "assets/balloon.jpg",
+       "kicker": "Balloon Balloon Balloon",
+       "artist": "Sharp Pins",
+       "line": "Album · 21 songs"
+      },
+      {
+       "img": "assets/savior.jpg",
+       "kicker": "SAVIOR",
+       "artist": "1300SAINT",
+       "line": "Album · 17 songs"
+      }
+     ]
     },
     {
-     "type": "hero",
-     "cat": "Up next",
-     "img": "assets/pwtb.jpg",
-     "chip": "Don Toliver",
-     "kicker": "Friday, Dec 4",
-     "headline": "Nitrous",
-     "line": "His follow up to Octane. He plays SNL the next night.",
-     "ask": "Is Nitrous topping Octane?",
-     "pos": "15% 50%",
-     "play": "Party With The Boys · out now"
+     "type": "carousel",
+     "cat": "Rewind",
+     "title": "A year ago<br>this week",
+     "sub": "All out Nov 21, 2025",
+     "index": 3,
+     "ask": "Who was playing 1300SAINT back then?",
+     "items": [
+      {
+       "img": "assets/cabin.jpg",
+       "kicker": "Cabin In The Sky",
+       "artist": "De La Soul",
+       "line": "Album · feat. Nas, Q Tip, Black Thought"
+      },
+      {
+       "img": "assets/kingdom.jpg",
+       "kicker": "Love Is A Kingdom",
+       "artist": "Tems",
+       "line": "EP · 7 songs"
+      },
+      {
+       "img": "assets/balloon.jpg",
+       "kicker": "Balloon Balloon Balloon",
+       "artist": "Sharp Pins",
+       "line": "Album · 21 songs"
+      },
+      {
+       "img": "assets/savior.jpg",
+       "kicker": "SAVIOR",
+       "artist": "1300SAINT",
+       "line": "Album · 17 songs"
+      }
+     ]
+    },
+    {
+     "type": "question",
+     "cat": "Your turn",
+     "question": "Still in<br>your rotation?",
+     "sub": "One year later, which of these do you still play?",
+     "imgs": [
+      "assets/cabin.jpg",
+      "assets/kingdom.jpg",
+      "assets/balloon.jpg",
+      "assets/savior.jpg"
+     ],
+     "placeholder": "Still playing...",
+     "ask": "Tell us in the comments"
     }
    ]
   }
