@@ -1,158 +1,372 @@
 {
  "posts": [
   {
-   "id": "2026-11-19",
-   "caption": "One year ago this week 🎧\n\nDe La Soul came back with Cabin In The Sky, their first album in nine years. Same Friday, Tems surprise dropped Love Is A Kingdom, Sharp Pins put out 21 songs of jangly Chicago guitar pop, and 1300SAINT dropped SAVIOR.\n\nWhich of these did you find first?\n\nRiffex is where fans back the artists they find early. Try the beta, link in bio.\n\n#rewind #delasoul #tems #sharppins #1300saint",
+   "id": "2026-11-20",
+   "caption": "New Music Friday is here 🎮\n\nThe GTA VI album finally dropped with 34 songs, and Rema came through with Wizkid. Underneath that: Mez's debut with J. Cole and Anderson .Paak, Fergie Baby repping Harlem with Cam'ron, Fly Anakin and Real Bad Man's Bad Blade, a short one from Blu & Sinopsis, and 17 new songs from Summrs.\n\nWhat are you playing first this weekend?\n\nRiffex is for fans who find artists early. Get on the waitlist at riffex.app.\n\n#newmusicfriday #newmusic #gta6 #rema #undergroundhiphop",
    "slides": [
     {
      "type": "carousel",
-     "cat": "Rewind",
-     "title": "A year ago<br>this week",
-     "sub": "All out Nov 21, 2025",
+     "cat": "The Drop",
+     "title": "New this Friday",
+     "sub": "All out Nov 20",
      "index": 0,
-     "ask": "Which guest verse hit hardest?",
+     "ask": "Which GTA song are you running first?",
      "items": [
       {
-       "img": "assets/cabin.jpg",
-       "kicker": "Cabin In The Sky",
-       "artist": "De La Soul",
-       "line": "Album · feat. Nas, Q Tip, Black Thought"
+       "img": "assets/gta.jpg",
+       "kicker": "GTA VI: The Album",
+       "artist": "Grand Theft Auto VI",
+       "line": "Soundtrack · 34 songs · Carti, Travis Scott, SZA"
       },
       {
-       "img": "assets/kingdom.jpg",
-       "kicker": "Love Is A Kingdom",
-       "artist": "Tems",
-       "line": "EP · 7 songs"
+       "img": "assets/rema.jpg",
+       "kicker": "E-Mortal Boy",
+       "artist": "Rema",
+       "line": "7 songs · feat. Wizkid"
       },
       {
-       "img": "assets/balloon.jpg",
-       "kicker": "Balloon Balloon Balloon",
-       "artist": "Sharp Pins",
-       "line": "Album · 21 songs"
+       "img": "assets/mez.jpg",
+       "kicker": "Electric Future Gangster",
+       "artist": "Mez",
+       "line": "Debut album · feat. J. Cole, Anderson .Paak"
       },
       {
-       "img": "assets/savior.jpg",
-       "kicker": "SAVIOR",
-       "artist": "1300SAINT",
+       "img": "assets/fergie.jpg",
+       "kicker": "GOD IS FROM HARLEM",
+       "artist": "Fergie Baby",
+       "line": "Debut album · feat. Cam'ron, Max B, Dave East"
+      },
+      {
+       "img": "assets/blade.jpg",
+       "kicker": "Bad Blade",
+       "artist": "Fly Anakin & Real Bad Man",
+       "line": "Album · feat. Boldy James, Elucid"
+      },
+      {
+       "img": "assets/blu.jpg",
+       "kicker": "One More Story",
+       "artist": "Blu & Sinopsis",
+       "line": "5 songs + instrumentals"
+      },
+      {
+       "img": "assets/summrs.jpg",
+       "kicker": "BADMAN",
+       "artist": "Summrs",
        "line": "Album · 17 songs"
       }
      ]
     },
     {
      "type": "carousel",
-     "cat": "Rewind",
-     "title": "A year ago<br>this week",
-     "sub": "All out Nov 21, 2025",
+     "cat": "The Drop",
+     "title": "New this Friday",
+     "sub": "All out Nov 20",
      "index": 1,
-     "ask": "Which song off this EP stuck with you?",
+     "ask": "Rema and Wizkid on one song. You in?",
      "items": [
       {
-       "img": "assets/cabin.jpg",
-       "kicker": "Cabin In The Sky",
-       "artist": "De La Soul",
-       "line": "Album · feat. Nas, Q Tip, Black Thought"
+       "img": "assets/gta.jpg",
+       "kicker": "GTA VI: The Album",
+       "artist": "Grand Theft Auto VI",
+       "line": "Soundtrack · 34 songs · Carti, Travis Scott, SZA"
       },
       {
-       "img": "assets/kingdom.jpg",
-       "kicker": "Love Is A Kingdom",
-       "artist": "Tems",
-       "line": "EP · 7 songs"
+       "img": "assets/rema.jpg",
+       "kicker": "E-Mortal Boy",
+       "artist": "Rema",
+       "line": "7 songs · feat. Wizkid"
       },
       {
-       "img": "assets/balloon.jpg",
-       "kicker": "Balloon Balloon Balloon",
-       "artist": "Sharp Pins",
-       "line": "Album · 21 songs"
+       "img": "assets/mez.jpg",
+       "kicker": "Electric Future Gangster",
+       "artist": "Mez",
+       "line": "Debut album · feat. J. Cole, Anderson .Paak"
       },
       {
-       "img": "assets/savior.jpg",
-       "kicker": "SAVIOR",
-       "artist": "1300SAINT",
+       "img": "assets/fergie.jpg",
+       "kicker": "GOD IS FROM HARLEM",
+       "artist": "Fergie Baby",
+       "line": "Debut album · feat. Cam'ron, Max B, Dave East"
+      },
+      {
+       "img": "assets/blade.jpg",
+       "kicker": "Bad Blade",
+       "artist": "Fly Anakin & Real Bad Man",
+       "line": "Album · feat. Boldy James, Elucid"
+      },
+      {
+       "img": "assets/blu.jpg",
+       "kicker": "One More Story",
+       "artist": "Blu & Sinopsis",
+       "line": "5 songs + instrumentals"
+      },
+      {
+       "img": "assets/summrs.jpg",
+       "kicker": "BADMAN",
+       "artist": "Summrs",
        "line": "Album · 17 songs"
       }
      ]
     },
     {
      "type": "carousel",
-     "cat": "Rewind",
-     "title": "A year ago<br>this week",
-     "sub": "All out Nov 21, 2025",
+     "cat": "The Drop",
+     "title": "New this Friday",
+     "sub": "All out Nov 20",
      "index": 2,
-     "ask": "Who had Sharp Pins on their radar?",
+     "ask": "Did you have Mez on your radar?",
      "items": [
       {
-       "img": "assets/cabin.jpg",
-       "kicker": "Cabin In The Sky",
-       "artist": "De La Soul",
-       "line": "Album · feat. Nas, Q Tip, Black Thought"
+       "img": "assets/gta.jpg",
+       "kicker": "GTA VI: The Album",
+       "artist": "Grand Theft Auto VI",
+       "line": "Soundtrack · 34 songs · Carti, Travis Scott, SZA"
       },
       {
-       "img": "assets/kingdom.jpg",
-       "kicker": "Love Is A Kingdom",
-       "artist": "Tems",
-       "line": "EP · 7 songs"
+       "img": "assets/rema.jpg",
+       "kicker": "E-Mortal Boy",
+       "artist": "Rema",
+       "line": "7 songs · feat. Wizkid"
       },
       {
-       "img": "assets/balloon.jpg",
-       "kicker": "Balloon Balloon Balloon",
-       "artist": "Sharp Pins",
-       "line": "Album · 21 songs"
+       "img": "assets/mez.jpg",
+       "kicker": "Electric Future Gangster",
+       "artist": "Mez",
+       "line": "Debut album · feat. J. Cole, Anderson .Paak"
       },
       {
-       "img": "assets/savior.jpg",
-       "kicker": "SAVIOR",
-       "artist": "1300SAINT",
+       "img": "assets/fergie.jpg",
+       "kicker": "GOD IS FROM HARLEM",
+       "artist": "Fergie Baby",
+       "line": "Debut album · feat. Cam'ron, Max B, Dave East"
+      },
+      {
+       "img": "assets/blade.jpg",
+       "kicker": "Bad Blade",
+       "artist": "Fly Anakin & Real Bad Man",
+       "line": "Album · feat. Boldy James, Elucid"
+      },
+      {
+       "img": "assets/blu.jpg",
+       "kicker": "One More Story",
+       "artist": "Blu & Sinopsis",
+       "line": "5 songs + instrumentals"
+      },
+      {
+       "img": "assets/summrs.jpg",
+       "kicker": "BADMAN",
+       "artist": "Summrs",
        "line": "Album · 17 songs"
       }
      ]
     },
     {
      "type": "carousel",
-     "cat": "Rewind",
-     "title": "A year ago<br>this week",
-     "sub": "All out Nov 21, 2025",
+     "cat": "The Drop",
+     "title": "New this Friday",
+     "sub": "All out Nov 20",
      "index": 3,
-     "ask": "Who was playing 1300SAINT back then?",
+     "ask": "Which Harlem feature are you skipping to?",
      "items": [
       {
-       "img": "assets/cabin.jpg",
-       "kicker": "Cabin In The Sky",
-       "artist": "De La Soul",
-       "line": "Album · feat. Nas, Q Tip, Black Thought"
+       "img": "assets/gta.jpg",
+       "kicker": "GTA VI: The Album",
+       "artist": "Grand Theft Auto VI",
+       "line": "Soundtrack · 34 songs · Carti, Travis Scott, SZA"
       },
       {
-       "img": "assets/kingdom.jpg",
-       "kicker": "Love Is A Kingdom",
-       "artist": "Tems",
-       "line": "EP · 7 songs"
+       "img": "assets/rema.jpg",
+       "kicker": "E-Mortal Boy",
+       "artist": "Rema",
+       "line": "7 songs · feat. Wizkid"
       },
       {
-       "img": "assets/balloon.jpg",
-       "kicker": "Balloon Balloon Balloon",
-       "artist": "Sharp Pins",
-       "line": "Album · 21 songs"
+       "img": "assets/mez.jpg",
+       "kicker": "Electric Future Gangster",
+       "artist": "Mez",
+       "line": "Debut album · feat. J. Cole, Anderson .Paak"
       },
       {
-       "img": "assets/savior.jpg",
-       "kicker": "SAVIOR",
-       "artist": "1300SAINT",
+       "img": "assets/fergie.jpg",
+       "kicker": "GOD IS FROM HARLEM",
+       "artist": "Fergie Baby",
+       "line": "Debut album · feat. Cam'ron, Max B, Dave East"
+      },
+      {
+       "img": "assets/blade.jpg",
+       "kicker": "Bad Blade",
+       "artist": "Fly Anakin & Real Bad Man",
+       "line": "Album · feat. Boldy James, Elucid"
+      },
+      {
+       "img": "assets/blu.jpg",
+       "kicker": "One More Story",
+       "artist": "Blu & Sinopsis",
+       "line": "5 songs + instrumentals"
+      },
+      {
+       "img": "assets/summrs.jpg",
+       "kicker": "BADMAN",
+       "artist": "Summrs",
        "line": "Album · 17 songs"
       }
      ]
     },
     {
-     "type": "question",
-     "cat": "Your turn",
-     "question": "Still in<br>your rotation?",
-     "sub": "One year later, which of these do you still play?",
-     "imgs": [
-      "assets/cabin.jpg",
-      "assets/kingdom.jpg",
-      "assets/balloon.jpg",
-      "assets/savior.jpg"
-     ],
-     "placeholder": "Still playing...",
-     "ask": "Tell us in the comments"
+     "type": "carousel",
+     "cat": "The Drop",
+     "title": "New this Friday",
+     "sub": "All out Nov 20",
+     "index": 4,
+     "ask": "Who wins Weird Flex: Fly Anakin or Boldy?",
+     "items": [
+      {
+       "img": "assets/gta.jpg",
+       "kicker": "GTA VI: The Album",
+       "artist": "Grand Theft Auto VI",
+       "line": "Soundtrack · 34 songs · Carti, Travis Scott, SZA"
+      },
+      {
+       "img": "assets/rema.jpg",
+       "kicker": "E-Mortal Boy",
+       "artist": "Rema",
+       "line": "7 songs · feat. Wizkid"
+      },
+      {
+       "img": "assets/mez.jpg",
+       "kicker": "Electric Future Gangster",
+       "artist": "Mez",
+       "line": "Debut album · feat. J. Cole, Anderson .Paak"
+      },
+      {
+       "img": "assets/fergie.jpg",
+       "kicker": "GOD IS FROM HARLEM",
+       "artist": "Fergie Baby",
+       "line": "Debut album · feat. Cam'ron, Max B, Dave East"
+      },
+      {
+       "img": "assets/blade.jpg",
+       "kicker": "Bad Blade",
+       "artist": "Fly Anakin & Real Bad Man",
+       "line": "Album · feat. Boldy James, Elucid"
+      },
+      {
+       "img": "assets/blu.jpg",
+       "kicker": "One More Story",
+       "artist": "Blu & Sinopsis",
+       "line": "5 songs + instrumentals"
+      },
+      {
+       "img": "assets/summrs.jpg",
+       "kicker": "BADMAN",
+       "artist": "Summrs",
+       "line": "Album · 17 songs"
+      }
+     ]
+    },
+    {
+     "type": "carousel",
+     "cat": "The Drop",
+     "title": "New this Friday",
+     "sub": "All out Nov 20",
+     "index": 5,
+     "ask": "Been riding with Blu since the early days?",
+     "items": [
+      {
+       "img": "assets/gta.jpg",
+       "kicker": "GTA VI: The Album",
+       "artist": "Grand Theft Auto VI",
+       "line": "Soundtrack · 34 songs · Carti, Travis Scott, SZA"
+      },
+      {
+       "img": "assets/rema.jpg",
+       "kicker": "E-Mortal Boy",
+       "artist": "Rema",
+       "line": "7 songs · feat. Wizkid"
+      },
+      {
+       "img": "assets/mez.jpg",
+       "kicker": "Electric Future Gangster",
+       "artist": "Mez",
+       "line": "Debut album · feat. J. Cole, Anderson .Paak"
+      },
+      {
+       "img": "assets/fergie.jpg",
+       "kicker": "GOD IS FROM HARLEM",
+       "artist": "Fergie Baby",
+       "line": "Debut album · feat. Cam'ron, Max B, Dave East"
+      },
+      {
+       "img": "assets/blade.jpg",
+       "kicker": "Bad Blade",
+       "artist": "Fly Anakin & Real Bad Man",
+       "line": "Album · feat. Boldy James, Elucid"
+      },
+      {
+       "img": "assets/blu.jpg",
+       "kicker": "One More Story",
+       "artist": "Blu & Sinopsis",
+       "line": "5 songs + instrumentals"
+      },
+      {
+       "img": "assets/summrs.jpg",
+       "kicker": "BADMAN",
+       "artist": "Summrs",
+       "line": "Album · 17 songs"
+      }
+     ]
+    },
+    {
+     "type": "carousel",
+     "cat": "The Drop",
+     "title": "New this Friday",
+     "sub": "All out Nov 20",
+     "index": 6,
+     "ask": "Summrs fans, how many times have you run it?",
+     "items": [
+      {
+       "img": "assets/gta.jpg",
+       "kicker": "GTA VI: The Album",
+       "artist": "Grand Theft Auto VI",
+       "line": "Soundtrack · 34 songs · Carti, Travis Scott, SZA"
+      },
+      {
+       "img": "assets/rema.jpg",
+       "kicker": "E-Mortal Boy",
+       "artist": "Rema",
+       "line": "7 songs · feat. Wizkid"
+      },
+      {
+       "img": "assets/mez.jpg",
+       "kicker": "Electric Future Gangster",
+       "artist": "Mez",
+       "line": "Debut album · feat. J. Cole, Anderson .Paak"
+      },
+      {
+       "img": "assets/fergie.jpg",
+       "kicker": "GOD IS FROM HARLEM",
+       "artist": "Fergie Baby",
+       "line": "Debut album · feat. Cam'ron, Max B, Dave East"
+      },
+      {
+       "img": "assets/blade.jpg",
+       "kicker": "Bad Blade",
+       "artist": "Fly Anakin & Real Bad Man",
+       "line": "Album · feat. Boldy James, Elucid"
+      },
+      {
+       "img": "assets/blu.jpg",
+       "kicker": "One More Story",
+       "artist": "Blu & Sinopsis",
+       "line": "5 songs + instrumentals"
+      },
+      {
+       "img": "assets/summrs.jpg",
+       "kicker": "BADMAN",
+       "artist": "Summrs",
+       "line": "Album · 17 songs"
+      }
+     ]
     }
    ]
   }
