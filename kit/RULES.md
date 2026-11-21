@@ -49,11 +49,12 @@ About once a week, swap a slot for "Inside Riffex" (inside type, then one produc
 - Never put a real artist next to Riff prices or credits, and never imply any real artist is on Riffex or endorses it.
 
 ## Tagging artists (tags.json)
-- Tag the artists featured, on the slide that shows them: queue/<date>/tags.json like {"2": ["handle"], "3": ["handle2"]} (slide numbers start at 1).
-- Only the artist's real account: confirm it from a link on their official site, Bandcamp, Linktree or label page. If you can't confirm the handle, don't tag.
-- Small artists matter most here (a tag from us means more to them), so always try to confirm and tag every small artist in the post.
+- Tag every featured artist on the slide that shows them, small and rising artists first: queue/<date>/tags.json like {"2": [{"handle": "danz_cm", "artist": "Danz CM"}], "3": [{"handle": "whoisconway", "artist": "Conway The Machine"}]} (slide numbers start at 1). Always include the artist name: the posting script uses it to check the account.
+- The artist does NOT need a verified badge (Milo, Nov 21). An account counts as theirs if it names them or links their music (SoundCloud, Spotify, Bandcamp, Apple Music, YouTube, Linktree). Find the handle with the best evidence you can reach, in this order: the confirmed list below; an instagram.com link on the artist's own pages (SoundCloud, Spotify, Bandcamp, Linktree, official site, label page), including links visible in search results for those pages; MusicBrainz artist URL relations (musicbrainz.org/ws/2/artist/<mbid> with inc url-rels and fmt json); Wikidata (property P2003, Instagram username); a news article that links the account. Write the source in checks.md. If two different accounts look plausible, leave that artist untagged.
+- Never skip tagging just because artist sites are blocked from your network: use the other sources above. Right before posting, scripts/post.py double checks each handle with Instagram's own API: it keeps a tag when the account names the artist or links their music, drops it when the account clearly isn't them, drops handles Instagram doesn't recognize (one at a time, so the others stay), and never lets a bad tag stop the post. What it kept and dropped is in queue/<date>/posted.json under "tags".
 - Max 5 tags per post. Never tag the same small artist more than once every 14 days (check POSTED_LOG.md). Never tag in negative or beef stories.
-- Also @mention the main artist once in the caption, only with a confirmed handle.
+- @mention artists in the caption only with a handle from the confirmed list or one whose source is an official link (a wrong @mention can't be dropped automatically). The photo tags are what notify the artist.
+- At the start of each run, add any handle the last post actually tagged (posted.json "tags" "tagged") to the confirmed list below.
 Confirmed handles so far: @whoisconway (Conway The Machine) @danz_cm (Danz CM) @fakemink @skepta @lilpeep @laflare1017 (Gucci Mane) @tierrawhack @rexv2s @yeat @dontoliver @cordae @champagnepapi (Drake) @lilbaby @yungmiami305 @metroboomin. NOT the artist: @glaive, @tiffanyday.
 
 ## Caption
@@ -72,7 +73,7 @@ Write queue/<date>/checks.md (post.py ignores it) with these sections, and fix a
 5. Words: no trivia or flat facts, nothing the slide already shows, no em dashes or hyphens, no banned words, every bottom pill is a real question for that slide, and it doesn't repeat the caption's question.
 6. Art: each image is the official art for exactly what the slide names (or a single shown with an "out now" play chip, see Images). No image is used twice on one slide.
 7. Structure: every overview item has its own slide, in the same order; at least one small or rising artist; full titles, nothing cut off or overlapping (look at every rendered slide).
-8. Tags: each handle confirmed from an official link (write the link), max 5, small artists not tagged in the last 14 days, and every tagged artist is @mentioned in the caption.
+8. Tags: tags.json lists every featured artist you found a handle for (handle, artist name, source in checks.md), max 5, small artists not tagged in the last 14 days, and caption @mentions only from the confirmed list or an official link.
 
 ## Publishing and account safety (most important)
 - Commit queue/YYYY-MM-DD/ (today, New York time): 1.jpg, 2.jpg ... in slide order, caption.txt, and tags.json if tagging. Then push to main. The "Post to Instagram" Action posts it from 5 PM New York time through Instagram's official publishing API.
