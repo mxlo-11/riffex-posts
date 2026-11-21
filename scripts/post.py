@@ -106,33 +106,83 @@ def publish(day):
     urls = [f"{RAW}/{folder.as_posix()}/{p.name}" for p in images]
     tags = json.loads((folder / "tags.json").read_text()) if (folder / "tags.json").exists() else {}
     budget = 5
+    tag_log = {"tagged": [], "dropped": []}
+    me_id = call("GET", "me", fields="user_id").get("user_id") if tags else None
 
-    def user_tags(slide_no):
-        nonlocal budget
-        names = [n.lstrip("@").strip() for n in tags.get(str(slide_no), []) if n.strip()][:budget]
-        budget -= len(names)
+    def entries(slide_no):
+        # tags.json values may be ["handle"] or [{"handle": "x", "artist": "Name"}]
+        out = []
+        for x in tags.get(str(slide_no), []):
+            h, a = (str(x.get("handle", "")), str(x.get("artist", ""))) if isinstance(x, dict) else (str(x), "")
+            h = h.lstrip("@").strip()
+            if h:
+                out.append((h, a))
+        return out
+
+    def looks_like_artist(handle, artist):
+        # Milo, Nov 21: no verified badge needed. The account counts as the artist if it names them or
+        # links their music (SoundCloud, Spotify, Bandcamp...). Instagram's own read only lookup; when it
+        # can't be read (a personal account, or not available for this token) the handle's source stands.
+        if not artist or not me_id:
+            return True
+        r = call("GET", me_id, soft=True, fields=f"business_discovery.username({handle}){{username,name,biography,website}}")
+        bd = (r or {}).get("business_discovery")
+        if not bd:
+            return True
+        blob = " ".join(str(bd.get(k, "")) for k in ("username", "name", "biography", "website")).lower()
+        squash = lambda s: "".join(ch for ch in s.lower() if ch.isalnum())
+        if squash(artist) and squash(artist) in squash(blob):
+            return True
+        return any(d in blob for d in ("soundcloud", "spotify", "bandcamp", "music.apple", "youtube", "linktr.ee", "audiomack", "tidal", "deezer"))
+
+    def tag_json(names):
         # spread tags along the lower part of the slide, where the artist name sits
-        return json.dumps([{"username": n, "x": round(0.2 + 0.6 * (k + 0.5) / len(names), 3), "y": 0.82} for k, n in enumerate(names)]) if names else None
+        return json.dumps([{"username": n, "x": round(0.2 + 0.6 * (k + 0.5) / len(names), 3), "y": 0.82} for k, n in enumerate(names)])
+
+    def make_item(slide_no, url, **extra):
+        nonlocal budget
+        names = []
+        for h, a in entries(slide_no):
+            if len(names) >= budget:
+                break
+            if looks_like_artist(h, a):
+                names.append(h)
+            else:
+                tag_log["dropped"].append({"slide": slide_no, "handle": h, "why": "account does not look like the artist"})
+        if names:
+            # all tags first; if Instagram rejects them, try each alone so one bad handle never costs the others
+            good = names
+            r = call("POST", "me/media", soft=True, image_url=url, user_tags=tag_json(names), **extra)
+            if not r:
+                good = []
+                for n in names:
+                    if call("POST", "me/media", soft=True, image_url=url, user_tags=tag_json([n]), **extra):
+                        good.append(n)
+                    else:
+                        tag_log["dropped"].append({"slide": slide_no, "handle": n, "why": "Instagram rejected the username"})
+                if good:
+                    r = call("POST", "me/media", soft=True, image_url=url, user_tags=tag_json(good), **extra)
+            if r:
+                budget -= len(good)
+                tag_log["tagged"] += [{"slide": slide_no, "handle": n} for n in good]
+                return r
+            print(f"Slide {slide_no}: posting it without tags")
+        return call("POST", "me/media", image_url=url, **extra)
 
     if len(urls) == 1:
-        t = user_tags(1)
-        r = call("POST", "me/media", soft=bool(t), image_url=urls[0], caption=caption, **({"user_tags": t} if t else {}))
-        c = (r or call("POST", "me/media", image_url=urls[0], caption=caption))["id"]
+        c = make_item(1, urls[0], caption=caption)["id"]
     else:
         kids = []
         for n, u in enumerate(urls[:10], 1):
-            t = user_tags(n)
-            r = call("POST", "me/media", soft=bool(t), image_url=u, is_carousel_item="true", **({"user_tags": t} if t else {}))
-            if r is None:
-                print(f"Slide {n}: tags rejected, posting it without them")
-                r = call("POST", "me/media", image_url=u, is_carousel_item="true")
-            k = r["id"]
+            k = make_item(n, u, is_carousel_item="true")["id"]
             wait_ready(k)
             kids.append(k)
         c = call("POST", "me/media", media_type="CAROUSEL", children=",".join(kids), caption=caption)["id"]
+    if tags:
+        print("Tags:", json.dumps(tag_log))
     wait_ready(c)
     media = call("POST", "me/media_publish", creation_id=c)["id"]
-    (folder / "posted.json").write_text(json.dumps({"media_id": media, "posted_at": datetime.datetime.utcnow().isoformat() + "Z", "slides": len(urls)}, indent=2))
+    (folder / "posted.json").write_text(json.dumps({"media_id": media, "posted_at": datetime.datetime.utcnow().isoformat() + "Z", "slides": len(urls), "tags": tag_log}, indent=2))
     print(f"Posted {day}: media {media} ({len(urls)} slide(s))")
 
 if __name__ == "__main__":
