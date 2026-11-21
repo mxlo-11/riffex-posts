@@ -10,7 +10,7 @@ from playwright.async_api import async_playwright
 
 ROOT = pathlib.Path(__file__).resolve().parent
 F = ROOT / "node_modules/@fontsource"
-WM = (ROOT / "brand/wordmark.svg").read_text().replace('width="1344" height="600"', 'width="98" height="44"')
+WM = __import__("re").sub(r'viewBox="[^"]*"', 'viewBox="101 92 1151 370"', (ROOT / "brand/wordmark.svg").read_text().replace('width="1344" height="600"', 'width="174" height="56" style="display:block"'), count=1)  # Milo, Nov 21: cropped to the letters and pick, about as tall as the pills
 PICK = 'M50 96 C38 90 8 52 8 30 C8 12 26 4 50 4 C74 4 92 12 92 30 C92 52 62 90 50 96 Z'
 ARROW = '<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#090B0C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
 PLAY = '<svg width="22" height="22" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="#F2EFE8"/></svg>'
@@ -50,7 +50,7 @@ def counter(n, i):
         return f'<span class="pill">{i + 1}/{n}</span>'
     return '<span class="pill" style="padding:0 20px;gap:6px">' + "".join(heart(k == i) for k in range(n)) + '</span>'
 def header(cat, n, i):
-    return (f'<div class="abs" style="left:64px;top:64px">{WM}</div>'
+    return (f'<div class="abs" style="left:64px;top:57px;line-height:0">{WM}</div>'
             f'<div class="abs" style="right:64px;top:54px;display:flex;gap:12px"><span class="pill">{e(cat)}</span>{counter(n, i)}</div>')
 def cta(s): return f'<div class="cta">{e(s["ask"])}<span>{ARROW}</span></div>' if s.get("ask") else ""
 def stage(img=None):
