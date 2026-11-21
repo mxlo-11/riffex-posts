@@ -1,372 +1,157 @@
 {
  "posts": [
   {
-   "id": "2026-11-20",
-   "caption": "New Music Friday is here 🎮\n\nThe GTA VI album finally dropped with 34 songs, and Rema came through with Wizkid. Underneath that: Mez's debut with J. Cole and Anderson .Paak, Fergie Baby repping Harlem with Cam'ron, Fly Anakin and Real Bad Man's Bad Blade, a short one from Blu & Sinopsis, and 17 new songs from Summrs.\n\nWhat are you playing first this weekend?\n\nRiffex is for fans who find artists early. Get on the waitlist at riffex.app.\n\n#newmusicfriday #newmusic #gta6 #rema #undergroundhiphop",
+   "id": "2026-11-21",
+   "caption": "Four projects you might've slept on 🔦\n\nPolo Perks dropped 3500 on Friday, 21 songs with Wiki on 616. The week before, Belly Gang Kushington brought out 21 Savage, Summer Walker and Wale, ZelooperZ linked with Black Noi$e and Danny Brown, and Boldy James brought half of Detroit along.\n\nWhich one are you starting with?\n\nBack the artists you find first. The Riffex beta is open, link in bio.\n\n#undergroundhiphop #newmusic #detroitrap #atlantarap #risingartists",
    "slides": [
     {
      "type": "carousel",
-     "cat": "The Drop",
-     "title": "New this Friday",
-     "sub": "All out Nov 20",
+     "cat": "Rising",
+     "title": "Under the radar",
+     "sub": "Out the last two Fridays",
      "index": 0,
-     "ask": "Which GTA song are you running first?",
+     "ask": "Which 3500 song are you running back?",
      "items": [
       {
-       "img": "assets/gta.jpg",
-       "kicker": "GTA VI: The Album",
-       "artist": "Grand Theft Auto VI",
-       "line": "Soundtrack · 34 songs · Carti, Travis Scott, SZA"
+       "img": "assets/polo.jpg",
+       "kicker": "3500",
+       "artist": "Polo Perks",
+       "line": "Album · 21 songs · feat. Wiki, Ghost Orchard"
       },
       {
-       "img": "assets/rema.jpg",
-       "kicker": "E-Mortal Boy",
-       "artist": "Rema",
-       "line": "7 songs · feat. Wizkid"
+       "img": "assets/belly.jpg",
+       "kicker": "GOOD DOPE SELL ITSELF",
+       "artist": "Belly Gang Kushington",
+       "line": "Album · feat. 21 Savage, Summer Walker, Wale"
       },
       {
-       "img": "assets/mez.jpg",
-       "kicker": "Electric Future Gangster",
-       "artist": "Mez",
-       "line": "Debut album · feat. J. Cole, Anderson .Paak"
+       "img": "assets/zelooperz.jpg",
+       "kicker": "Pin Breakers",
+       "artist": "ZelooperZ",
+       "line": "Album · prod. Black Noi$e · feat. Danny Brown"
       },
       {
-       "img": "assets/fergie.jpg",
-       "kicker": "GOD IS FROM HARLEM",
-       "artist": "Fergie Baby",
-       "line": "Debut album · feat. Cam'ron, Max B, Dave East"
-      },
-      {
-       "img": "assets/blade.jpg",
-       "kicker": "Bad Blade",
-       "artist": "Fly Anakin & Real Bad Man",
-       "line": "Album · feat. Boldy James, Elucid"
-      },
-      {
-       "img": "assets/blu.jpg",
-       "kicker": "One More Story",
-       "artist": "Blu & Sinopsis",
-       "line": "5 songs + instrumentals"
-      },
-      {
-       "img": "assets/summrs.jpg",
-       "kicker": "BADMAN",
-       "artist": "Summrs",
-       "line": "Album · 17 songs"
+       "img": "assets/boldy.jpg",
+       "kicker": "Bentayga Genesis",
+       "artist": "Boldy James",
+       "line": "Album · feat. Sada Baby, Icewear Vezzo"
       }
      ]
     },
     {
      "type": "carousel",
-     "cat": "The Drop",
-     "title": "New this Friday",
-     "sub": "All out Nov 20",
+     "cat": "Rising",
+     "title": "Under the radar",
+     "sub": "Out the last two Fridays",
      "index": 1,
-     "ask": "Rema and Wizkid on one song. You in?",
+     "ask": "21 Savage or Summer Walker: whose verse wins?",
      "items": [
       {
-       "img": "assets/gta.jpg",
-       "kicker": "GTA VI: The Album",
-       "artist": "Grand Theft Auto VI",
-       "line": "Soundtrack · 34 songs · Carti, Travis Scott, SZA"
+       "img": "assets/polo.jpg",
+       "kicker": "3500",
+       "artist": "Polo Perks",
+       "line": "Album · 21 songs · feat. Wiki, Ghost Orchard"
       },
       {
-       "img": "assets/rema.jpg",
-       "kicker": "E-Mortal Boy",
-       "artist": "Rema",
-       "line": "7 songs · feat. Wizkid"
+       "img": "assets/belly.jpg",
+       "kicker": "GOOD DOPE SELL ITSELF",
+       "artist": "Belly Gang Kushington",
+       "line": "Album · feat. 21 Savage, Summer Walker, Wale"
       },
       {
-       "img": "assets/mez.jpg",
-       "kicker": "Electric Future Gangster",
-       "artist": "Mez",
-       "line": "Debut album · feat. J. Cole, Anderson .Paak"
+       "img": "assets/zelooperz.jpg",
+       "kicker": "Pin Breakers",
+       "artist": "ZelooperZ",
+       "line": "Album · prod. Black Noi$e · feat. Danny Brown"
       },
       {
-       "img": "assets/fergie.jpg",
-       "kicker": "GOD IS FROM HARLEM",
-       "artist": "Fergie Baby",
-       "line": "Debut album · feat. Cam'ron, Max B, Dave East"
-      },
-      {
-       "img": "assets/blade.jpg",
-       "kicker": "Bad Blade",
-       "artist": "Fly Anakin & Real Bad Man",
-       "line": "Album · feat. Boldy James, Elucid"
-      },
-      {
-       "img": "assets/blu.jpg",
-       "kicker": "One More Story",
-       "artist": "Blu & Sinopsis",
-       "line": "5 songs + instrumentals"
-      },
-      {
-       "img": "assets/summrs.jpg",
-       "kicker": "BADMAN",
-       "artist": "Summrs",
-       "line": "Album · 17 songs"
+       "img": "assets/boldy.jpg",
+       "kicker": "Bentayga Genesis",
+       "artist": "Boldy James",
+       "line": "Album · feat. Sada Baby, Icewear Vezzo"
       }
      ]
     },
     {
      "type": "carousel",
-     "cat": "The Drop",
-     "title": "New this Friday",
-     "sub": "All out Nov 20",
+     "cat": "Rising",
+     "title": "Under the radar",
+     "sub": "Out the last two Fridays",
      "index": 2,
-     "ask": "Did you have Mez on your radar?",
+     "ask": "Danny Brown on Pin Breakers. Who's tapped in?",
      "items": [
       {
-       "img": "assets/gta.jpg",
-       "kicker": "GTA VI: The Album",
-       "artist": "Grand Theft Auto VI",
-       "line": "Soundtrack · 34 songs · Carti, Travis Scott, SZA"
+       "img": "assets/polo.jpg",
+       "kicker": "3500",
+       "artist": "Polo Perks",
+       "line": "Album · 21 songs · feat. Wiki, Ghost Orchard"
       },
       {
-       "img": "assets/rema.jpg",
-       "kicker": "E-Mortal Boy",
-       "artist": "Rema",
-       "line": "7 songs · feat. Wizkid"
+       "img": "assets/belly.jpg",
+       "kicker": "GOOD DOPE SELL ITSELF",
+       "artist": "Belly Gang Kushington",
+       "line": "Album · feat. 21 Savage, Summer Walker, Wale"
       },
       {
-       "img": "assets/mez.jpg",
-       "kicker": "Electric Future Gangster",
-       "artist": "Mez",
-       "line": "Debut album · feat. J. Cole, Anderson .Paak"
+       "img": "assets/zelooperz.jpg",
+       "kicker": "Pin Breakers",
+       "artist": "ZelooperZ",
+       "line": "Album · prod. Black Noi$e · feat. Danny Brown"
       },
       {
-       "img": "assets/fergie.jpg",
-       "kicker": "GOD IS FROM HARLEM",
-       "artist": "Fergie Baby",
-       "line": "Debut album · feat. Cam'ron, Max B, Dave East"
-      },
-      {
-       "img": "assets/blade.jpg",
-       "kicker": "Bad Blade",
-       "artist": "Fly Anakin & Real Bad Man",
-       "line": "Album · feat. Boldy James, Elucid"
-      },
-      {
-       "img": "assets/blu.jpg",
-       "kicker": "One More Story",
-       "artist": "Blu & Sinopsis",
-       "line": "5 songs + instrumentals"
-      },
-      {
-       "img": "assets/summrs.jpg",
-       "kicker": "BADMAN",
-       "artist": "Summrs",
-       "line": "Album · 17 songs"
+       "img": "assets/boldy.jpg",
+       "kicker": "Bentayga Genesis",
+       "artist": "Boldy James",
+       "line": "Album · feat. Sada Baby, Icewear Vezzo"
       }
      ]
     },
     {
      "type": "carousel",
-     "cat": "The Drop",
-     "title": "New this Friday",
-     "sub": "All out Nov 20",
+     "cat": "Rising",
+     "title": "Under the radar",
+     "sub": "Out the last two Fridays",
      "index": 3,
-     "ask": "Which Harlem feature are you skipping to?",
+     "ask": "Which Detroit feature hits hardest?",
      "items": [
       {
-       "img": "assets/gta.jpg",
-       "kicker": "GTA VI: The Album",
-       "artist": "Grand Theft Auto VI",
-       "line": "Soundtrack · 34 songs · Carti, Travis Scott, SZA"
+       "img": "assets/polo.jpg",
+       "kicker": "3500",
+       "artist": "Polo Perks",
+       "line": "Album · 21 songs · feat. Wiki, Ghost Orchard"
       },
       {
-       "img": "assets/rema.jpg",
-       "kicker": "E-Mortal Boy",
-       "artist": "Rema",
-       "line": "7 songs · feat. Wizkid"
+       "img": "assets/belly.jpg",
+       "kicker": "GOOD DOPE SELL ITSELF",
+       "artist": "Belly Gang Kushington",
+       "line": "Album · feat. 21 Savage, Summer Walker, Wale"
       },
       {
-       "img": "assets/mez.jpg",
-       "kicker": "Electric Future Gangster",
-       "artist": "Mez",
-       "line": "Debut album · feat. J. Cole, Anderson .Paak"
+       "img": "assets/zelooperz.jpg",
+       "kicker": "Pin Breakers",
+       "artist": "ZelooperZ",
+       "line": "Album · prod. Black Noi$e · feat. Danny Brown"
       },
       {
-       "img": "assets/fergie.jpg",
-       "kicker": "GOD IS FROM HARLEM",
-       "artist": "Fergie Baby",
-       "line": "Debut album · feat. Cam'ron, Max B, Dave East"
-      },
-      {
-       "img": "assets/blade.jpg",
-       "kicker": "Bad Blade",
-       "artist": "Fly Anakin & Real Bad Man",
-       "line": "Album · feat. Boldy James, Elucid"
-      },
-      {
-       "img": "assets/blu.jpg",
-       "kicker": "One More Story",
-       "artist": "Blu & Sinopsis",
-       "line": "5 songs + instrumentals"
-      },
-      {
-       "img": "assets/summrs.jpg",
-       "kicker": "BADMAN",
-       "artist": "Summrs",
-       "line": "Album · 17 songs"
+       "img": "assets/boldy.jpg",
+       "kicker": "Bentayga Genesis",
+       "artist": "Boldy James",
+       "line": "Album · feat. Sada Baby, Icewear Vezzo"
       }
      ]
     },
     {
-     "type": "carousel",
-     "cat": "The Drop",
-     "title": "New this Friday",
-     "sub": "All out Nov 20",
-     "index": 4,
-     "ask": "Who wins Weird Flex: Fly Anakin or Boldy?",
-     "items": [
-      {
-       "img": "assets/gta.jpg",
-       "kicker": "GTA VI: The Album",
-       "artist": "Grand Theft Auto VI",
-       "line": "Soundtrack · 34 songs · Carti, Travis Scott, SZA"
-      },
-      {
-       "img": "assets/rema.jpg",
-       "kicker": "E-Mortal Boy",
-       "artist": "Rema",
-       "line": "7 songs · feat. Wizkid"
-      },
-      {
-       "img": "assets/mez.jpg",
-       "kicker": "Electric Future Gangster",
-       "artist": "Mez",
-       "line": "Debut album · feat. J. Cole, Anderson .Paak"
-      },
-      {
-       "img": "assets/fergie.jpg",
-       "kicker": "GOD IS FROM HARLEM",
-       "artist": "Fergie Baby",
-       "line": "Debut album · feat. Cam'ron, Max B, Dave East"
-      },
-      {
-       "img": "assets/blade.jpg",
-       "kicker": "Bad Blade",
-       "artist": "Fly Anakin & Real Bad Man",
-       "line": "Album · feat. Boldy James, Elucid"
-      },
-      {
-       "img": "assets/blu.jpg",
-       "kicker": "One More Story",
-       "artist": "Blu & Sinopsis",
-       "line": "5 songs + instrumentals"
-      },
-      {
-       "img": "assets/summrs.jpg",
-       "kicker": "BADMAN",
-       "artist": "Summrs",
-       "line": "Album · 17 songs"
-      }
-     ]
-    },
-    {
-     "type": "carousel",
-     "cat": "The Drop",
-     "title": "New this Friday",
-     "sub": "All out Nov 20",
-     "index": 5,
-     "ask": "Been riding with Blu since the early days?",
-     "items": [
-      {
-       "img": "assets/gta.jpg",
-       "kicker": "GTA VI: The Album",
-       "artist": "Grand Theft Auto VI",
-       "line": "Soundtrack · 34 songs · Carti, Travis Scott, SZA"
-      },
-      {
-       "img": "assets/rema.jpg",
-       "kicker": "E-Mortal Boy",
-       "artist": "Rema",
-       "line": "7 songs · feat. Wizkid"
-      },
-      {
-       "img": "assets/mez.jpg",
-       "kicker": "Electric Future Gangster",
-       "artist": "Mez",
-       "line": "Debut album · feat. J. Cole, Anderson .Paak"
-      },
-      {
-       "img": "assets/fergie.jpg",
-       "kicker": "GOD IS FROM HARLEM",
-       "artist": "Fergie Baby",
-       "line": "Debut album · feat. Cam'ron, Max B, Dave East"
-      },
-      {
-       "img": "assets/blade.jpg",
-       "kicker": "Bad Blade",
-       "artist": "Fly Anakin & Real Bad Man",
-       "line": "Album · feat. Boldy James, Elucid"
-      },
-      {
-       "img": "assets/blu.jpg",
-       "kicker": "One More Story",
-       "artist": "Blu & Sinopsis",
-       "line": "5 songs + instrumentals"
-      },
-      {
-       "img": "assets/summrs.jpg",
-       "kicker": "BADMAN",
-       "artist": "Summrs",
-       "line": "Album · 17 songs"
-      }
-     ]
-    },
-    {
-     "type": "carousel",
-     "cat": "The Drop",
-     "title": "New this Friday",
-     "sub": "All out Nov 20",
-     "index": 6,
-     "ask": "Summrs fans, how many times have you run it?",
-     "items": [
-      {
-       "img": "assets/gta.jpg",
-       "kicker": "GTA VI: The Album",
-       "artist": "Grand Theft Auto VI",
-       "line": "Soundtrack · 34 songs · Carti, Travis Scott, SZA"
-      },
-      {
-       "img": "assets/rema.jpg",
-       "kicker": "E-Mortal Boy",
-       "artist": "Rema",
-       "line": "7 songs · feat. Wizkid"
-      },
-      {
-       "img": "assets/mez.jpg",
-       "kicker": "Electric Future Gangster",
-       "artist": "Mez",
-       "line": "Debut album · feat. J. Cole, Anderson .Paak"
-      },
-      {
-       "img": "assets/fergie.jpg",
-       "kicker": "GOD IS FROM HARLEM",
-       "artist": "Fergie Baby",
-       "line": "Debut album · feat. Cam'ron, Max B, Dave East"
-      },
-      {
-       "img": "assets/blade.jpg",
-       "kicker": "Bad Blade",
-       "artist": "Fly Anakin & Real Bad Man",
-       "line": "Album · feat. Boldy James, Elucid"
-      },
-      {
-       "img": "assets/blu.jpg",
-       "kicker": "One More Story",
-       "artist": "Blu & Sinopsis",
-       "line": "5 songs + instrumentals"
-      },
-      {
-       "img": "assets/summrs.jpg",
-       "kicker": "BADMAN",
-       "artist": "Summrs",
-       "line": "Album · 17 songs"
-      }
-     ]
+     "type": "question",
+     "cat": "Your turn",
+     "question": "Who's your<br>underground<br>pick?",
+     "sub": "The artist you'd put everyone on to right now.",
+     "imgs": [
+      "assets/polo.jpg",
+      "assets/belly.jpg",
+      "assets/zelooperz.jpg",
+      "assets/boldy.jpg"
+     ],
+     "ask": "Who should we put on next week?"
     }
    ]
   }
