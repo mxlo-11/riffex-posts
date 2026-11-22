@@ -140,7 +140,7 @@ def t_pick(s, n, i):
           <div style="position:relative;width:{d}px;height:{d}px;margin:0 auto"><div class="round" style="width:{d}px;height:{d}px;background-image:url({u(x["img"])})"></div>
           <span style="position:absolute;right:6px;bottom:6px;width:54px;height:54px;border-radius:50%;background:#090B0C;display:flex;align-items:center;justify-content:center">{PLAY}</span></div>
           <div style="font-weight:700;font-size:{30 if len(x.get("artist","")) < 16 else 24}px;margin-top:20px;line-height:1.15">{e(x.get("artist"))}</div>
-          <div class="chip" style="margin-top:12px;height:42px;font-size:21px;color:#9AA3A6">{e(x.get("title"))}</div>
+          <div class="chip" style="margin-top:12px;height:auto;min-height:42px;padding:7px 20px;line-height:1.2;font-size:21px;color:#9AA3A6">{e(x.get("title"))}</div>
           <div class="blue" style="font-weight:700;font-size:30px;margin-top:18px">Pick</div></div>'''
     return doc(stage(s.get("bg") or its[0]["img"]) + header(s["cat"], n, i) + title(s["title"], s.get("sub")) +
         f'''<div class="abs panel" style="left:64px;right:64px;top:{s.get("top", 540)}px;padding:30px">

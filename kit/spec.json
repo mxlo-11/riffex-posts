@@ -1,157 +1,43 @@
 {
  "posts": [
   {
-   "id": "2026-11-21",
-   "caption": "Four projects you might've slept on 🔦\n\nPolo Perks dropped 3500 on Friday, 21 songs with Wiki on 616. The week before, Belly Gang Kushington brought out 21 Savage, Summer Walker and Wale, ZelooperZ linked with Black Noi$e and Danny Brown, and Boldy James brought half of Detroit along.\n\nWhich one are you starting with?\n\nBack the artists you find first. The Riffex beta is open, link in bio.\n\n#undergroundhiphop #newmusic #detroitrap #atlantarap #risingartists",
+   "id": "2026-11-22",
+   "caption": "Two votes, one question 👇\n\nFriday brought Rema's E-Mortal Boy and two big debuts from Mez and Fergie Baby. The underground came through too, with Polo Perks, Fly Anakin & Real Bad Man, and Blu & Sinopsis.\n\nOne from each slide: what made your week?\n\nThe artists you pick early are the ones you get to say you found first. Get on the waitlist at riffex.app.\n\n#newmusicfriday #pickone #undergroundhiphop #afrobeats #hiphop",
    "slides": [
     {
-     "type": "carousel",
-     "cat": "Rising",
-     "title": "Under the radar",
-     "sub": "Out the last two Fridays",
-     "index": 0,
-     "ask": "Which 3500 song are you running back?",
+     "type": "pick",
+     "cat": "Pick one",
+     "title": "Friday's big<br>three. Pick one.",
+     "sub": "All out Nov 20",
+     "panel_note": "1 vote each",
+     "ask": "Rema, Mez or Fergie Baby?",
      "items": [
-      {
-       "img": "assets/polo.jpg",
-       "kicker": "3500",
-       "artist": "Polo Perks",
-       "line": "Album · 21 songs · feat. Wiki, Ghost Orchard"
-      },
-      {
-       "img": "assets/belly.jpg",
-       "kicker": "GOOD DOPE SELL ITSELF",
-       "artist": "Belly Gang Kushington",
-       "line": "Album · feat. 21 Savage, Summer Walker, Wale"
-      },
-      {
-       "img": "assets/zelooperz.jpg",
-       "kicker": "Pin Breakers",
-       "artist": "ZelooperZ",
-       "line": "Album · prod. Black Noi$e · feat. Danny Brown"
-      },
-      {
-       "img": "assets/boldy.jpg",
-       "kicker": "Bentayga Genesis",
-       "artist": "Boldy James",
-       "line": "Album · feat. Sada Baby, Icewear Vezzo"
-      }
-     ]
+      {"img": "assets/rema.jpg", "artist": "Rema", "title": "E-Mortal Boy"},
+      {"img": "assets/mez.jpg", "artist": "Mez", "title": "Electric Future Gangster"},
+      {"img": "assets/fergie.jpg", "artist": "Fergie Baby", "title": "GOD IS FROM HARLEM"}
+    ]
     },
     {
-     "type": "carousel",
-     "cat": "Rising",
-     "title": "Under the radar",
-     "sub": "Out the last two Fridays",
-     "index": 1,
-     "ask": "21 Savage or Summer Walker: whose verse wins?",
+     "type": "pick",
+     "cat": "Pick one",
+     "title": "Deep cuts.<br>Pick one.",
+     "sub": "Underground drops, also Nov 20",
+     "panel_note": "1 vote each",
+     "ask": "Which one did you actually play?",
      "items": [
-      {
-       "img": "assets/polo.jpg",
-       "kicker": "3500",
-       "artist": "Polo Perks",
-       "line": "Album · 21 songs · feat. Wiki, Ghost Orchard"
-      },
-      {
-       "img": "assets/belly.jpg",
-       "kicker": "GOOD DOPE SELL ITSELF",
-       "artist": "Belly Gang Kushington",
-       "line": "Album · feat. 21 Savage, Summer Walker, Wale"
-      },
-      {
-       "img": "assets/zelooperz.jpg",
-       "kicker": "Pin Breakers",
-       "artist": "ZelooperZ",
-       "line": "Album · prod. Black Noi$e · feat. Danny Brown"
-      },
-      {
-       "img": "assets/boldy.jpg",
-       "kicker": "Bentayga Genesis",
-       "artist": "Boldy James",
-       "line": "Album · feat. Sada Baby, Icewear Vezzo"
-      }
-     ]
-    },
-    {
-     "type": "carousel",
-     "cat": "Rising",
-     "title": "Under the radar",
-     "sub": "Out the last two Fridays",
-     "index": 2,
-     "ask": "Danny Brown on Pin Breakers. Who's tapped in?",
-     "items": [
-      {
-       "img": "assets/polo.jpg",
-       "kicker": "3500",
-       "artist": "Polo Perks",
-       "line": "Album · 21 songs · feat. Wiki, Ghost Orchard"
-      },
-      {
-       "img": "assets/belly.jpg",
-       "kicker": "GOOD DOPE SELL ITSELF",
-       "artist": "Belly Gang Kushington",
-       "line": "Album · feat. 21 Savage, Summer Walker, Wale"
-      },
-      {
-       "img": "assets/zelooperz.jpg",
-       "kicker": "Pin Breakers",
-       "artist": "ZelooperZ",
-       "line": "Album · prod. Black Noi$e · feat. Danny Brown"
-      },
-      {
-       "img": "assets/boldy.jpg",
-       "kicker": "Bentayga Genesis",
-       "artist": "Boldy James",
-       "line": "Album · feat. Sada Baby, Icewear Vezzo"
-      }
-     ]
-    },
-    {
-     "type": "carousel",
-     "cat": "Rising",
-     "title": "Under the radar",
-     "sub": "Out the last two Fridays",
-     "index": 3,
-     "ask": "Which Detroit feature hits hardest?",
-     "items": [
-      {
-       "img": "assets/polo.jpg",
-       "kicker": "3500",
-       "artist": "Polo Perks",
-       "line": "Album · 21 songs · feat. Wiki, Ghost Orchard"
-      },
-      {
-       "img": "assets/belly.jpg",
-       "kicker": "GOOD DOPE SELL ITSELF",
-       "artist": "Belly Gang Kushington",
-       "line": "Album · feat. 21 Savage, Summer Walker, Wale"
-      },
-      {
-       "img": "assets/zelooperz.jpg",
-       "kicker": "Pin Breakers",
-       "artist": "ZelooperZ",
-       "line": "Album · prod. Black Noi$e · feat. Danny Brown"
-      },
-      {
-       "img": "assets/boldy.jpg",
-       "kicker": "Bentayga Genesis",
-       "artist": "Boldy James",
-       "line": "Album · feat. Sada Baby, Icewear Vezzo"
-      }
-     ]
+      {"img": "assets/polo.jpg", "artist": "Polo Perks", "title": "3500"},
+      {"img": "assets/badblade.jpg", "artist": "Fly Anakin & Real Bad Man", "title": "Bad Blade"},
+      {"img": "assets/blu.jpg", "artist": "Blu & Sinopsis", "title": "One More Story"}
+    ]
     },
     {
      "type": "question",
      "cat": "Your turn",
-     "question": "Who's your<br>underground<br>pick?",
-     "sub": "The artist you'd put everyone on to right now.",
-     "imgs": [
-      "assets/polo.jpg",
-      "assets/belly.jpg",
-      "assets/zelooperz.jpg",
-      "assets/boldy.jpg"
-     ],
-     "ask": "Who should we put on next week?"
+     "question": "What's the<br>sleeper of<br>the week?",
+     "sub": "The Nov 20 album nobody's talking about yet.",
+     "imgs": ["assets/mez.jpg", "assets/fergie.jpg", "assets/polo.jpg", "assets/badblade.jpg", "assets/blu.jpg"],
+     "placeholder": "Nobody's talking about...",
+     "ask": "Put us on in the comments"
     }
    ]
   }
