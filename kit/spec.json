@@ -1,84 +1,78 @@
 {
  "posts": [
   {
-   "id": "2026-11-23",
-   "caption": "Four things from a loud week in music 🏆\n\n@dontoliver got a Best New Artist nod at Monday's Grammy nominations, and GTA VI finally landed Thursday. Panchiko brought billy woods back for Day One, and 2 Chainz locked in Dec 4 for his album with Statik Selektah.\n\nWhat was your favorite music moment this week?\n\nRiffex is where you back the artists you find early. Try the beta, link in bio.\n\n#grammys #gtavi #billywoods #hiphop #newmusic",
+   "id": "2026-11-24",
+   "caption": "GTA VI's soundtrack just got 23 songs bigger 🎮\n\nRockstar dropped the deluxe edition of GTA VI: The Album on Monday. The rappers who play characters in the story are on it too: Krissy Celess and Hood Brat as Real Dimez, Denzel Curry as DWNPLY, and Kodak Black as himself.\n\nWho's your favorite character in the game so far?\n\nRiffex is for fans who find artists early. Join the waitlist at riffex.app.\n\n#gtavi #gta6 #denzelcurry #kodakblack #newmusic",
+   "tags": {
+    "4": [{"handle": "krissycelessss", "artist": "Krissy Celess"}, {"handle": "thehoodbrat", "artist": "Hood Brat"}],
+    "6": [{"handle": "kodakblack", "artist": "Kodak Black"}]
+   },
    "slides": [
     {
-     "type": "ranked",
-     "cat": "This week",
-     "title": "The week in music",
-     "sub": "Four things from Nov 16 to 22",
-     "ask": "What did we miss this week?",
-     "rows": [
-      {
-       "img": "assets/octane.jpg",
-       "headline": "Don Toliver up for Best New Artist",
-       "line": "Grammy nominations came out Monday"
-      },
-      {
-       "img": "assets/gta.jpg",
-       "headline": "GTA VI made $3.79B on day one",
-       "line": "The game finally came out Thursday"
-      },
-      {
-       "img": "assets/dayone.jpg",
-       "headline": "Panchiko dropped Day One",
-       "line": "Single · feat. billy woods"
-      },
-      {
-       "img": "assets/paris.jpg",
-       "headline": "2 Chainz has an album Dec 4",
-       "line": "With Statik Selektah · 18 songs"
-      }
-     ],
-     "top": 400
-    },
-    {
      "type": "hero",
-     "cat": "This week",
-     "img": "assets/octane.jpg",
-     "chip": "Don Toliver",
-     "kicker": "Grammy nominations",
-     "headline": "Best New<br>Artist nominee",
-     "line": "Up against Geese, Slayyyter and the Womack Sisters. Octane is in for Best Rap Album too.",
-     "ask": "Who should take Best New Artist?"
+     "cat": "The Wire",
+     "img": "assets/gta_deluxe.jpg",
+     "chip": "GTA VI: The Album",
+     "kicker": "New this week",
+     "headline": "The deluxe<br>is here",
+     "line": "Rockstar added 23 songs, and the rappers you meet in the story are on it.",
+     "ask": "Which new song are you playing first?"
     },
     {
      "type": "number",
-     "cat": "This week",
-     "big": "$3.79B",
-     "big_size": 180,
-     "img": "assets/gta.jpg",
-     "headline": "GTA VI sales<br>on day one",
-     "sub": "Rockstar says no launch in entertainment has ever done more.",
-     "ask": "Who's your favorite on the soundtrack?"
+     "cat": "The Wire",
+     "big": "57",
+     "img": "assets/gta_deluxe.jpg",
+     "imgs": ["assets/gta_album.jpg", "assets/gta_deluxe.jpg"],
+     "headline": "songs on the<br>album now",
+     "sub": "Up from 34, with Travis Scott, 21 Savage, Latto and five from Overmono.",
+     "ask": "Who's the best add on the deluxe?"
+    },
+    {
+     "type": "ranked",
+     "cat": "The Wire",
+     "title": "Rappers in<br>the story",
+     "sub": "They play roles in GTA VI and have songs on the deluxe",
+     "numbered": false,
+     "ask": "Who did you spot first in the game?",
+     "rows": [
+      {"img": "assets/gta_deluxe.jpg", "headline": "Real Dimez · Cooties (Remix)", "line": "Krissy Celess and Hood Brat · feat. Sexyy Red"},
+      {"img": "assets/ii.jpg", "headline": "Denzel Curry · FLA Flow", "line": "Plays DWNPLY · feat. 454"},
+      {"img": "assets/kodak_blessing.jpg", "headline": "Kodak Black · Tèt Kale Bobis", "line": "Plays himself, with his own radio show"}
+     ]
     },
     {
      "type": "hero",
-     "cat": "This week",
-     "img": "assets/dayone.jpg",
-     "chip": "Panchiko",
-     "kicker": "New this week",
-     "headline": "Day One",
-     "line": "The UK band found again through a lost Y2K demo, with billy woods on the first song off Chimera.",
-     "feats": [
-      "feat. billy woods",
-      "feat. Cotillon",
-      "Chimera · April 9"
-     ],
-     "ask": "Did you know Panchiko before this?"
+     "cat": "The Wire",
+     "img": "assets/gta_deluxe.jpg",
+     "chip": "Real Dimez",
+     "kicker": "Cooties (Remix)",
+     "headline": "Krissy Celess<br>& Hood Brat",
+     "line": "Two Miami rappers who play Bae Luxe and Roxy Rashad in the story. Sexyy Red jumps on their remix.",
+     "play": "Cooties (Remix) · out now",
+     "ask": "Did you know Krissy Celess or Hood Brat before GTA?"
     },
     {
      "type": "hero",
-     "cat": "This week",
-     "img": "assets/paris.jpg",
-     "chip": "2 Chainz",
-     "kicker": "Friday, Dec 4",
-     "headline": "Playaz Only<br>Live Once",
-     "line": "Statik Selektah made every beat. Mary J. Blige and Westside Gunn are on it.",
-     "play": "A Week In Paris · out now",
-     "ask": "Which feature are you most curious about?"
+     "cat": "The Wire",
+     "img": "assets/ii.jpg",
+     "chip": "Denzel Curry",
+     "kicker": "FLA Flow",
+     "headline": "He plays<br>DWNPLY",
+     "line": "DWNPLY is the Real Dimez rival in the story. FLA Flow brings in Orlando rapper 454.",
+     "play": "ii with Kenny Beats · out now",
+     "ask": "Is Denzel the best voice in the game?"
+    },
+    {
+     "type": "hero",
+     "cat": "The Wire",
+     "img": "assets/kodak_blessing.jpg",
+     "chip": "Kodak Black",
+     "kicker": "Tèt Kale Bobis",
+     "headline": "Playing<br>himself",
+     "line": "Kodak hosts his own radio show in the game, and the deluxe has two of his songs.",
+     "play": "Kodak The Blessing · out now",
+     "ask": "Have you found Kodak's radio show yet?"
     }
    ]
   }
