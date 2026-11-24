@@ -1,9 +1,10 @@
-# Riffex daily post rules (v4, Nov 18, 2026)
+# Riffex daily post rules (v4.1, Nov 24, 2026)
 
 The daily scheduled task reads this file every run. Goal (Milo): keep @riffexapp full of on brand music news and culture posts so the account never looks empty, put small and rising artists in front of people next to the big names, and remind people Riffex exists. Posts are content first, not app ads.
 
-## Weekly calendar (one post a day, America/New_York). Every post is a carousel (2 to 10 slides).
-| Day | Format | Main slide types |
+## Formats (one post a day, America/New_York). Every post is a carousel (2 to 10 slides).
+Milo, Nov 24: the format is NOT fixed by weekday. Research first, then pick whichever format below fits what you found best that day: one huge story is a Wire, several medium ones are a week in music, a stack of announced dates is Up next, a strong batch of underground drops is Rising, and so on. The one fixed day is Friday: always The Drop (New Music Friday release recap). Don't use the same format two days in a row (check POSTED_LOG.md) unless the news really calls for it, and keep a healthy mix across the week. The weekday column below is only a fallback for slow news days.
+| Fallback day | Format | Main slide types |
 |---|---|---|
 | Mon | The week in music: 3 to 5 stories from the past 7 days | ranked, then one slide per story (hero or number) |
 | Tue | The Wire: the one story that matters most | hero, then number or ranked for the details |
