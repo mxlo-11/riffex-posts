@@ -56,7 +56,7 @@ About once a week, swap a slot for "Inside Riffex" (inside type, then one produc
 - Max 5 tags per post. Never tag the same small artist more than once every 14 days (check POSTED_LOG.md). Never tag in negative or beef stories.
 - @mention artists in the caption only with a handle from the confirmed list or one whose source is an official link (a wrong @mention can't be dropped automatically). The photo tags are what notify the artist.
 - At the start of each run, add any handle the last post actually tagged (posted.json "tags" "tagged") to the confirmed list below.
-Confirmed handles so far: @whoisconway (Conway The Machine) @danz_cm (Danz CM) @fakemink @skepta @lilpeep @laflare1017 (Gucci Mane) @tierrawhack @rexv2s @yeat @dontoliver @cordae @champagnepapi (Drake) @lilbaby @yungmiami305 @metroboomin @heisrema (Rema). NOT the artist: @glaive, @tiffanyday.
+Confirmed handles so far: @whoisconway (Conway The Machine) @danz_cm (Danz CM) @fakemink @skepta @lilpeep @laflare1017 (Gucci Mane) @tierrawhack @rexv2s @yeat @dontoliver @cordae @champagnepapi (Drake) @lilbaby @yungmiami305 @metroboomin @heisrema (Rema) @krissycelessss (Krissy Celess) @thehoodbrat (Hood Brat) @kodakblack (Kodak Black). NOT the artist: @glaive, @tiffanyday.
 
 ## Caption
 1. A hook line that shows before "more", at most one emoji.

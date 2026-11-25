@@ -1,80 +1,130 @@
 {
  "posts": [
   {
-   "id": "2026-11-24",
-   "caption": "GTA VI's soundtrack just got 23 songs bigger 🎮\n\nRockstar dropped the deluxe edition of GTA VI: The Album on Monday. The rappers who play characters in the story are on it too: Krissy Celess and Hood Brat as Real Dimez, Denzel Curry as DWNPLY, and Kodak Black as himself.\n\nWho's your favorite character in the game so far?\n\nRiffex is for fans who find artists early. Join the waitlist at riffex.app.\n\n#gtavi #gta6 #denzelcurry #kodakblack #newmusic",
-   "tags": {
-    "4": [{"handle": "krissycelessss", "artist": "Krissy Celess"}, {"handle": "thehoodbrat", "artist": "Hood Brat"}],
-    "6": [{"handle": "kodakblack", "artist": "Kodak Black"}]
-   },
+   "id": "2026-11-25",
+   "caption": "The first two Fridays of December are stacked 🗓️\n\nSlayyyter drops the partner album to WOR$T GIRL IN AMERICA, SOAK is back with a new record, Post Malone adds eight unheard songs to Stoney for its 10th birthday, and Oklou & ROB score a movie coming to Netflix.\n\nWho on this list are you hearing for the first time?\n\nRiffex is where fans back the artists they find first. Try the beta, link in bio.\n\n#newmusic #upcomingalbums #slayyyter #postmalone #soak",
    "slides": [
     {
-     "type": "hero",
-     "cat": "The Wire",
-     "img": "assets/gta_deluxe.jpg",
-     "chip": "GTA VI: The Album",
-     "kicker": "New this week",
-     "headline": "The deluxe<br>is here",
-     "line": "Rockstar added 23 songs, and the rappers you meet in the story are on it.",
-     "ask": "Which new song are you playing first?"
-    },
-    {
-     "type": "number",
-     "cat": "The Wire",
-     "big": "57",
-     "img": "assets/gta_deluxe.jpg",
-     "imgs": ["assets/gta_album.jpg", "assets/gta_deluxe.jpg"],
-     "headline": "songs on the<br>album now",
-     "sub": "Up from 34, with Travis Scott, 21 Savage, Latto and five from Overmono.",
-     "ask": "Who's the best add on the deluxe?"
-    },
-    {
-     "type": "ranked",
-     "cat": "The Wire",
-     "title": "Rappers in<br>the story",
-     "sub": "They play roles in GTA VI and have songs on the deluxe",
-     "numbered": false,
-     "ask": "Who did you spot first in the game?",
+     "type": "calendar",
+     "cat": "Up next",
+     "title": "Coming in<br>December",
+     "sub": "Four albums worth a reminder",
+     "ask": "Which one are you saving a spot for?",
      "rows": [
-      {"img": "assets/gta_deluxe.jpg", "headline": "Real Dimez · Cooties (Remix)", "line": "Krissy Celess and Hood Brat · feat. Sexyy Red"},
-      {"img": "assets/ii.jpg", "headline": "Denzel Curry · FLA Flow", "line": "Plays DWNPLY · feat. 454"},
-      {"img": "assets/kodak_blessing.jpg", "headline": "Kodak Black · Tèt Kale Bobis", "line": "Plays himself, with his own radio show"}
-     ]
+      {
+       "day": "Fri",
+       "date": "4",
+       "img": "assets/slay_man.jpg",
+       "artist": "Slayyyter",
+       "title": "wor$t man in america",
+       "meta": "Album · 9 songs"
+      },
+      {
+       "day": "Fri",
+       "date": "4",
+       "img": "assets/soak_dec.jpg",
+       "artist": "SOAK",
+       "title": "decembers",
+       "meta": "Album · 9 songs"
+      },
+      {
+       "day": "Fri",
+       "date": "11",
+       "img": "assets/stoney10.jpg",
+       "artist": "Post Malone",
+       "title": "Stoney (10 Year Anniversary)",
+       "meta": "Anniversary edition · 26 songs"
+      },
+      {
+       "day": "Fri",
+       "date": "11",
+       "img": "assets/inwaves_a.jpg",
+       "artist": "Oklou & ROB",
+       "title": "In Waves (Original Soundtrack)",
+       "meta": "Soundtrack · 23 songs"
+      }
+     ],
+     "top": 470
     },
     {
      "type": "hero",
-     "cat": "The Wire",
-     "img": "assets/gta_deluxe.jpg",
-     "chip": "Real Dimez",
-     "kicker": "Cooties (Remix)",
-     "headline": "Krissy Celess<br>& Hood Brat",
-     "line": "Two Miami rappers who play Bae Luxe and Roxy Rashad in the story. Sexyy Red jumps on their remix.",
-     "play": "Cooties (Remix) · out now",
-     "ask": "Did you know Krissy Celess or Hood Brat before GTA?"
+     "cat": "Up next",
+     "img": "assets/slay_man.jpg",
+     "chip": "Slayyyter",
+     "kicker": "Friday, Dec 4",
+     "headline": "wor$t man<br>in america",
+     "line": "The partner album to WOR$T GIRL IN AMERICA from March.",
+     "play": "crank 2 · out now",
+     "ask": "Are you playing both halves back to back?"
     },
     {
      "type": "hero",
-     "cat": "The Wire",
-     "img": "assets/ii.jpg",
-     "chip": "Denzel Curry",
-     "kicker": "FLA Flow",
-     "headline": "He plays<br>DWNPLY",
-     "line": "DWNPLY is the Real Dimez rival in the story. FLA Flow brings in Orlando rapper 454.",
-     "play": "ii with Kenny Beats · out now",
-     "ask": "Is Denzel the best voice in the game?"
+     "cat": "Up next",
+     "img": "assets/soak_dec.jpg",
+     "chip": "SOAK",
+     "kicker": "Friday, Dec 4",
+     "headline": "decembers",
+     "line": "The Derry songwriter's first album since 2022, with a UK and EU tour into February.",
+     "play": "decembers · out now",
+     "ask": "First time hearing SOAK?"
     },
     {
      "type": "hero",
-     "cat": "The Wire",
-     "img": "assets/kodak_blessing.jpg",
-     "chip": "Kodak Black",
-     "kicker": "Tèt Kale Bobis",
-     "headline": "Playing<br>himself",
-     "line": "Kodak hosts his own radio show in the game, and the deluxe has two of his songs.",
-     "play": "Kodak The Blessing · out now",
-     "ask": "Have you found Kodak's radio show yet?"
+     "cat": "Up next",
+     "img": "assets/stoney10.jpg",
+     "chip": "Post Malone",
+     "kicker": "Friday, Dec 11",
+     "headline": "Stoney<br>turns 10",
+     "line": "Eight songs nobody's heard yet, and a one night show at the Palladium in LA on Dec 9.",
+     "ask": "What's your favorite song on Stoney?"
+    },
+    {
+     "type": "hero",
+     "cat": "Up next",
+     "img": "assets/inwaves_a.jpg",
+     "chip": "Oklou & ROB",
+     "kicker": "Friday, Dec 11",
+     "headline": "In Waves",
+     "line": "Their first film score, for the animated movie that hits Netflix the same day.",
+     "play": "the swirl ahead · out now",
+     "ask": "Would you watch it for the score alone?"
+    },
+    {
+     "type": "question",
+     "cat": "Your turn",
+     "question": "What's the last<br>album of your<br>year?",
+     "sub": "The one you're waiting on before 2026 ends.",
+     "imgs": [
+      "assets/slay_man.jpg",
+      "assets/soak_dec.jpg",
+      "assets/stoney10.jpg",
+      "assets/inwaves_a.jpg",
+      "assets/slay_crank2.jpg"
+     ],
+     "ask": "Tell us in the comments",
+     "placeholder": "My last album of 2026 is..."
     }
-   ]
+   ],
+   "tags": {
+    "3": [
+     {
+      "handle": "soaksoaksoak",
+      "artist": "SOAK"
+     }
+    ],
+    "2": [
+     {
+      "handle": "slayyyter",
+      "artist": "Slayyyter"
+     }
+    ],
+    "4": [
+     {
+      "handle": "postmalone",
+      "artist": "Post Malone"
+     }
+    ]
+   }
   }
  ]
 }
