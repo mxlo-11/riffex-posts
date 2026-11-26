@@ -1,130 +1,160 @@
 {
  "posts": [
   {
-   "id": "2026-11-25",
-   "caption": "The first two Fridays of December are stacked 🗓️\n\nSlayyyter drops the partner album to WOR$T GIRL IN AMERICA, SOAK is back with a new record, Post Malone adds eight unheard songs to Stoney for its 10th birthday, and Oklou & ROB score a movie coming to Netflix.\n\nWho on this list are you hearing for the first time?\n\nRiffex is where fans back the artists they find first. Try the beta, link in bio.\n\n#newmusic #upcomingalbums #slayyyter #postmalone #soak",
+   "id": "2026-11-26",
+   "caption": "Black Friday, one year ago 🎧\n\nWhile everyone was out shopping, Jessie J put out her sixth album, Pink Siifu dropped ONYX'! as a whole second chapter to BLACK'!ANTIQUE, A$AP Ferg brought Gucci Mane onto Flip Phone Shorty, and Sega Bodega went full ambient.\n\nWhich of these four is still on your phone a year later?\n\nFound an artist before everyone else? Riffex is where fans back them early. Join the waitlist at riffex.app.\n\n#rewind #jessiej #pinksiifu #asapferg #segabodega",
    "slides": [
     {
-     "type": "calendar",
-     "cat": "Up next",
-     "title": "Coming in<br>December",
-     "sub": "Four albums worth a reminder",
-     "ask": "Which one are you saving a spot for?",
-     "rows": [
+     "type": "carousel",
+     "cat": "Rewind",
+     "title": "A year ago<br>this week",
+     "sub": "All out Nov 28, 2025",
+     "index": 0,
+     "ask": "Which Jessie J era is your favorite?",
+     "items": [
       {
-       "day": "Fri",
-       "date": "4",
-       "img": "assets/slay_man.jpg",
-       "artist": "Slayyyter",
-       "title": "wor$t man in america",
-       "meta": "Album · 9 songs"
+       "img": "assets/jessie.jpg",
+       "kicker": "Don't Tease Me With A Good Time",
+       "artist": "Jessie J",
+       "line": "Album · 16 songs"
       },
       {
-       "day": "Fri",
-       "date": "4",
-       "img": "assets/soak_dec.jpg",
-       "artist": "SOAK",
-       "title": "decembers",
-       "meta": "Album · 9 songs"
+       "img": "assets/onyx.jpg",
+       "kicker": "ONYX'!",
+       "artist": "Pink Siifu",
+       "line": "Album · feat. Armand Hammer"
       },
       {
-       "day": "Fri",
-       "date": "11",
-       "img": "assets/stoney10.jpg",
-       "artist": "Post Malone",
-       "title": "Stoney (10 Year Anniversary)",
-       "meta": "Anniversary edition · 26 songs"
+       "img": "assets/ferg.jpg",
+       "kicker": "Flip Phone Shorty: Strictly For Da Streetz Vol. 1",
+       "artist": "A$AP Ferg",
+       "line": "Album · feat. Gucci Mane, Awich"
       },
       {
-       "day": "Fri",
-       "date": "11",
-       "img": "assets/inwaves_a.jpg",
-       "artist": "Oklou & ROB",
-       "title": "In Waves (Original Soundtrack)",
-       "meta": "Soundtrack · 23 songs"
+       "img": "assets/sega.jpg",
+       "kicker": "I Created The Universe So That Life Could Create a Language So Complex, Just To Say How Much I Love You",
+       "artist": "Sega Bodega",
+       "line": "Ambient album · 11 songs"
       }
-     ],
-     "top": 470
+     ]
     },
     {
-     "type": "hero",
-     "cat": "Up next",
-     "img": "assets/slay_man.jpg",
-     "chip": "Slayyyter",
-     "kicker": "Friday, Dec 4",
-     "headline": "wor$t man<br>in america",
-     "line": "The partner album to WOR$T GIRL IN AMERICA from March.",
-     "play": "crank 2 · out now",
-     "ask": "Are you playing both halves back to back?"
+     "type": "carousel",
+     "cat": "Rewind",
+     "title": "A year ago<br>this week",
+     "sub": "All out Nov 28, 2025",
+     "index": 1,
+     "ask": "Who's been on Pink Siifu since the early days?",
+     "items": [
+      {
+       "img": "assets/jessie.jpg",
+       "kicker": "Don't Tease Me With A Good Time",
+       "artist": "Jessie J",
+       "line": "Album · 16 songs"
+      },
+      {
+       "img": "assets/onyx.jpg",
+       "kicker": "ONYX'!",
+       "artist": "Pink Siifu",
+       "line": "Album · feat. Armand Hammer"
+      },
+      {
+       "img": "assets/ferg.jpg",
+       "kicker": "Flip Phone Shorty: Strictly For Da Streetz Vol. 1",
+       "artist": "A$AP Ferg",
+       "line": "Album · feat. Gucci Mane, Awich"
+      },
+      {
+       "img": "assets/sega.jpg",
+       "kicker": "I Created The Universe So That Life Could Create a Language So Complex, Just To Say How Much I Love You",
+       "artist": "Sega Bodega",
+       "line": "Ambient album · 11 songs"
+      }
+     ]
     },
     {
-     "type": "hero",
-     "cat": "Up next",
-     "img": "assets/soak_dec.jpg",
-     "chip": "SOAK",
-     "kicker": "Friday, Dec 4",
-     "headline": "decembers",
-     "line": "The Derry songwriter's first album since 2022, with a UK and EU tour into February.",
-     "play": "decembers · out now",
-     "ask": "First time hearing SOAK?"
+     "type": "carousel",
+     "cat": "Rewind",
+     "title": "A year ago<br>this week",
+     "sub": "All out Nov 28, 2025",
+     "index": 2,
+     "ask": "Which song on this one do you run back most?",
+     "items": [
+      {
+       "img": "assets/jessie.jpg",
+       "kicker": "Don't Tease Me With A Good Time",
+       "artist": "Jessie J",
+       "line": "Album · 16 songs"
+      },
+      {
+       "img": "assets/onyx.jpg",
+       "kicker": "ONYX'!",
+       "artist": "Pink Siifu",
+       "line": "Album · feat. Armand Hammer"
+      },
+      {
+       "img": "assets/ferg.jpg",
+       "kicker": "Flip Phone Shorty: Strictly For Da Streetz Vol. 1",
+       "artist": "A$AP Ferg",
+       "line": "Album · feat. Gucci Mane, Awich"
+      },
+      {
+       "img": "assets/sega.jpg",
+       "kicker": "I Created The Universe So That Life Could Create a Language So Complex, Just To Say How Much I Love You",
+       "artist": "Sega Bodega",
+       "line": "Ambient album · 11 songs"
+      }
+     ]
     },
     {
-     "type": "hero",
-     "cat": "Up next",
-     "img": "assets/stoney10.jpg",
-     "chip": "Post Malone",
-     "kicker": "Friday, Dec 11",
-     "headline": "Stoney<br>turns 10",
-     "line": "Eight songs nobody's heard yet, and a one night show at the Palladium in LA on Dec 9.",
-     "ask": "What's your favorite song on Stoney?"
-    },
-    {
-     "type": "hero",
-     "cat": "Up next",
-     "img": "assets/inwaves_a.jpg",
-     "chip": "Oklou & ROB",
-     "kicker": "Friday, Dec 11",
-     "headline": "In Waves",
-     "line": "Their first film score, for the animated movie that hits Netflix the same day.",
-     "play": "the swirl ahead · out now",
-     "ask": "Would you watch it for the score alone?"
+     "type": "carousel",
+     "cat": "Rewind",
+     "title": "A year ago<br>this week",
+     "sub": "All out Nov 28, 2025",
+     "index": 3,
+     "ask": "Who else falls asleep to ambient records?",
+     "items": [
+      {
+       "img": "assets/jessie.jpg",
+       "kicker": "Don't Tease Me With A Good Time",
+       "artist": "Jessie J",
+       "line": "Album · 16 songs"
+      },
+      {
+       "img": "assets/onyx.jpg",
+       "kicker": "ONYX'!",
+       "artist": "Pink Siifu",
+       "line": "Album · feat. Armand Hammer"
+      },
+      {
+       "img": "assets/ferg.jpg",
+       "kicker": "Flip Phone Shorty: Strictly For Da Streetz Vol. 1",
+       "artist": "A$AP Ferg",
+       "line": "Album · feat. Gucci Mane, Awich"
+      },
+      {
+       "img": "assets/sega.jpg",
+       "kicker": "I Created The Universe So That Life Could Create a Language So Complex, Just To Say How Much I Love You",
+       "artist": "Sega Bodega",
+       "line": "Ambient album · 11 songs"
+      }
+     ]
     },
     {
      "type": "question",
      "cat": "Your turn",
-     "question": "What's the last<br>album of your<br>year?",
-     "sub": "The one you're waiting on before 2026 ends.",
+     "question": "Which one<br>slipped past<br>you?",
+     "sub": "Black Friday drops get buried. Which of these are you hearing about now?",
      "imgs": [
-      "assets/slay_man.jpg",
-      "assets/soak_dec.jpg",
-      "assets/stoney10.jpg",
-      "assets/inwaves_a.jpg",
-      "assets/slay_crank2.jpg"
+      "assets/jessie.jpg",
+      "assets/onyx.jpg",
+      "assets/ferg.jpg",
+      "assets/sega.jpg"
      ],
-     "ask": "Tell us in the comments",
-     "placeholder": "My last album of 2026 is..."
+     "placeholder": "Missed this one...",
+     "ask": "Tell us in the comments"
     }
-   ],
-   "tags": {
-    "3": [
-     {
-      "handle": "soaksoaksoak",
-      "artist": "SOAK"
-     }
-    ],
-    "2": [
-     {
-      "handle": "slayyyter",
-      "artist": "Slayyyter"
-     }
-    ],
-    "4": [
-     {
-      "handle": "postmalone",
-      "artist": "Post Malone"
-     }
-    ]
-   }
+   ]
   }
  ]
 }

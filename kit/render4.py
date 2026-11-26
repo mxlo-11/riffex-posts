@@ -80,11 +80,13 @@ def t_carousel(s, n, i):
         on = k == k_on
         cards += (f'<div class="abs card" style="left:{x}px;top:{top + (0 if on else 30)}px;width:{W}px;height:{W - (0 if on else 60)}px;'
                   f'background-image:url({u(it["img"])});{"" if on else "opacity:.5;"}"></div>')
-    it = it_on; tx = max(64, x0); a = it.get("artist", "")
+    it = it_on; a = it.get("artist", ""); kick = it.get("kicker") or ""
+    tx = 64 if len(kick) > 40 else max(64, x0)  # long titles get the full width so they never run into the dots or the pill
+    tr = 64 + 36 + 22 * (m - 1) + 24            # keep text clear of the dots
     dots = "".join(f'<span style="width:{36 if k == k_on else 13}px;height:13px;border-radius:7px;background:{"#F2EFE8" if k == k_on else "#3A4144"}"></span>' for k in range(m))
     return doc(stage(it["img"]) + header(s["cat"], n, i) + title(s["title"], s.get("sub")) + cards +
-        f'<div class="abs" style="left:{tx}px;right:64px;top:{top + W + 34}px">'
-        f'<div class="blue" style="font-weight:600;font-size:28px">{e(it.get("kicker"))}</div>'
+        f'<div class="abs" style="left:{tx}px;right:{tr}px;top:{top + W + 34}px">'
+        f'<div class="blue" style="font-weight:600;font-size:{28 if len(kick) <= 60 else 25}px">{e(kick)}</div>'
         f'<div class="title" style="font-size:{58 if len(a) < 18 else 42}px;margin-top:10px">{e(a)}</div>'
         f'<div class="sub" style="margin-top:8px;font-size:31px">{e(it.get("line"))}</div></div>'
         f'<div class="abs" style="right:64px;top:{top + W + 44}px;display:flex;gap:9px">{dots}</div>' + cta(s))
