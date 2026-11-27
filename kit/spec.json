@@ -1,158 +1,284 @@
 {
  "posts": [
   {
-   "id": "2026-11-26",
-   "caption": "Black Friday, one year ago 🎧\n\nWhile everyone was out shopping, Jessie J put out her sixth album, Pink Siifu dropped ONYX'! as a whole second chapter to BLACK'!ANTIQUE, A$AP Ferg brought Gucci Mane onto Flip Phone Shorty, and Sega Bodega went full ambient.\n\nWhich of these four is still on your phone a year later?\n\nFound an artist before everyone else? Riffex is where fans back them early. Join the waitlist at riffex.app.\n\n#rewind #jessiej #pinksiifu #asapferg #segabodega",
+   "id": "2026-11-27",
+   "caption": "New Music Friday, Black Friday edition 🛍️\n\nJorja Smith gave her album an afterparty with JME, D Double E and Katy B, the Stones added five new songs, and blackbear dropped a mixtape on his birthday. Nelly Furtado put out new versions of her Loose songs with Adam Tendler. Two to know: Star's Revenge, with members of Geese and Sunflower Bean, and Priya Ragu, back with her second album, Madras.\n\nWhich one is getting the most plays from you this weekend?\n\nLove finding artists before everyone else? Try the Riffex beta, link in bio.\n\n#newmusicfriday #newmusic #jorjasmith #blackbear #indiemusic",
    "slides": [
     {
      "type": "carousel",
-     "cat": "Rewind",
-     "title": "A year ago<br>this week",
-     "sub": "All out Nov 28, 2025",
+     "cat": "The Drop",
+     "title": "New this week",
+     "sub": "Swipe through what just came out",
      "index": 0,
-     "ask": "Which Jessie J era is your favorite?",
+     "ask": "Grime remix or the original?",
      "items": [
       {
-       "img": "assets/jessie.jpg",
-       "kicker": "Don't Tease Me With A Good Time",
-       "artist": "Jessie J",
-       "line": "Album · 16 songs"
+       "img": "assets/jorja.jpg",
+       "kicker": "What Are The Odds (The Afterparty)",
+       "artist": "Jorja Smith",
+       "line": "Deluxe · feat. JME, D Double E, Katy B"
       },
       {
-       "img": "assets/onyx.jpg",
-       "kicker": "ONYX'!",
-       "artist": "Pink Siifu",
-       "line": "Album · feat. Armand Hammer"
+       "img": "assets/stones.jpg",
+       "kicker": "Foreign Tongues, Loose Lips",
+       "artist": "The Rolling Stones",
+       "line": "Deluxe · 5 new songs"
       },
       {
-       "img": "assets/ferg.jpg",
-       "kicker": "Flip Phone Shorty: Strictly For Da Streetz Vol. 1",
-       "artist": "A$AP Ferg",
-       "line": "Album · feat. Gucci Mane, Awich"
+       "img": "assets/bb.jpg",
+       "kicker": "analogue_OFF",
+       "artist": "blackbear",
+       "line": "Mixtape · feat. Lefty Gunplay, Perry Maysun"
       },
       {
-       "img": "assets/sega.jpg",
-       "kicker": "I Created The Universe So That Life Could Create a Language So Complex, Just To Say How Much I Love You",
-       "artist": "Sega Bodega",
-       "line": "Ambient album · 11 songs"
+       "img": "assets/nelly.jpg",
+       "kicker": "The Shadow Sessions: Songs From Loose",
+       "artist": "Nelly Furtado",
+       "line": "Album · with Adam Tendler"
+      },
+      {
+       "img": "assets/stars.jpg",
+       "kicker": "Star's Revenge II",
+       "artist": "Star's Revenge",
+       "line": "Geese + Sunflower Bean members"
+      },
+      {
+       "img": "assets/priya.jpg",
+       "kicker": "Madras",
+       "artist": "Priya Ragu",
+       "line": "Album · 12 songs · out Nov 26"
       }
      ]
     },
     {
      "type": "carousel",
-     "cat": "Rewind",
-     "title": "A year ago<br>this week",
-     "sub": "All out Nov 28, 2025",
+     "cat": "The Drop",
+     "title": "New this week",
+     "sub": "Swipe through what just came out",
      "index": 1,
-     "ask": "Who's been on Pink Siifu since the early days?",
+     "ask": "Which new Stones song is your favorite?",
      "items": [
       {
-       "img": "assets/jessie.jpg",
-       "kicker": "Don't Tease Me With A Good Time",
-       "artist": "Jessie J",
-       "line": "Album · 16 songs"
+       "img": "assets/jorja.jpg",
+       "kicker": "What Are The Odds (The Afterparty)",
+       "artist": "Jorja Smith",
+       "line": "Deluxe · feat. JME, D Double E, Katy B"
       },
       {
-       "img": "assets/onyx.jpg",
-       "kicker": "ONYX'!",
-       "artist": "Pink Siifu",
-       "line": "Album · feat. Armand Hammer"
+       "img": "assets/stones.jpg",
+       "kicker": "Foreign Tongues, Loose Lips",
+       "artist": "The Rolling Stones",
+       "line": "Deluxe · 5 new songs"
       },
       {
-       "img": "assets/ferg.jpg",
-       "kicker": "Flip Phone Shorty: Strictly For Da Streetz Vol. 1",
-       "artist": "A$AP Ferg",
-       "line": "Album · feat. Gucci Mane, Awich"
+       "img": "assets/bb.jpg",
+       "kicker": "analogue_OFF",
+       "artist": "blackbear",
+       "line": "Mixtape · feat. Lefty Gunplay, Perry Maysun"
       },
       {
-       "img": "assets/sega.jpg",
-       "kicker": "I Created The Universe So That Life Could Create a Language So Complex, Just To Say How Much I Love You",
-       "artist": "Sega Bodega",
-       "line": "Ambient album · 11 songs"
+       "img": "assets/nelly.jpg",
+       "kicker": "The Shadow Sessions: Songs From Loose",
+       "artist": "Nelly Furtado",
+       "line": "Album · with Adam Tendler"
+      },
+      {
+       "img": "assets/stars.jpg",
+       "kicker": "Star's Revenge II",
+       "artist": "Star's Revenge",
+       "line": "Geese + Sunflower Bean members"
+      },
+      {
+       "img": "assets/priya.jpg",
+       "kicker": "Madras",
+       "artist": "Priya Ragu",
+       "line": "Album · 12 songs · out Nov 26"
       }
      ]
     },
     {
      "type": "carousel",
-     "cat": "Rewind",
-     "title": "A year ago<br>this week",
-     "sub": "All out Nov 28, 2025",
+     "cat": "The Drop",
+     "title": "New this week",
+     "sub": "Swipe through what just came out",
      "index": 2,
-     "ask": "Which song on this one do you run back most?",
+     "ask": "Which blackbear era are you in?",
      "items": [
       {
-       "img": "assets/jessie.jpg",
-       "kicker": "Don't Tease Me With A Good Time",
-       "artist": "Jessie J",
-       "line": "Album · 16 songs"
+       "img": "assets/jorja.jpg",
+       "kicker": "What Are The Odds (The Afterparty)",
+       "artist": "Jorja Smith",
+       "line": "Deluxe · feat. JME, D Double E, Katy B"
       },
       {
-       "img": "assets/onyx.jpg",
-       "kicker": "ONYX'!",
-       "artist": "Pink Siifu",
-       "line": "Album · feat. Armand Hammer"
+       "img": "assets/stones.jpg",
+       "kicker": "Foreign Tongues, Loose Lips",
+       "artist": "The Rolling Stones",
+       "line": "Deluxe · 5 new songs"
       },
       {
-       "img": "assets/ferg.jpg",
-       "kicker": "Flip Phone Shorty: Strictly For Da Streetz Vol. 1",
-       "artist": "A$AP Ferg",
-       "line": "Album · feat. Gucci Mane, Awich"
+       "img": "assets/bb.jpg",
+       "kicker": "analogue_OFF",
+       "artist": "blackbear",
+       "line": "Mixtape · feat. Lefty Gunplay, Perry Maysun"
       },
       {
-       "img": "assets/sega.jpg",
-       "kicker": "I Created The Universe So That Life Could Create a Language So Complex, Just To Say How Much I Love You",
-       "artist": "Sega Bodega",
-       "line": "Ambient album · 11 songs"
+       "img": "assets/nelly.jpg",
+       "kicker": "The Shadow Sessions: Songs From Loose",
+       "artist": "Nelly Furtado",
+       "line": "Album · with Adam Tendler"
+      },
+      {
+       "img": "assets/stars.jpg",
+       "kicker": "Star's Revenge II",
+       "artist": "Star's Revenge",
+       "line": "Geese + Sunflower Bean members"
+      },
+      {
+       "img": "assets/priya.jpg",
+       "kicker": "Madras",
+       "artist": "Priya Ragu",
+       "line": "Album · 12 songs · out Nov 26"
       }
      ]
     },
     {
      "type": "carousel",
-     "cat": "Rewind",
-     "title": "A year ago<br>this week",
-     "sub": "All out Nov 28, 2025",
+     "cat": "The Drop",
+     "title": "New this week",
+     "sub": "Swipe through what just came out",
      "index": 3,
-     "ask": "Who else falls asleep to ambient records?",
+     "ask": "Maneater on piano: yes or no?",
      "items": [
       {
-       "img": "assets/jessie.jpg",
-       "kicker": "Don't Tease Me With A Good Time",
-       "artist": "Jessie J",
-       "line": "Album · 16 songs"
+       "img": "assets/jorja.jpg",
+       "kicker": "What Are The Odds (The Afterparty)",
+       "artist": "Jorja Smith",
+       "line": "Deluxe · feat. JME, D Double E, Katy B"
       },
       {
-       "img": "assets/onyx.jpg",
-       "kicker": "ONYX'!",
-       "artist": "Pink Siifu",
-       "line": "Album · feat. Armand Hammer"
+       "img": "assets/stones.jpg",
+       "kicker": "Foreign Tongues, Loose Lips",
+       "artist": "The Rolling Stones",
+       "line": "Deluxe · 5 new songs"
       },
       {
-       "img": "assets/ferg.jpg",
-       "kicker": "Flip Phone Shorty: Strictly For Da Streetz Vol. 1",
-       "artist": "A$AP Ferg",
-       "line": "Album · feat. Gucci Mane, Awich"
+       "img": "assets/bb.jpg",
+       "kicker": "analogue_OFF",
+       "artist": "blackbear",
+       "line": "Mixtape · feat. Lefty Gunplay, Perry Maysun"
       },
       {
-       "img": "assets/sega.jpg",
-       "kicker": "I Created The Universe So That Life Could Create a Language So Complex, Just To Say How Much I Love You",
-       "artist": "Sega Bodega",
-       "line": "Ambient album · 11 songs"
+       "img": "assets/nelly.jpg",
+       "kicker": "The Shadow Sessions: Songs From Loose",
+       "artist": "Nelly Furtado",
+       "line": "Album · with Adam Tendler"
+      },
+      {
+       "img": "assets/stars.jpg",
+       "kicker": "Star's Revenge II",
+       "artist": "Star's Revenge",
+       "line": "Geese + Sunflower Bean members"
+      },
+      {
+       "img": "assets/priya.jpg",
+       "kicker": "Madras",
+       "artist": "Priya Ragu",
+       "line": "Album · 12 songs · out Nov 26"
       }
      ]
     },
     {
-     "type": "question",
-     "cat": "Your turn",
-     "question": "Which one<br>slipped past<br>you?",
-     "sub": "Black Friday drops get buried. Which of these are you hearing about now?",
-     "imgs": [
-      "assets/jessie.jpg",
-      "assets/onyx.jpg",
-      "assets/ferg.jpg",
-      "assets/sega.jpg"
-     ],
-     "placeholder": "Missed this one...",
-     "ask": "Tell us in the comments"
+     "type": "carousel",
+     "cat": "The Drop",
+     "title": "New this week",
+     "sub": "Swipe through what just came out",
+     "index": 4,
+     "ask": "Geese fans, heard Star's Revenge yet?",
+     "items": [
+      {
+       "img": "assets/jorja.jpg",
+       "kicker": "What Are The Odds (The Afterparty)",
+       "artist": "Jorja Smith",
+       "line": "Deluxe · feat. JME, D Double E, Katy B"
+      },
+      {
+       "img": "assets/stones.jpg",
+       "kicker": "Foreign Tongues, Loose Lips",
+       "artist": "The Rolling Stones",
+       "line": "Deluxe · 5 new songs"
+      },
+      {
+       "img": "assets/bb.jpg",
+       "kicker": "analogue_OFF",
+       "artist": "blackbear",
+       "line": "Mixtape · feat. Lefty Gunplay, Perry Maysun"
+      },
+      {
+       "img": "assets/nelly.jpg",
+       "kicker": "The Shadow Sessions: Songs From Loose",
+       "artist": "Nelly Furtado",
+       "line": "Album · with Adam Tendler"
+      },
+      {
+       "img": "assets/stars.jpg",
+       "kicker": "Star's Revenge II",
+       "artist": "Star's Revenge",
+       "line": "Geese + Sunflower Bean members"
+      },
+      {
+       "img": "assets/priya.jpg",
+       "kicker": "Madras",
+       "artist": "Priya Ragu",
+       "line": "Album · 12 songs · out Nov 26"
+      }
+     ]
+    },
+    {
+     "type": "carousel",
+     "cat": "The Drop",
+     "title": "New this week",
+     "sub": "Swipe through what just came out",
+     "index": 5,
+     "ask": "Who's been on Priya Ragu since Santhosam?",
+     "items": [
+      {
+       "img": "assets/jorja.jpg",
+       "kicker": "What Are The Odds (The Afterparty)",
+       "artist": "Jorja Smith",
+       "line": "Deluxe · feat. JME, D Double E, Katy B"
+      },
+      {
+       "img": "assets/stones.jpg",
+       "kicker": "Foreign Tongues, Loose Lips",
+       "artist": "The Rolling Stones",
+       "line": "Deluxe · 5 new songs"
+      },
+      {
+       "img": "assets/bb.jpg",
+       "kicker": "analogue_OFF",
+       "artist": "blackbear",
+       "line": "Mixtape · feat. Lefty Gunplay, Perry Maysun"
+      },
+      {
+       "img": "assets/nelly.jpg",
+       "kicker": "The Shadow Sessions: Songs From Loose",
+       "artist": "Nelly Furtado",
+       "line": "Album · with Adam Tendler"
+      },
+      {
+       "img": "assets/stars.jpg",
+       "kicker": "Star's Revenge II",
+       "artist": "Star's Revenge",
+       "line": "Geese + Sunflower Bean members"
+      },
+      {
+       "img": "assets/priya.jpg",
+       "kicker": "Madras",
+       "artist": "Priya Ragu",
+       "line": "Album · 12 songs · out Nov 26"
+      }
+     ]
     }
    ]
   }
